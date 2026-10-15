@@ -1,0 +1,76 @@
+# ==========================================
+# Anlogic EG4S20 FPGA Project .gitignore
+# ==========================================
+
+# 1. 忽略大型网盘安装包与原厂全套软件镜像（避免超出 GitHub 100MB 限制）
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.iso
+HX4S20_Contest_202606/
+HX4S20_Contest_202606.zip
+
+# 2. 忽略第三方软件安装包与冗余数据转储
+*.exe
+*.msi
+*.dll
+xin.txt
+
+# 3. 忽略安路 TangDynasty (TD) 编译临时数据库与过程文件
+*.db
+*.ts
+*.area
+*.timing
+*.qor
+*.logw
+*.rpt
+*.f
+*.cwc
+*.qws
+*.qdf
+*.ppf
+*.qip
+*.ipregen.rpt
+*.nativelink_simulation.rpt
+gate_flow.status
+flow.status
+camera_to_dsi_display_Runs/
+*_Runs/
+run/
+log/
+.temp.f
+.opt_*.f
+.read_design.*.f
+
+# 4. 忽略 ModelSim 仿真缓存与波形文件
+work/
+transcript
+*.wlf
+modelsim.ini
+
+# 5. 忽略操作系统与编辑器临时文件
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*~
+.vscode/
+.idea/
+
+# 6. 必须保留的关键文件白名单（无论何时不被忽略）
+!*.v
+!*.vhd
+!*.sv
+!*.h
+!*.adc
+!*.sdc
+!*.al
+!*.ipc
+!*.do
+!*.tcl
+!*.bmp
+!*.wav
+!*.bit
+!README.md
+!.gitignore

@@ -1,0 +1,216 @@
+============================================================
+   Tang Dynasty, V5.6.119222
+      Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/Anlogic/bin/td.exe
+   Built at =   17:28:21 May 30 2024
+   Run by =     27744
+   Run Date =   Thu Jun 26 17:51:31 2025
+
+   Run on =     OPC
+============================================================
+RUN-001 : GUI based run...
+RUN-1002 : start command "open_project udp_demo.al -update"
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file al_ip/TEMAC_CORE_gate.v
+HDL-1007 : undeclared symbol 'open_n0', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(3736)
+HDL-1007 : undeclared symbol 'open_n3', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(3741)
+HDL-1007 : undeclared symbol 'open_n6', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(3972)
+HDL-1007 : undeclared symbol 'open_n7', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(4084)
+HDL-1007 : undeclared symbol 'open_n10', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7366)
+HDL-1007 : undeclared symbol 'open_n11', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7471)
+HDL-1007 : undeclared symbol 'open_n14', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7476)
+HDL-1007 : undeclared symbol 'open_n15', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7553)
+HDL-1007 : undeclared symbol 'open_n16', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7560)
+HDL-1007 : undeclared symbol 'open_n17', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7567)
+HDL-1007 : undeclared symbol 'open_n18', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7574)
+HDL-1007 : undeclared symbol 'open_n19', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7581)
+HDL-1007 : undeclared symbol 'open_n22', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7586)
+HDL-1007 : undeclared symbol 'open_n23', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7593)
+HDL-1007 : undeclared symbol 'open_n24', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7600)
+HDL-1007 : undeclared symbol 'open_n25', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7607)
+HDL-1007 : undeclared symbol 'open_n26', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(7614)
+HDL-1007 : undeclared symbol 'open_n29', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12059)
+HDL-1007 : undeclared symbol 'open_n30', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12101)
+HDL-1007 : undeclared symbol 'open_n33', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12737)
+HDL-1007 : undeclared symbol 'open_n34', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12842)
+HDL-1007 : undeclared symbol 'open_n35', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12849)
+HDL-1007 : undeclared symbol 'open_n36', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12856)
+HDL-1007 : undeclared symbol 'open_n37', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12863)
+HDL-1007 : undeclared symbol 'open_n40', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12868)
+HDL-1007 : undeclared symbol 'open_n41', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12875)
+HDL-1007 : undeclared symbol 'open_n42', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12882)
+HDL-1007 : undeclared symbol 'open_n43', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12889)
+HDL-1007 : undeclared symbol 'open_n44', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(12896)
+HDL-1007 : undeclared symbol 'open_n45', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(14453)
+HDL-1007 : undeclared symbol 'open_n48', assumed default net type 'wire' in al_ip/TEMAC_CORE_gate.v(14458)
+HDL-1007 : analyze verilog file al_ip/ram.v
+HDL-1007 : analyze verilog file al_ip/rom_bmp.v
+HDL-1007 : analyze verilog file al_ip/rx_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in al_ip/rx_pll.v(78)
+HDL-1007 : analyze verilog file al_ip/pll_gen.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in al_ip/pll_gen.v(99)
+HDL-1007 : analyze verilog file al_ip/pll_50.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in al_ip/pll_50.v(85)
+HDL-1007 : analyze verilog file al_ip/clk_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in al_ip/clk_pll.v(85)
+HDL-1007 : analyze verilog file al_ip/fifo_sdr_data.v
+HDL-1007 : analyze verilog file al_ip/fifo_sdr_data_2.v
+HDL-1007 : analyze verilog file ../src/BUFGMUX.v
+HDL-1007 : analyze verilog file ../src/clk_gen_rst_gen.v
+HDL-1007 : analyze verilog file ../src/div_clk_gen.v
+HDL-1007 : analyze verilog file ../src/IDDR.v
+HDL-1007 : analyze verilog file ../src/ODDR.v
+HDL-1007 : analyze verilog file ../src/pll_gen_1.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../src/pll_gen_1.v(119)
+HDL-1007 : analyze verilog file ../src/pll_gen_2.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../src/pll_gen_2.v(119)
+HDL-1007 : analyze verilog file ../src/RAMB16_S9_S9.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../src/RAMB16_S9_S9.v(109)
+HDL-1007 : analyze verilog file ../src/rgmii_interface.v
+HDL-1007 : analyze verilog file ../src/rx_client_fifo.v
+HDL-5007 WARNING: parameter 'WAIT_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(49)
+HDL-5007 WARNING: parameter 'QUEUE1_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(50)
+HDL-5007 WARNING: parameter 'QUEUE2_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(51)
+HDL-5007 WARNING: parameter 'QUEUE3_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(52)
+HDL-5007 WARNING: parameter 'QUEUE_SOF_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(53)
+HDL-5007 WARNING: parameter 'SOF_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(54)
+HDL-5007 WARNING: parameter 'DATA_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(55)
+HDL-5007 WARNING: parameter 'EOF_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(56)
+HDL-5007 WARNING: parameter 'IDLE_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(62)
+HDL-5007 WARNING: parameter 'FRAME_s' becomes localparam in 'rx_client_fifo' with formal parameter declaration list in ../src/rx_client_fifo.v(63)
+HDL-5007 Similar messages will be suppressed.
+HDL-1007 : analyze verilog file ../src/temac_block.v
+HDL-1007 : analyze verilog file ../src/temac_clk_gen.v
+HDL-1007 : analyze verilog file ../src/tx_client_fifo.v
+HDL-5007 WARNING: parameter 'IDLE_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(53)
+HDL-5007 WARNING: parameter 'QUEUE1_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(54)
+HDL-5007 WARNING: parameter 'QUEUE2_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(55)
+HDL-5007 WARNING: parameter 'QUEUE3_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(56)
+HDL-5007 WARNING: parameter 'QUEUE_ACK_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(57)
+HDL-5007 WARNING: parameter 'WAIT_ACK_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(58)
+HDL-5007 WARNING: parameter 'FRAME_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(59)
+HDL-5007 WARNING: parameter 'DROP_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(60)
+HDL-5007 WARNING: parameter 'RETRANSMIT_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(61)
+HDL-5007 WARNING: parameter 'WAIT_s' becomes localparam in 'tx_client_fifo' with formal parameter declaration list in ../src/tx_client_fifo.v(67)
+HDL-5007 Similar messages will be suppressed.
+HDL-1007 : analyze verilog file ../src/tx_clk_en_gen.v
+HDL-1007 : analyze verilog file ../src/udp_data_tpg.v
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+HDL-1007 : analyze verilog file udp_transmit_test.v
+HDL-1007 : undeclared symbol 'full_flag', assumed default net type 'wire' in udp_transmit_test.v(241)
+HDL-1007 : undeclared symbol 'phy_reset', assumed default net type 'wire' in udp_transmit_test.v(260)
+HDL-5007 WARNING: data object 'rst_n' is already declared in udp_transmit_test.v(581)
+HDL-1007 : previous declaration of 'rst_n' is from here in udp_transmit_test.v(152)
+HDL-5007 WARNING: second declaration of 'rst_n' is ignored in udp_transmit_test.v(581)
+HDL-1007 : undeclared symbol 'tpg_data_done', assumed default net type 'wire' in udp_transmit_test.v(702)
+HDL-1007 : analyze verilog file ../src/udp_ip_protocol_stack_merge.enc.v
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file '../src/udp_ip_protocol_stack_merge.enc.v' in ../src/udp_ip_protocol_stack_merge.enc.v(418)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : back to file '../src/udp_ip_protocol_stack_merge.enc.v' in ../src/udp_ip_protocol_stack_merge.enc.v(3910)
+HDL-1007 : analyze verilog file app/addr_crt.v
+HDL-1007 : analyze verilog file app/app.v
+HDL-1007 : analyze verilog file app/vga_disp.v
+HDL-1007 : analyze verilog file ../src/sd_ctrl_top.v
+HDL-1007 : analyze verilog file ../src/sd_init.v
+HDL-1007 : analyze verilog file ../src/sd_read.v
+HDL-1007 : analyze verilog file ../src/sd_read_photo.v
+HDL-1007 : analyze verilog file ../source_code/model/IS42s32200.v
+HDL-1007 : analyze verilog file ../source_code/rtl/app_wrrd.v
+HDL-1007 : analyze included file ../source_code/include/global_def.v in ../source_code/rtl/app_wrrd.v(10)
+HDL-1007 : back to file '../source_code/rtl/app_wrrd.v' in ../source_code/rtl/app_wrrd.v(10)
+HDL-5007 WARNING: redeclaration of ANSI port 'full_flag' is not allowed in ../source_code/rtl/app_wrrd.v(55)
+HDL-1007 : undeclared symbol 'afull', assumed default net type 'wire' in ../source_code/rtl/app_wrrd.v(68)
+HDL-1007 : undeclared symbol 'aempty', assumed default net type 'wire' in ../source_code/rtl/app_wrrd.v(69)
+HDL-1007 : undeclared symbol 'wrusedw', assumed default net type 'wire' in ../source_code/rtl/app_wrrd.v(70)
+HDL-5007 WARNING: data object 'w_addr_cnt' is already declared in ../source_code/rtl/app_wrrd.v(133)
+HDL-1007 : previous declaration of 'w_addr_cnt' is from here in ../source_code/rtl/app_wrrd.v(37)
+HDL-5007 WARNING: second declaration of 'w_addr_cnt' is ignored in ../source_code/rtl/app_wrrd.v(133)
+HDL-1007 : analyze verilog file ../source_code/rtl/enc_file/sdr_as_ram.enc.v
+HDL-1007 : back to file '../source_code/rtl/enc_file/sdr_as_ram.enc.v' in ../source_code/rtl/enc_file/sdr_as_ram.enc.v(148)
+HDL-1007 : analyze verilog file ../source_code/rtl/enc_file/sdr_init_ref.enc.v
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : back to file '../source_code/rtl/enc_file/sdr_init_ref.enc.v' in ../source_code/rtl/enc_file/sdr_init_ref.enc.v(242)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in encrypted_text(0)
+HDL-1007 : analyze verilog file ../source_code/rtl/enc_file/sdr_wrrd.enc.v
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in encrypted_text(0)
+HDL-1007 : back to file '../source_code/rtl/enc_file/sdr_wrrd.enc.v' in ../source_code/rtl/enc_file/sdr_wrrd.enc.v(255)
+HDL-1007 : analyze verilog file ../source_code/rtl/sdram_top.v
+HDL-1007 : analyze included file ../source_code/rtl/../include/global_def.v in ../source_code/rtl/sdram_top.v(10)
+HDL-1007 : back to file '../source_code/rtl/sdram_top.v' in ../source_code/rtl/sdram_top.v(10)
+HDL-1007 : undeclared symbol 'Rst_n', assumed default net type 'wire' in ../source_code/rtl/sdram_top.v(69)
+HDL-5007 WARNING: redeclaration of ANSI port 'wr_done' is not allowed in ../source_code/rtl/sdram_top.v(72)
+HDL-1007 : undeclared symbol 'SDR_CKE', assumed default net type 'wire' in ../source_code/rtl/sdram_top.v(130)
+RUN-1001 : Project manager successfully analyzed 41 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.

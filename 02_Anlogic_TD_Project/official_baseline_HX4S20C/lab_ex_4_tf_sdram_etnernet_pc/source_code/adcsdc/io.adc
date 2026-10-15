@@ -1,0 +1,5 @@
+set_pin_assignment	{ SYS_CLK }	{ LOCATION = T14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ LED }	{ LOCATION = R15; IOSTANDARD = LVCMOS33; }
+
+
+

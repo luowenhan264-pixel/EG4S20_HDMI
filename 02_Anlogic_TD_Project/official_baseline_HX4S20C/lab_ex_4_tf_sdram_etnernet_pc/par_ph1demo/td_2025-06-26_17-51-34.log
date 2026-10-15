@@ -1,0 +1,788 @@
+============================================================
+   Tang Dynasty, V5.6.119222
+      Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/Anlogic/bin/td.exe
+   Built at =   17:28:21 May 30 2024
+   Run by =     27744
+   Run Date =   Thu Jun 26 17:51:34 2025
+
+   Run on =     OPC
+============================================================
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.062521s wall, 0.046875s user + 0.046875s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 238 MB, reserved memory is 176 MB, peak memory is 267 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.383719s wall, 0.109375s user + 0.046875s system = 0.156250s CPU (2.1%)
+
+RUN-1004 : used memory is 238 MB, reserved memory is 176 MB, peak memory is 267 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.058216s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (0.4%)
+
+RUN-1004 : used memory is 240 MB, reserved memory is 177 MB, peak memory is 271 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.349691s wall, 0.046875s user + 0.015625s system = 0.062500s CPU (0.9%)
+
+RUN-1004 : used memory is 240 MB, reserved memory is 177 MB, peak memory is 271 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.047245s wall, 0.031250s user + 0.093750s system = 0.125000s CPU (1.8%)
+
+RUN-1004 : used memory is 237 MB, reserved memory is 175 MB, peak memory is 271 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.344122s wall, 0.046875s user + 0.093750s system = 0.140625s CPU (1.9%)
+
+RUN-1004 : used memory is 237 MB, reserved memory is 175 MB, peak memory is 271 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.042426s wall, 0.015625s user + 0.046875s system = 0.062500s CPU (0.9%)
+
+RUN-1004 : used memory is 236 MB, reserved memory is 177 MB, peak memory is 271 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.350350s wall, 0.078125s user + 0.046875s system = 0.125000s CPU (1.7%)
+
+RUN-1004 : used memory is 237 MB, reserved memory is 177 MB, peak memory is 271 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.067049s wall, 0.015625s user + 0.031250s system = 0.046875s CPU (0.7%)
+
+RUN-1004 : used memory is 237 MB, reserved memory is 174 MB, peak memory is 271 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.388229s wall, 0.046875s user + 0.031250s system = 0.078125s CPU (1.1%)
+
+RUN-1004 : used memory is 237 MB, reserved memory is 174 MB, peak memory is 271 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file udp_transmit_test.v
+HDL-1007 : undeclared symbol 'full_flag', assumed default net type 'wire' in udp_transmit_test.v(241)
+HDL-1007 : undeclared symbol 'phy_reset', assumed default net type 'wire' in udp_transmit_test.v(260)
+HDL-5007 WARNING: data object 'rst_n' is already declared in udp_transmit_test.v(581)
+HDL-1007 : previous declaration of 'rst_n' is from here in udp_transmit_test.v(152)
+HDL-5007 WARNING: second declaration of 'rst_n' is ignored in udp_transmit_test.v(581)
+HDL-1007 : undeclared symbol 'tpg_data_done', assumed default net type 'wire' in udp_transmit_test.v(702)
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+HDL-1007 : analyze verilog file udp_transmit_test.v
+HDL-1007 : undeclared symbol 'full_flag', assumed default net type 'wire' in udp_transmit_test.v(241)
+HDL-1007 : undeclared symbol 'phy_reset', assumed default net type 'wire' in udp_transmit_test.v(260)
+HDL-5007 WARNING: data object 'rst_n' is already declared in udp_transmit_test.v(581)
+HDL-1007 : previous declaration of 'rst_n' is from here in udp_transmit_test.v(152)
+HDL-5007 WARNING: second declaration of 'rst_n' is ignored in udp_transmit_test.v(581)
+HDL-1007 : undeclared symbol 'tpg_data_done', assumed default net type 'wire' in udp_transmit_test.v(702)
+GUI-5005 WARNING: Unknown file icon ...
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+HDL-8007 ERROR: 'fifo_read_data_cnt' is not a constant in ../src/udp_loopback.v(53)
+HDL-8007 ERROR: 'fifo_read_data_cnt' is not a constant in ../src/udp_loopback.v(53)
+HDL-8007 ERROR: range must be bounded by constant expressions in ../src/udp_loopback.v(53)
+HDL-8007 ERROR: ignore module module due to previous errors in ../src/udp_loopback.v(23)
+HDL-1007 : Verilog file '../src/udp_loopback.v' ignored due to errors
+GUI-5005 WARNING: Unknown file icon ...
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+HDL-8007 ERROR: 'fifo_read_data_cnt_wire' is not a constant in ../src/udp_loopback.v(53)
+HDL-8007 ERROR: 'fifo_read_data_cnt_wire' is not a constant in ../src/udp_loopback.v(53)
+HDL-8007 ERROR: range must be bounded by constant expressions in ../src/udp_loopback.v(53)
+HDL-8007 ERROR: ignore module module due to previous errors in ../src/udp_loopback.v(23)
+HDL-1007 : Verilog file '../src/udp_loopback.v' ignored due to errors
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-6001 WARNING: syn_1: run failed.
+RUN-1002 : start command "save_best_bits"
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-6001 WARNING: phy_1: run failed.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : open_run syn_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/syn_1/udp_demo_gate.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/syn_1/udp_demo_gate.db" in  1.760782s wall, 0.578125s user + 0.046875s system = 0.625000s CPU (35.5%)
+
+RUN-1004 : used memory is 343 MB, reserved memory is 377 MB, peak memory is 346 MB
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 83 feed throughs used by 73 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  9.794437s wall, 1.984375s user + 0.062500s system = 2.046875s CPU (20.9%)
+
+RUN-1004 : used memory is 724 MB, reserved memory is 766 MB, peak memory is 762 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.759040s wall, 0.015625s user + 0.062500s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 774 MB, reserved memory is 798 MB, peak memory is 792 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.110477s wall, 0.093750s user + 0.078125s system = 0.171875s CPU (2.4%)
+
+RUN-1004 : used memory is 774 MB, reserved memory is 798 MB, peak memory is 792 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.806484s wall, 0.000000s user + 0.046875s system = 0.046875s CPU (0.7%)
+
+RUN-1004 : used memory is 766 MB, reserved memory is 791 MB, peak memory is 792 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.112403s wall, 0.078125s user + 0.062500s system = 0.140625s CPU (2.0%)
+
+RUN-1004 : used memory is 766 MB, reserved memory is 791 MB, peak memory is 792 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+HDL-5007 WARNING: literal value 'h000fffff truncated to fit in 16 bits in ../src/udp_loopback.v(202)
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.708232s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 772 MB, reserved memory is 796 MB, peak memory is 792 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  6.977704s wall, 0.062500s user + 0.031250s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 772 MB, reserved memory is 796 MB, peak memory is 792 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+HDL-5007 WARNING: literal value 'h000fffff truncated to fit in 16 bits in ../src/udp_loopback.v(202)
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 93 feed throughs used by 85 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  6.283379s wall, 1.203125s user + 0.093750s system = 1.296875s CPU (20.6%)
+
+RUN-1004 : used memory is 820 MB, reserved memory is 849 MB, peak memory is 825 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.765913s wall, 0.031250s user + 0.046875s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 820 MB, reserved memory is 849 MB, peak memory is 838 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.047182s wall, 0.062500s user + 0.046875s system = 0.109375s CPU (1.6%)
+
+RUN-1004 : used memory is 820 MB, reserved memory is 849 MB, peak memory is 838 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 115 feed throughs used by 96 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  5.825318s wall, 1.343750s user + 0.062500s system = 1.406250s CPU (24.1%)
+
+RUN-1004 : used memory is 826 MB, reserved memory is 860 MB, peak memory is 838 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.702172s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 834 MB, reserved memory is 867 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  6.973997s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (0.7%)
+
+RUN-1004 : used memory is 834 MB, reserved memory is 867 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.741676s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (0.2%)
+
+RUN-1004 : used memory is 827 MB, reserved memory is 860 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.026889s wall, 0.062500s user + 0.000000s system = 0.062500s CPU (0.9%)
+
+RUN-1004 : used memory is 827 MB, reserved memory is 860 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 76 feed throughs used by 66 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  6.033607s wall, 1.218750s user + 0.062500s system = 1.281250s CPU (21.2%)
+
+RUN-1004 : used memory is 795 MB, reserved memory is 888 MB, peak memory is 853 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.710667s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (0.5%)
+
+RUN-1004 : used memory is 796 MB, reserved memory is 888 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  6.985645s wall, 0.062500s user + 0.015625s system = 0.078125s CPU (1.1%)
+
+RUN-1004 : used memory is 796 MB, reserved memory is 888 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.741955s wall, 0.062500s user + 0.031250s system = 0.093750s CPU (1.4%)
+
+RUN-1004 : used memory is 796 MB, reserved memory is 888 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.024010s wall, 0.109375s user + 0.046875s system = 0.156250s CPU (2.2%)
+
+RUN-1004 : used memory is 796 MB, reserved memory is 888 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.737181s wall, 0.046875s user + 0.046875s system = 0.093750s CPU (1.4%)
+
+RUN-1004 : used memory is 794 MB, reserved memory is 886 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.018760s wall, 0.093750s user + 0.046875s system = 0.140625s CPU (2.0%)
+
+RUN-1004 : used memory is 794 MB, reserved memory is 886 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.754554s wall, 0.046875s user + 0.031250s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 780 MB, reserved memory is 880 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.041829s wall, 0.093750s user + 0.046875s system = 0.140625s CPU (2.0%)
+
+RUN-1004 : used memory is 780 MB, reserved memory is 880 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.746148s wall, 0.000000s user + 0.015625s system = 0.015625s CPU (0.2%)
+
+RUN-1004 : used memory is 780 MB, reserved memory is 880 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.026714s wall, 0.046875s user + 0.015625s system = 0.062500s CPU (0.9%)
+
+RUN-1004 : used memory is 780 MB, reserved memory is 880 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 88 feed throughs used by 80 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  6.884574s wall, 1.359375s user + 0.187500s system = 1.546875s CPU (22.5%)
+
+RUN-1004 : used memory is 737 MB, reserved memory is 886 MB, peak memory is 853 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.737046s wall, 0.031250s user + 0.015625s system = 0.046875s CPU (0.7%)
+
+RUN-1004 : used memory is 768 MB, reserved memory is 907 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.050452s wall, 0.078125s user + 0.031250s system = 0.109375s CPU (1.6%)
+
+RUN-1004 : used memory is 768 MB, reserved memory is 907 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-6001 WARNING: Failed to reset phy_1: some files can't be removed in E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 114 feed throughs used by 91 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  9.736796s wall, 0.687500s user + 0.203125s system = 0.890625s CPU (9.1%)
+
+RUN-1004 : used memory is 726 MB, reserved memory is 892 MB, peak memory is 853 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.713400s wall, 0.015625s user + 0.031250s system = 0.046875s CPU (0.7%)
+
+RUN-1004 : used memory is 761 MB, reserved memory is 917 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.020642s wall, 0.031250s user + 0.062500s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 761 MB, reserved memory is 917 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.770795s wall, 0.015625s user + 0.031250s system = 0.046875s CPU (0.7%)
+
+RUN-1004 : used memory is 755 MB, reserved memory is 911 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.062859s wall, 0.062500s user + 0.031250s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 755 MB, reserved memory is 911 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.071824s wall, 0.031250s user + 0.046875s system = 0.078125s CPU (1.1%)
+
+RUN-1004 : used memory is 779 MB, reserved memory is 912 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.431039s wall, 0.093750s user + 0.062500s system = 0.156250s CPU (2.1%)
+
+RUN-1004 : used memory is 779 MB, reserved memory is 912 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.034168s wall, 0.015625s user + 0.046875s system = 0.062500s CPU (0.9%)
+
+RUN-1004 : used memory is 777 MB, reserved memory is 910 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.326520s wall, 0.109375s user + 0.046875s system = 0.156250s CPU (2.1%)
+
+RUN-1004 : used memory is 777 MB, reserved memory is 910 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.088211s wall, 0.031250s user + 0.046875s system = 0.078125s CPU (1.1%)
+
+RUN-1004 : used memory is 777 MB, reserved memory is 910 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.366832s wall, 0.046875s user + 0.046875s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 777 MB, reserved memory is 910 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  7.067414s wall, 0.093750s user + 0.015625s system = 0.109375s CPU (1.5%)
+
+RUN-1004 : used memory is 785 MB, reserved memory is 918 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.438452s wall, 0.203125s user + 0.062500s system = 0.265625s CPU (3.6%)
+
+RUN-1004 : used memory is 785 MB, reserved memory is 918 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.756795s wall, 0.046875s user + 0.031250s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 785 MB, reserved memory is 918 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.067882s wall, 0.078125s user + 0.031250s system = 0.109375s CPU (1.5%)
+
+RUN-1004 : used memory is 785 MB, reserved memory is 918 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.777889s wall, 0.062500s user + 0.015625s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 778 MB, reserved memory is 910 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.085487s wall, 0.171875s user + 0.031250s system = 0.203125s CPU (2.9%)
+
+RUN-1004 : used memory is 778 MB, reserved memory is 910 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : stop_run syn_1.
+RUN-1001 : reset_run syn_1 -step read_design.
+RUN-6001 WARNING: Failed to reset syn_1: some files can't be removed in E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/syn_1
+RUN-1001 : syn_1: run complete.
+RUN-1002 : start command "save_best_bits"
+GUI-5005 WARNING: Unknown file icon ...
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-6001 WARNING: phy_1: run failed.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : open_run syn_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/syn_1/udp_demo_gate.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/syn_1/udp_demo_gate.db" in  1.881112s wall, 0.531250s user + 0.109375s system = 0.640625s CPU (34.1%)
+
+RUN-1004 : used memory is 522 MB, reserved memory is 692 MB, peak memory is 853 MB
+RUN-1002 : start command "config_chipwatcher state.cwc -dir "
+KIT-1004 : ChipWatcher: import watcher inst auto_chipwatcher_0 completed, there are 55 view nodes, 311 trigger nets, 311 data nets.
+KIT-1004 : Chipwatcher code = 1000000101111101
+GUI-1001 : Import state.cwc success!
+GUI-1001 : User opens ChipWatcher ...
+GUI-1001 : User closes ChipWatcher ...
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 87 feed throughs used by 75 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  5.050789s wall, 1.562500s user + 0.031250s system = 1.593750s CPU (31.6%)
+
+RUN-1004 : used memory is 806 MB, reserved memory is 944 MB, peak memory is 853 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.735255s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 805 MB, reserved memory is 943 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.020134s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (0.4%)
+
+RUN-1004 : used memory is 805 MB, reserved memory is 943 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+HDL-1007 : analyze verilog file ../src/udp_loopback.v
+RUN-1001 : reset_run syn_1 phy_1.
+RUN-1001 : launch_runs syn_1 phy_1  -jobs 6.
+RUN-1001 : syn_1: run complete.
+RUN-1001 : phy_1: run complete.
+RUN-1002 : start command "save_best_bits"
+RUN-1001 : The implemented result of phy_1 is saved as best result.
+RUN-1001 : open_run phy_1.
+RUN-1002 : start command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_50_dup_1 will be routed on clock mesh
+PHY-1001 : net clk_50m_180deg will be routed on clock mesh
+PHY-5010 WARNING: Net clk_sample is skipped due to 0 input or output
+PHY-1001 : net phy1_rgmii_rx_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net temac_clk will be merged with clock u_clk_gen/u_pll_0/clk0_buf
+PHY-1001 : net temac_clk90 will be routed on clock mesh
+PHY-1001 : net udp_clk will be routed on clock mesh
+PHY-1001 : clock net t1_sd_ctrl_top/u_sd_init/div_clk_syn_4 will be merged with clock t1_sd_ctrl_top/u_sd_init/div_clk
+PHY-1001 : clock net t2_sd_read_photo/clk will be merged with clock u_pll_50/clk0_buf
+PHY-1001 : clock net t3_sdram/u0_clk/clk0_out will be merged with clock t3_sdram/u0_clk/clk0_buf
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[10] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[9] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[8] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[7] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[6] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[5] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[4] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[3] is skipped due to 0 input or output
+PHY-5010 WARNING: Net t3_sdram/u1_app_wrrd/udp_wrusedw[2] is skipped due to 0 input or output
+PHY-5010 Similar messages will be suppressed.
+PHY-1001 : clock net u_rx_pll/clk0_out will be merged with clock u_rx_pll/clk0_buf
+PHY-1001 : net t3_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net t3_sdram/u2_ram/u2_wrrd/Sdr_clk will be routed on clock mesh
+PHY-1001 : net u4_trimac_block/rgmii_rxc will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 80 feed throughs used by 73 nets
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1003 : finish command "import_db E:/subjects/45_enthernet/anlo_final/lab_ex_4_tf_sdram_etnernet_pc/par_ph1demo/udp_demo_Runs/phy_1/udp_demo_pr.db" in  6.028075s wall, 1.140625s user + 0.046875s system = 1.187500s CPU (19.7%)
+
+RUN-1004 : used memory is 804 MB, reserved memory is 957 MB, peak memory is 853 MB
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.754347s wall, 0.046875s user + 0.031250s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 789 MB, reserved memory is 957 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.045100s wall, 0.062500s user + 0.031250s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 788 MB, reserved memory is 957 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag_burst -freq 4 -bit udp_demo_Runs/best_result/udp_demo.bit"
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.774423s wall, 0.031250s user + 0.046875s system = 0.078125s CPU (1.2%)
+
+RUN-1004 : used memory is 788 MB, reserved memory is 957 MB, peak memory is 853 MB
+RUN-1003 : finish command "download -bit udp_demo_Runs\best_result\udp_demo.bit -mode jtag -spd 7 -sec 64 -cable 0" in  7.054153s wall, 0.046875s user + 0.046875s system = 0.093750s CPU (1.3%)
+
+RUN-1004 : used memory is 788 MB, reserved memory is 957 MB, peak memory is 853 MB
+GUI-1001 : Downloading succeeded!
