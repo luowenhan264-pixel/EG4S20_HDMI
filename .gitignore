@@ -24,6 +24,7 @@ xin.txt
 *.timing
 *.qor
 *.logw
+*.log
 *.rpt
 *.f
 *.cwc

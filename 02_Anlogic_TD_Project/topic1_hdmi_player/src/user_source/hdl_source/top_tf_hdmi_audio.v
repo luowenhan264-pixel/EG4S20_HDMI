@@ -5,6 +5,8 @@ module top(
     input                       key1,           // 手动下一张
     input                       key2,           // 自动播放 开/关
 
+    output [3:0]                led_data,       // 板载 4 颗用户指示灯 (B12, C10, A3, A4)
+
     output [5:0]                seg_sel,
     output [7:0]                seg_data,
 
@@ -194,8 +196,8 @@ sd_card_bmp #(
 ) sd_card_bmp_m0(
     .clk               (sd_card_clk),
     .rst               (rst_all),
-    .key_next          (key1),
-    .key_auto          (key2),
+    .key_next          (next_img_trig),
+    .key_auto          (auto_play_trig),
     .state_code        (state_code),
     .bmp_width         (16'd640),
     .bmp_height        (16'd480),
@@ -216,6 +218,45 @@ sd_card_bmp #(
     .SD_MOSI           (sd_mosi),
     .SD_MISO           (sd_miso)
 );
+
+// ===================== 多功能按键控制器（短按/长按消抖） =====================
+wire       next_img_trig;
+wire [1:0] fx_mode;
+wire       auto_play_trig;
+wire       osd_toggle_trig;
+wire [3:0] vol_level;
+
+multi_function_key_controller #(
+    .CLK_FREQ_HZ       (50_000_000)
+) u_key_ctrl (
+    .clk               (clk),
+    .rst_n             (rst_n),
+    .key1_raw          (key1),
+    .key2_raw          (key2),
+    .next_img_trig     (next_img_trig),
+    .fx_mode           (fx_mode),
+    .auto_play_trig    (auto_play_trig),
+    .osd_toggle_trig   (osd_toggle_trig),
+    .vol_level         (vol_level)
+);
+
+// OSD 显隐切换触发
+reg osd_enable = 1'b1;
+always @(posedge clk or posedge rst_all) begin
+    if (rst_all)
+        osd_enable <= 1'b1;
+    else if (osd_toggle_trig)
+        osd_enable <= ~osd_enable;
+end
+
+// 板载用户指示灯与心跳
+reg [25:0] heartbeat_cnt = 26'd0;
+always @(posedge clk) heartbeat_cnt <= heartbeat_cnt + 26'd1;
+
+assign led_data[0] = heartbeat_cnt[24];                       // LED0: 1.5Hz 心跳闪烁
+assign led_data[1] = sys_pll_lock & video_pll_lock & audio_pll_lock; // LED1: 全 PLL 锁定常亮
+assign led_data[2] = auto_play_en;                            // LED2: 自动轮播激活指示
+assign led_data[3] = (state_code != 4'd1) | in_transition;    // LED3: SD卡读图或转场中
 
 seg_decoder seg_decoder_m0(
     .bin_data          (state_code),
@@ -259,10 +300,13 @@ video_delay video_delay_m0(
     .vout_data         (vout_data_raw)
 );
 
-// sd_card_clk -> video_clk 轻量同步（OSD 显示用）
+// sd_card_clk / clk -> video_clk 跨时钟域轻量同步
 reg [1:0] img_idx_sync0, img_idx_sync1;
 reg       auto_play_sync0, auto_play_sync1;
 reg [3:0] state_code_sync0, state_code_sync1;
+reg [1:0] fx_mode_sync0, fx_mode_sync1;
+reg [3:0] vol_level_sync0, vol_level_sync1;
+reg       osd_en_sync0, osd_en_sync1;
 
 always @(posedge video_clk or posedge rst_all) begin
     if (rst_all) begin
@@ -272,6 +316,12 @@ always @(posedge video_clk or posedge rst_all) begin
         auto_play_sync1  <= 1'b0;
         state_code_sync0 <= 4'd0;
         state_code_sync1 <= 4'd0;
+        fx_mode_sync0    <= 2'd1;
+        fx_mode_sync1    <= 2'd1;
+        vol_level_sync0  <= 4'd12;
+        vol_level_sync1  <= 4'd12;
+        osd_en_sync0     <= 1'b1;
+        osd_en_sync1     <= 1'b1;
     end else begin
         img_idx_sync0    <= img_idx;
         img_idx_sync1    <= img_idx_sync0;
@@ -279,20 +329,68 @@ always @(posedge video_clk or posedge rst_all) begin
         auto_play_sync1  <= auto_play_sync0;
         state_code_sync0 <= state_code;
         state_code_sync1 <= state_code_sync0;
+        fx_mode_sync0    <= fx_mode;
+        fx_mode_sync1    <= fx_mode_sync0;
+        vol_level_sync0  <= vol_level;
+        vol_level_sync1  <= vol_level_sync0;
+        osd_en_sync0     <= osd_enable;
+        osd_en_sync1     <= osd_en_sync0;
     end
 end
 
-osd_overlay_640x480 u_osd_overlay (
-    .video_clk     (video_clk),
-    .rst           (rst_all),
-    .hs            (hs),
-    .vs            (vs),
-    .de            (de),
-    .img_idx       (img_idx_sync1),
-    .auto_play_en  (auto_play_sync1),
-    .state_code    (state_code_sync1),
-    .vout_data_raw (vout_data_raw),
-    .osd_rgb       (osd_rgb)
+// ===================== 视频处理流水线 Stage 1：硬件转场特效引擎 =====================
+wire [1:0]  active_read_buf_idx;
+wire        in_transition;
+wire [23:0] fx_rgb;
+
+image_transition_engine u_transition_engine (
+    .video_clk         (video_clk),
+    .rst               (rst_all),
+    .vs                (vs),
+    .hs                (hs),
+    .de                (de),
+    .fx_mode           (fx_mode_sync1),
+    .target_buf_idx    (disp_buf_idx),
+    .active_buf_idx    (active_read_buf_idx),
+    .in_transition     (in_transition),
+    .raw_rgb           (vout_data_raw),
+    .fx_rgb            (fx_rgb)
+);
+
+// ===================== 视频处理流水线 Stage 2：实时音频频谱与波形示波器 =====================
+wire [23:0] vis_rgb;
+
+audio_spectrum_visualizer u_audio_vis (
+    .video_clk         (video_clk),
+    .rst               (rst_all),
+    .vs                (vs),
+    .hs                (hs),
+    .de                (de),
+    .vis_en            (1'b1),
+    .vis_mode          (1'b0), // 0: 示波器波形模式, 1: 16段柱状频谱模式
+    .audio_valid       (audio_valid_raw),
+    .audio_pcm         (audio_left_data_raw),
+    .bg_rgb            (fx_rgb),
+    .vis_rgb           (vis_rgb)
+);
+
+// ===================== 视频处理流水线 Stage 3：专业 ASCII 字符 OSD 叠加 =====================
+wire [23:0] osd_rgb;
+
+osd_text_overlay u_osd_text (
+    .video_clk         (video_clk),
+    .rst               (rst_all),
+    .hs                (hs),
+    .vs                (vs),
+    .de                (de),
+    .img_idx           (img_idx_sync1),
+    .auto_play_en      (auto_play_sync1),
+    .vol_level         (vol_level_sync1),
+    .fx_mode           (fx_mode_sync1),
+    .state_code        (state_code_sync1),
+    .osd_en            (osd_en_sync1),
+    .bg_rgb            (vis_rgb),
+    .osd_rgb           (osd_rgb)
 );
 
 assign vout_data = display_valid ? osd_rgb : 24'd0;
@@ -321,7 +419,7 @@ frame_read_write #(
     .read_addr_1       (BUF1_ADDR),
     .read_addr_2       (24'd0),
     .read_addr_3       (24'd0),
-    .read_addr_index   (disp_buf_idx),
+    .read_addr_index   (active_read_buf_idx),
     .read_len          (FRAME_PIXELS),
     .read_en           (video_read_en),
     .read_data         (video_read_data),
@@ -373,15 +471,32 @@ hdmi_audio_tone_i2s_64fs #(
     .O_i2s_DOUT  (audio_i2s_dout)
 );
 
+wire        audio_valid_raw;
+wire [23:0] audio_left_data_raw;
+wire [23:0] audio_right_data_raw;
+
 I2S_receiver u_I2S_receiver(
     .I_clk              (video_clk),
     .I_rst              (rst_all),
     .I_i2s_BCLK         (audio_i2s_bclk),
     .I_i2s_LRCK         (audio_i2s_lrck),
     .I_i2s_DOUT         (audio_i2s_dout),
-    .O_audio_valid      (audio_valid),
-    .O_audio_left_data  (audio_left_data),
-    .O_audio_right_data (audio_right_data)
+    .O_audio_valid      (audio_valid_raw),
+    .O_audio_left_data  (audio_left_data_raw),
+    .O_audio_right_data (audio_right_data_raw)
+);
+
+audio_volume_controller u_audio_vol_ctrl (
+    .clk             (video_clk),
+    .rst             (rst_all),
+    .vol_level       (vol_level_sync1),
+    .vol_mute        (1'b0),
+    .audio_valid_in  (audio_valid_raw),
+    .audio_left_in   (audio_left_data_raw),
+    .audio_right_in  (audio_right_data_raw),
+    .audio_valid_out (audio_valid),
+    .audio_left_out  (audio_left_data),
+    .audio_right_out (audio_right_data)
 );
 
 audio_arc_calculate #(

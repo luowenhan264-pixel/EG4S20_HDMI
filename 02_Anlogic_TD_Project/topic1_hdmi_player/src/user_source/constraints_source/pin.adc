@@ -52,9 +52,7 @@ set_pin_assignment	{ seg_sel[5] }	{ LOCATION = D11; IOSTANDARD = LVCMOS33; DRIVE
 #set_pin_assignment	{ vga_data[8] }	{ LOCATION = R5; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
 #set_pin_assignment	{ vga_data[9] }	{ LOCATION = L7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
 #set_pin_assignment	{ vga_out_hs }	{ LOCATION = E7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
-#set_pin_assignment	{ vga_out_vs }	{ LOCATION = F7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
-
-
-
-
-
+set_pin_assignment	{ led_data[0] }	{ LOCATION = B12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led_data[1] }	{ LOCATION = C10; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led_data[2] }	{ LOCATION = A3;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led_data[3] }	{ LOCATION = A4;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

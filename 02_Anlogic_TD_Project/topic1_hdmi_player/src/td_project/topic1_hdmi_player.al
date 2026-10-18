@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project Version="3" Minor="2" Path="C:/Users/AUSU/Desktop/FPGA/work/topic1_hdmi_player/src/td_project">
+<Project Version="3" Minor="2" Path="C:/Users/75941/Desktop/Anlogic_EG4S20_Project/02_Anlogic_TD_Project/topic1_hdmi_player/src/td_project">
     <Project_Created_Time></Project_Created_Time>
     <TD_Version>6.2.168116</TD_Version>
     <Name>topic1_hdmi_player</Name>
@@ -306,6 +306,54 @@
                     <Attr Name="CompileOrder" Val="43"/>
                 </FileInfo>
             </File>
+            <File Path="../user_source/hdl_source/font_rom_8x16.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="50"/>
+                </FileInfo>
+            </File>
+            <File Path="../user_source/hdl_source/osd_text_overlay.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="51"/>
+                </FileInfo>
+            </File>
+            <File Path="../user_source/hdl_source/image_transition_engine.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="52"/>
+                </FileInfo>
+            </File>
+            <File Path="../user_source/hdl_source/audio_spectrum_visualizer.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="53"/>
+                </FileInfo>
+            </File>
+            <File Path="../user_source/hdl_source/audio_volume_controller.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="54"/>
+                </FileInfo>
+            </File>
+            <File Path="../user_source/hdl_source/multi_function_key_controller.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="55"/>
+                </FileInfo>
+            </File>
         </Verilog>
         <ADC_FILE>
             <File Path="../user_source/constraints_source/pin.adc">
@@ -327,16 +375,6 @@
                 </FileInfo>
             </File>
         </SDC_FILE>
-        <CWC_FILE>
-            <File Path="../user_source/constraints_source/edid_debug.cwc">
-                <FileInfo>
-                    <Attr Name="UsedInSyn" Val="true"/>
-                    <Attr Name="UsedInP&R" Val="true"/>
-                    <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="7"/>
-                </FileInfo>
-            </File>
-        </CWC_FILE>
         <IP_FILE>
             <File Path="al_ip/PLL_HDMI_AUDIO.ipc">
                 <FileInfo>
