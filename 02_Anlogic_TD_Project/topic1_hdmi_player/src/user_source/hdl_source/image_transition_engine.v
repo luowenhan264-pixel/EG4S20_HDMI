@@ -17,16 +17,23 @@ module image_transition_engine (
     output reg  [1:0]  active_buf_idx,   // Currently active buffer index fed to SDRAM
     output reg         in_transition,    // High when transition is actively executing
     input  wire [23:0] raw_rgb,          // Raw 24-bit RGB from SDRAM frame buffer
+    output reg         vs_out,
+    output reg         hs_out,
+    output reg         de_out,
     output reg  [23:0] fx_rgb            // Processed 24-bit RGB with transition applied
 );
 
-    // Vsync Edge Detector
+    // Vsync Edge Detector & Active Frame End Detector
     reg vs_d;
     wire vs_fall = vs_d & ~vs;
 
     // Line and Column Coordinates
     reg [9:0] x_cnt, y_cnt;
     reg de_d;
+
+    // Advance transition state right after the last active line (line 479),
+    // which is 10 lines (8,000 cycles) BEFORE video_vs falls and latches active_buf_idx in SDRAM reader
+    wire frame_end_tick = (de_d && !de && (y_cnt == 10'd479));
 
     always @(posedge video_clk or posedge rst) begin
         if (rst) begin
@@ -63,7 +70,7 @@ module image_transition_engine (
     reg [1:0] pending_buf_idx;
     reg [4:0] blind_width;       // 0..16 pixel stripe width
 
-    // Frame-level State Machine updated on Vsync Falling Edge
+    // Frame-level State Machine updated at End of Active Frame (before next Vsync read_req)
     always @(posedge video_clk or posedge rst) begin
         if (rst) begin
             state           <= S_IDLE;
@@ -73,7 +80,7 @@ module image_transition_engine (
             frame_cnt       <= 6'd0;
             blind_width     <= 5'd0;
             in_transition   <= 1'b0;
-        end else if (vs_fall) begin
+        end else if (frame_end_tick) begin
             case (state)
                 S_IDLE: begin
                     alpha         <= 8'd255;
@@ -192,28 +199,36 @@ module image_transition_engine (
 
     always @(posedge video_clk or posedge rst) begin
         if (rst) begin
-            fx_rgb <= 24'd0;
-        end else if (!de) begin
+            vs_out <= 1'b0;
+            hs_out <= 1'b0;
+            de_out <= 1'b0;
             fx_rgb <= 24'd0;
         end else begin
-            case (state)
-                S_IDLE: begin
-                    fx_rgb <= raw_rgb;
-                end
-
-                S_FADE_OUT, S_SWAP, S_FADE_IN: begin
-                    fx_rgb <= fade_pixel;
-                end
-
-                S_BLIND_RUN: begin
-                    if (is_blind_mask)
-                        fx_rgb <= 24'h000000;
-                    else
+            vs_out <= vs;
+            hs_out <= hs;
+            de_out <= de;
+            if (!de) begin
+                fx_rgb <= 24'd0;
+            end else begin
+                case (state)
+                    S_IDLE: begin
                         fx_rgb <= raw_rgb;
-                end
+                    end
 
-                default: fx_rgb <= raw_rgb;
-            endcase
+                    S_FADE_OUT, S_SWAP, S_FADE_IN: begin
+                        fx_rgb <= fade_pixel;
+                    end
+
+                    S_BLIND_RUN: begin
+                        if (is_blind_mask)
+                            fx_rgb <= 24'h000000;
+                        else
+                            fx_rgb <= raw_rgb;
+                    end
+
+                    default: fx_rgb <= raw_rgb;
+                endcase
+            end
         end
     end
 

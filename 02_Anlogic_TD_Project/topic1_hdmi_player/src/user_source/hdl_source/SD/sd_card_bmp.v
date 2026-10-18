@@ -3,9 +3,10 @@ module sd_card_bmp #(
     parameter [2:0]   IMG_COUNT      = 3'd4,
     parameter [31:0]  IMG_SECTOR0    = 32'd0,
     parameter [31:0]  IMG_SECTOR1    = 32'd2048,
-    parameter [31:0]  IMG_SECTOR2    = 32'd4096,
-    parameter [31:0]  IMG_SECTOR3    = 32'd6144,
-    parameter [31:0]  AUTO_PERIOD_MS = 32'd2000
+    parameter [31:0]  IMG_SECTOR2        = 32'd4096,
+    parameter [31:0]  IMG_SECTOR3        = 32'd6144,
+    parameter [31:0]  AUTO_PERIOD_MS     = 32'd2000,
+    parameter         USE_EXT_TRIG_PULSE = 1'b0
 )(
     input                       clk,
     input                       rst,
@@ -36,6 +37,8 @@ localparam [31:0] AUTO_PERIOD_CYCLES = AUTO_PERIOD_MS * (CLK_FREQ_HZ / 1000);
 
 wire key_next_press;
 wire key_auto_press;
+wire key_next_debounced;
+wire key_auto_debounced;
 
 wire             sd_sec_read;
 wire [31:0]      sd_sec_read_addr;
@@ -96,7 +99,7 @@ key_press_debounce #(
     .clk        (clk),
     .rst        (rst),
     .button_in  (key_next),
-    .press_pulse(key_next_press)
+    .press_pulse(key_next_debounced)
 );
 
 key_press_debounce #(
@@ -106,8 +109,11 @@ key_press_debounce #(
     .clk        (clk),
     .rst        (rst),
     .button_in  (key_auto),
-    .press_pulse(key_auto_press)
+    .press_pulse(key_auto_debounced)
 );
+
+assign key_next_press = USE_EXT_TRIG_PULSE ? key_next : key_next_debounced;
+assign key_auto_press = USE_EXT_TRIG_PULSE ? key_auto : key_auto_debounced;
 
 function [1:0] next_index_limited;
     input [1:0] cur;

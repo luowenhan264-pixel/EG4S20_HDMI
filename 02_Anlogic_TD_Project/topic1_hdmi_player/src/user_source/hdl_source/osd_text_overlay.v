@@ -23,6 +23,9 @@ module osd_text_overlay (
     input  wire [3:0]  state_code,       // SD card / SDRAM state code
     input  wire        osd_en,           // 1: OSD visible, 0: hidden
     input  wire [23:0] bg_rgb,           // Background pixel from image/transition engine
+    output reg         vs_out,
+    output reg         hs_out,
+    output reg         de_out,
     output reg  [23:0] osd_rgb           // Final output pixel with OSD
 );
 
@@ -84,11 +87,12 @@ module osd_text_overlay (
     wire [9:0] text_x_rel = (x_cnt >= 10'd24) ? (x_cnt - 10'd24) : 10'd0;
     wire [4:0] char_col   = text_x_rel[7:3];   // Character index (0..31)
     wire [2:0] char_x_bit = text_x_rel[2:0];   // 0..7 bit within char
-    wire [3:0] char_row =
+    wire [9:0] char_row_full =
         in_line0 ? (y_cnt - 10'd16) :
         in_line1 ? (y_cnt - 10'd34) :
         in_line2 ? (y_cnt - 10'd52) :
                    (y_cnt - 10'd70);
+    wire [3:0] char_row = char_row_full[3:0];
 
     // Dynamic Character Selector based on Line and Column
     reg [7:0] char_code;
@@ -123,7 +127,7 @@ module osd_text_overlay (
     // Line 0: "EG4S20 HDMI PLAYER" (Length: 18)
     // Line 1: "IMG: 0X/04  AUTO: ON " (Length: 20)
     // Line 2: "VOL: [||||||||  ] XX%" (Length: 21)
-    // Line 3: "BUF: PINGPONG  FX: FADE" (Length: 22)
+    // Line 3: "BUF:2X  FX: FADE" (Length: 16)
     always @(*) begin
         char_code = 8'h20; // default space
         text_color = 24'hFFFFFF;
@@ -251,19 +255,27 @@ module osd_text_overlay (
 
     always @(posedge video_clk or posedge rst) begin
         if (rst) begin
+            vs_out  <= 1'b0;
+            hs_out  <= 1'b0;
+            de_out  <= 1'b0;
             osd_rgb <= 24'd0;
-        end else if (!de) begin
-            osd_rgb <= 24'd0;
-        end else if (!osd_en) begin
-            osd_rgb <= bg_rgb;
-        end else if (is_border) begin
-            osd_rgb <= border_color;
-        end else if (in_any_line && font_pixel && (x_cnt >= 10'd24) && (x_cnt < 10'd280)) begin
-            osd_rgb <= text_color;
-        end else if (in_box) begin
-            osd_rgb <= bg_translucent;
         end else begin
-            osd_rgb <= bg_rgb;
+            vs_out <= vs;
+            hs_out <= hs;
+            de_out <= de;
+            if (!de) begin
+                osd_rgb <= 24'd0;
+            end else if (!osd_en) begin
+                osd_rgb <= bg_rgb;
+            end else if ((x_cnt == BOX_X0 || x_cnt == BOX_X1 || y_cnt == BOX_Y0 || y_cnt == BOX_Y1) && in_box) begin
+                osd_rgb <= border_color;
+            end else if (in_any_line && font_pixel && (x_cnt >= 10'd24) && (x_cnt < 10'd280)) begin
+                osd_rgb <= text_color;
+            end else if (in_box) begin
+                osd_rgb <= bg_translucent;
+            end else begin
+                osd_rgb <= bg_rgb;
+            end
         end
     end
 

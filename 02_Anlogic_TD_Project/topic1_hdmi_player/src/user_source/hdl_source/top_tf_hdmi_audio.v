@@ -100,12 +100,24 @@ wire        audio_mclk;
 wire        audio_i2s_bclk;
 wire        audio_i2s_lrck;
 wire        audio_i2s_dout;
+wire        audio_valid_raw;
+wire [23:0] audio_left_data_raw;
+wire [23:0] audio_right_data_raw;
 wire        audio_valid;
 wire [23:0] audio_left_data;
 wire [23:0] audio_right_data;
 wire        acr_valid;
 wire [19:0] acr_cts;
 wire [19:0] acr_n;
+
+// 多功能按键控制信号
+wire        next_img_trig;
+wire [1:0]  fx_mode;
+wire        vis_mode;
+wire        auto_play_trig;
+wire        osd_toggle_trig;
+wire        osd_enable;
+wire [3:0]  vol_level;
 
 wire        axis_s_user;
 wire        axis_s_valid;
@@ -186,13 +198,14 @@ end
 
 // ===================== TF playlist + 双缓冲 =====================
 sd_card_bmp #(
-    .CLK_FREQ_HZ    (100_000_000),
-    .IMG_COUNT      (IMG_COUNT),
-    .IMG_SECTOR0    (IMG_SECTOR0),
-    .IMG_SECTOR1    (IMG_SECTOR1),
-    .IMG_SECTOR2    (IMG_SECTOR2),
-    .IMG_SECTOR3    (IMG_SECTOR3),
-    .AUTO_PERIOD_MS (AUTO_PERIOD_MS)
+    .CLK_FREQ_HZ        (100_000_000),
+    .IMG_COUNT          (IMG_COUNT),
+    .IMG_SECTOR0        (IMG_SECTOR0),
+    .IMG_SECTOR1        (IMG_SECTOR1),
+    .IMG_SECTOR2        (IMG_SECTOR2),
+    .IMG_SECTOR3        (IMG_SECTOR3),
+    .AUTO_PERIOD_MS     (AUTO_PERIOD_MS),
+    .USE_EXT_TRIG_PULSE (1'b1)
 ) sd_card_bmp_m0(
     .clk               (sd_card_clk),
     .rst               (rst_all),
@@ -219,44 +232,34 @@ sd_card_bmp #(
     .SD_MISO           (sd_miso)
 );
 
-// ===================== 多功能按键控制器（短按/长按消抖） =====================
-wire       next_img_trig;
-wire [1:0] fx_mode;
-wire       auto_play_trig;
-wire       osd_toggle_trig;
-wire [3:0] vol_level;
-
+// ===================== 多功能按键控制器（短按/长按消抖，运行于 sd_card_clk 100MHz 域） =====================
 multi_function_key_controller #(
-    .CLK_FREQ_HZ       (50_000_000)
+    .CLK_FREQ_HZ       (100_000_000)
 ) u_key_ctrl (
-    .clk               (clk),
-    .rst_n             (rst_n),
+    .clk               (sd_card_clk),
+    .rst_n             (~rst_all),
     .key1_raw          (key1),
     .key2_raw          (key2),
     .next_img_trig     (next_img_trig),
     .fx_mode           (fx_mode),
+    .vis_mode          (vis_mode),
     .auto_play_trig    (auto_play_trig),
     .osd_toggle_trig   (osd_toggle_trig),
+    .osd_en            (osd_enable),
     .vol_level         (vol_level)
 );
-
-// OSD 显隐切换触发
-reg osd_enable = 1'b1;
-always @(posedge clk or posedge rst_all) begin
-    if (rst_all)
-        osd_enable <= 1'b1;
-    else if (osd_toggle_trig)
-        osd_enable <= ~osd_enable;
-end
 
 // 板载用户指示灯与心跳
 reg [25:0] heartbeat_cnt = 26'd0;
 always @(posedge clk) heartbeat_cnt <= heartbeat_cnt + 26'd1;
 
-assign led_data[0] = heartbeat_cnt[24];                       // LED0: 1.5Hz 心跳闪烁
-assign led_data[1] = sys_pll_lock & video_pll_lock & audio_pll_lock; // LED1: 全 PLL 锁定常亮
-assign led_data[2] = auto_play_en;                            // LED2: 自动轮播激活指示
-assign led_data[3] = (state_code != 4'd1) | in_transition;    // LED3: SD卡读图或转场中
+wire [1:0] active_read_buf_idx;
+wire       in_transition;
+
+assign led_data[0] = heartbeat_cnt[24];                                  // LED0: 1.5Hz 心跳闪烁
+assign led_data[1] = sys_pll_lock & video_pll_lock & audio_pll_lock;     // LED1: 全 PLL 锁定常亮
+assign led_data[2] = auto_play_en;                                       // LED2: 自动轮播激活指示
+assign led_data[3] = (state_code != 4'd1) | in_transition;               // LED3: SD卡读图或转场中
 
 seg_decoder seg_decoder_m0(
     .bin_data          (state_code),
@@ -300,47 +303,61 @@ video_delay video_delay_m0(
     .vout_data         (vout_data_raw)
 );
 
-// sd_card_clk / clk -> video_clk 跨时钟域轻量同步
-reg [1:0] img_idx_sync0, img_idx_sync1;
-reg       auto_play_sync0, auto_play_sync1;
-reg [3:0] state_code_sync0, state_code_sync1;
-reg [1:0] fx_mode_sync0, fx_mode_sync1;
-reg [3:0] vol_level_sync0, vol_level_sync1;
-reg       osd_en_sync0, osd_en_sync1;
+// sd_card_clk -> video_clk 跨时钟域双级同步器
+reg [1:0] img_idx_sync0,       img_idx_sync1;
+reg [1:0] disp_buf_idx_sync0,  disp_buf_idx_sync1;
+reg       display_valid_sync0, display_valid_sync1;
+reg       auto_play_sync0,     auto_play_sync1;
+reg [3:0] state_code_sync0,    state_code_sync1;
+reg [1:0] fx_mode_sync0,       fx_mode_sync1;
+reg       vis_mode_sync0,      vis_mode_sync1;
+reg [3:0] vol_level_sync0,     vol_level_sync1;
+reg       osd_en_sync0,        osd_en_sync1;
 
 always @(posedge video_clk or posedge rst_all) begin
     if (rst_all) begin
-        img_idx_sync0    <= 2'd0;
-        img_idx_sync1    <= 2'd0;
-        auto_play_sync0  <= 1'b0;
-        auto_play_sync1  <= 1'b0;
-        state_code_sync0 <= 4'd0;
-        state_code_sync1 <= 4'd0;
-        fx_mode_sync0    <= 2'd1;
-        fx_mode_sync1    <= 2'd1;
-        vol_level_sync0  <= 4'd12;
-        vol_level_sync1  <= 4'd12;
-        osd_en_sync0     <= 1'b1;
-        osd_en_sync1     <= 1'b1;
+        img_idx_sync0       <= 2'd0;
+        img_idx_sync1       <= 2'd0;
+        disp_buf_idx_sync0  <= 2'd0;
+        disp_buf_idx_sync1  <= 2'd0;
+        display_valid_sync0 <= 1'b0;
+        display_valid_sync1 <= 1'b0;
+        auto_play_sync0     <= 1'b0;
+        auto_play_sync1     <= 1'b0;
+        state_code_sync0    <= 4'd0;
+        state_code_sync1    <= 4'd0;
+        fx_mode_sync0       <= 2'd1;
+        fx_mode_sync1       <= 2'd1;
+        vis_mode_sync0      <= 1'b0;
+        vis_mode_sync1      <= 1'b0;
+        vol_level_sync0     <= 4'd12;
+        vol_level_sync1     <= 4'd12;
+        osd_en_sync0        <= 1'b1;
+        osd_en_sync1        <= 1'b1;
     end else begin
-        img_idx_sync0    <= img_idx;
-        img_idx_sync1    <= img_idx_sync0;
-        auto_play_sync0  <= auto_play_en;
-        auto_play_sync1  <= auto_play_sync0;
-        state_code_sync0 <= state_code;
-        state_code_sync1 <= state_code_sync0;
-        fx_mode_sync0    <= fx_mode;
-        fx_mode_sync1    <= fx_mode_sync0;
-        vol_level_sync0  <= vol_level;
-        vol_level_sync1  <= vol_level_sync0;
-        osd_en_sync0     <= osd_enable;
-        osd_en_sync1     <= osd_en_sync0;
+        img_idx_sync0       <= img_idx;
+        img_idx_sync1       <= img_idx_sync0;
+        disp_buf_idx_sync0  <= disp_buf_idx;
+        disp_buf_idx_sync1  <= disp_buf_idx_sync0;
+        display_valid_sync0 <= display_valid;
+        display_valid_sync1 <= display_valid_sync0;
+        auto_play_sync0     <= auto_play_en;
+        auto_play_sync1     <= auto_play_sync0;
+        state_code_sync0    <= state_code;
+        state_code_sync1    <= state_code_sync0;
+        fx_mode_sync0       <= fx_mode;
+        fx_mode_sync1       <= fx_mode_sync0;
+        vis_mode_sync0      <= vis_mode;
+        vis_mode_sync1      <= vis_mode_sync0;
+        vol_level_sync0     <= vol_level;
+        vol_level_sync1     <= vol_level_sync0;
+        osd_en_sync0        <= osd_enable;
+        osd_en_sync1        <= osd_en_sync0;
     end
 end
 
-// ===================== 视频处理流水线 Stage 1：硬件转场特效引擎 =====================
-wire [1:0]  active_read_buf_idx;
-wire        in_transition;
+// ===================== 视频处理流水线 Stage 1：硬件转场特效引擎 (Latency = +1 clk) =====================
+wire        vs_s1, hs_s1, de_s1;
 wire [23:0] fx_rgb;
 
 image_transition_engine u_transition_engine (
@@ -350,39 +367,46 @@ image_transition_engine u_transition_engine (
     .hs                (hs),
     .de                (de),
     .fx_mode           (fx_mode_sync1),
-    .target_buf_idx    (disp_buf_idx),
+    .target_buf_idx    (disp_buf_idx_sync1),
     .active_buf_idx    (active_read_buf_idx),
     .in_transition     (in_transition),
     .raw_rgb           (vout_data_raw),
+    .vs_out            (vs_s1),
+    .hs_out            (hs_s1),
+    .de_out            (de_s1),
     .fx_rgb            (fx_rgb)
 );
 
-// ===================== 视频处理流水线 Stage 2：实时音频频谱与波形示波器 =====================
+// ===================== 视频处理流水线 Stage 2：实时音频频谱与波形示波器 (Latency = +2 clk) =====================
+wire        vs_s2, hs_s2, de_s2;
 wire [23:0] vis_rgb;
 
 audio_spectrum_visualizer u_audio_vis (
     .video_clk         (video_clk),
     .rst               (rst_all),
-    .vs                (vs),
-    .hs                (hs),
-    .de                (de),
-    .vis_en            (1'b1),
-    .vis_mode          (1'b0), // 0: 示波器波形模式, 1: 16段柱状频谱模式
+    .vs                (vs_s1),
+    .hs                (hs_s1),
+    .de                (de_s1),
+    .vis_en            (osd_en_sync1),
+    .vis_mode          (vis_mode_sync1), // 0: 示波器波形模式, 1: 16段柱状频谱模式 (KEY1长按切换)
     .audio_valid       (audio_valid_raw),
     .audio_pcm         (audio_left_data_raw),
     .bg_rgb            (fx_rgb),
+    .vs_out            (vs_s2),
+    .hs_out            (hs_s2),
+    .de_out            (de_s2),
     .vis_rgb           (vis_rgb)
 );
 
-// ===================== 视频处理流水线 Stage 3：专业 ASCII 字符 OSD 叠加 =====================
-wire [23:0] osd_rgb;
+// ===================== 视频处理流水线 Stage 3：专业 ASCII 字符 OSD 叠加 (Latency = +3 clk) =====================
+wire        vs_s3, hs_s3, de_s3;
 
 osd_text_overlay u_osd_text (
     .video_clk         (video_clk),
     .rst               (rst_all),
-    .hs                (hs),
-    .vs                (vs),
-    .de                (de),
+    .hs                (hs_s2),
+    .vs                (vs_s2),
+    .de                (de_s2),
     .img_idx           (img_idx_sync1),
     .auto_play_en      (auto_play_sync1),
     .vol_level         (vol_level_sync1),
@@ -390,10 +414,13 @@ osd_text_overlay u_osd_text (
     .state_code        (state_code_sync1),
     .osd_en            (osd_en_sync1),
     .bg_rgb            (vis_rgb),
+    .vs_out            (vs_s3),
+    .hs_out            (hs_s3),
+    .de_out            (de_s3),
     .osd_rgb           (osd_rgb)
 );
 
-assign vout_data = display_valid ? osd_rgb : 24'd0;
+assign vout_data = display_valid_sync1 ? osd_rgb : 24'd0;
 
 frame_read_write #(
     .WRITE_V_FLIP     (1),
@@ -471,10 +498,6 @@ hdmi_audio_tone_i2s_64fs #(
     .O_i2s_DOUT  (audio_i2s_dout)
 );
 
-wire        audio_valid_raw;
-wire [23:0] audio_left_data_raw;
-wire [23:0] audio_right_data_raw;
-
 I2S_receiver u_I2S_receiver(
     .I_clk              (video_clk),
     .I_rst              (rst_all),
@@ -513,8 +536,8 @@ audio_arc_calculate #(
 video_rgb_to_axis_640x480 u_video_rgb_to_axis_640x480(
     .I_clk         (video_clk),
     .I_rst         (rst_all),
-    .I_vs          (vs),
-    .I_de          (de),
+    .I_vs          (vs_s3),
+    .I_de          (de_s3),
     .I_rgb         (vout_data),
     .O_video_user  (axis_s_user),
     .O_video_valid (axis_s_valid),

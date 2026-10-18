@@ -18,6 +18,9 @@ module audio_spectrum_visualizer (
     input  wire        audio_valid,      // Pulse when new audio sample arrives (from I2S)
     input  wire [23:0] audio_pcm,        // 24-bit Signed Audio PCM
     input  wire [23:0] bg_rgb,           // Background pixel from video pipeline
+    output reg         vs_out,
+    output reg         hs_out,
+    output reg         de_out,
     output reg  [23:0] vis_rgb           // Output pixel with audio visualizer overlaid
 );
 
@@ -53,16 +56,14 @@ module audio_spectrum_visualizer (
     reg [7:0] sample_ram [0:255];
     reg [7:0] wr_ptr;
     reg [7:0] abs_peak;
-    reg [5:0] peak_decay_cnt;
 
     // Abs value of current audio sample
     wire [23:0] abs_audio = audio_pcm[23] ? (~audio_pcm + 24'd1) : audio_pcm;
 
     always @(posedge video_clk or posedge rst) begin
         if (rst) begin
-            wr_ptr         <= 8'd0;
-            abs_peak       <= 8'd0;
-            peak_decay_cnt <= 6'd0;
+            wr_ptr   <= 8'd0;
+            abs_peak <= 8'd0;
         end else begin
             if (audio_valid) begin
                 // Store signed 8-bit MSB of audio waveform
@@ -84,7 +85,7 @@ module audio_spectrum_visualizer (
         end
     end
 
-    // Visualizer Docking Area: X in [32, 607], Y in [416, 468]
+    // Visualizer Docking Area: X in [40, 600], Y in [416, 468]
     localparam [9:0] DOCK_X0 = 10'd40;
     localparam [9:0] DOCK_X1 = 10'd600;
     localparam [9:0] DOCK_Y0 = 10'd416;
@@ -102,12 +103,12 @@ module audio_spectrum_visualizer (
     // -------------------------------------------------------------------------
     // 1. Oscilloscope Mode Calculations
     // -------------------------------------------------------------------------
-    wire [9:0] x_rel       = (x_cnt >= DOCK_X0) ? (x_cnt - DOCK_X0) : 10'd0;
+    wire [9:0] x_rel         = (x_cnt >= DOCK_X0) ? (x_cnt - DOCK_X0) : 10'd0;
     wire [7:0] rd_sample_idx = x_rel[8:1]; // 512 pixels map to 256 samples
-    wire signed [7:0] wave_val = sample_ram[rd_sample_idx];
+    wire [7:0] wave_val      = sample_ram[rd_sample_idx];
 
-    // Scale wave amplitude: divide by 8 for +/- 16 pixel deviation around Y_MID
-    wire signed [9:0] wave_offset = {{3{wave_val[7]}}, wave_val[7:1]}; // signed / 2
+    // Sign-extend 8-bit sample divided by 2 to 10-bit two's complement offset
+    wire [9:0] wave_offset   = {{3{wave_val[7]}}, wave_val[7:1]};
     wire [9:0] wave_target_y = Y_MID - wave_offset;
 
     wire is_wave_pixel = in_dock && (
@@ -122,13 +123,12 @@ module audio_spectrum_visualizer (
     // 2. Spectrum Bar Mode Calculations (16 Animated Bars)
     // -------------------------------------------------------------------------
     // Dock width = 560 pixels. Each bar zone = 32 pixels wide (Bar = 20px, Gap = 12px)
-    wire [8:0] bar_x_rel = (x_cnt >= 10'd64) ? (x_cnt - 10'd64) : 9'd0;
+    wire [9:0] bar_x_rel = (x_cnt >= 10'd64) ? (x_cnt - 10'd64) : 10'd0;
     wire [3:0] bar_idx   = bar_x_rel[8:5];   // 0..15 bar index
     wire [4:0] bar_col   = bar_x_rel[4:0];   // 0..31 within zone
     wire in_bar_x        = (bar_col < 5'd20) && (x_cnt >= 10'd64) && (x_cnt < 10'd576);
 
     // Synthesize frequency height curve for 16 bands based on peak and bar index
-    // Generates lively bouncing frequency response shapes
     reg [5:0] bar_height;
     always @(*) begin
         case (bar_idx)
@@ -171,27 +171,35 @@ module audio_spectrum_visualizer (
     // Output Compositing Pipeline
     always @(posedge video_clk or posedge rst) begin
         if (rst) begin
+            vs_out  <= 1'b0;
+            hs_out  <= 1'b0;
+            de_out  <= 1'b0;
             vis_rgb <= 24'd0;
-        end else if (!de) begin
-            vis_rgb <= 24'd0;
-        end else if (!vis_en || !in_dock) begin
-            vis_rgb <= bg_rgb;
-        end else if (is_dock_border) begin
-            vis_rgb <= 24'h00A0E0; // Border
-        end else if (vis_mode == 1'b0) begin
-            // Oscilloscope Mode
-            if (is_wave_pixel)
-                vis_rgb <= 24'h00FFCC; // Neon Cyan Trace
-            else if (is_axis_pixel)
-                vis_rgb <= 24'h004060; // Axis Grid
-            else
-                vis_rgb <= bg_dock;    // Translucent Dock
         end else begin
-            // Spectrum Bar Mode
-            if (in_bar_active)
-                vis_rgb <= bar_color;
-            else
-                vis_rgb <= bg_dock;
+            vs_out <= vs;
+            hs_out <= hs;
+            de_out <= de;
+            if (!de) begin
+                vis_rgb <= 24'd0;
+            end else if (!vis_en || !in_dock) begin
+                vis_rgb <= bg_rgb;
+            end else if (is_dock_border) begin
+                vis_rgb <= 24'h00A0E0; // Border
+            end else if (vis_mode == 1'b0) begin
+                // Oscilloscope Mode
+                if (is_wave_pixel)
+                    vis_rgb <= 24'h00FFCC; // Neon Cyan Trace
+                else if (is_axis_pixel)
+                    vis_rgb <= 24'h004060; // Axis Grid
+                else
+                    vis_rgb <= bg_dock;    // Translucent Dock
+            end else begin
+                // Spectrum Bar Mode
+                if (in_bar_active)
+                    vis_rgb <= bar_color;
+                else
+                    vis_rgb <= bg_dock;
+            end
         end
     end
 
