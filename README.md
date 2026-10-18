@@ -58,3 +58,18 @@
 5. **开发板网盘资料**：
    - 百度网盘：`https://pan.baidu.com/s/1ysv_FmmgZKuM0rBiHfSv8w` 提取码：`M5N1`
    - 板载免驱下载器，Win11 若出现驱动感叹号需关闭内存完整性或签名强制。
+
+---
+
+## 四、本仓库最新选题一工程（协作更新）
+
+由协作账号 **BENY1119** 整理推送的 **选题一 HDMI 多媒体播放器** 最新工程：
+
+| 路径 | 内容 |
+| :--- | :--- |
+| [`01_Bitstream_Ready_To_Flash/`](./01_Bitstream_Ready_To_Flash/) | 可烧录位流 `topic1_hdmi_player.bit`、下载脚本与上板说明 |
+| [`02_Anlogic_TD_Project/topic1_hdmi_player/`](./02_Anlogic_TD_Project/topic1_hdmi_player/) | TD 工程（`.al`）、RTL 源码、约束、IP、文档与 BMP/音频资源 |
+| [`05_Contest_Guides_And_Reports/选题一_例程体检报告.md`](./05_Contest_Guides_And_Reports/选题一_例程体检报告.md) | 例程体检报告 |
+
+> 官方例程基线仍保留在 `02_Anlogic_TD_Project/official_baseline_HX4S20C/`，与选题一自研工程并列，互不覆盖。
+

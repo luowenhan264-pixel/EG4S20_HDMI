@@ -1,0 +1,4 @@
+选题一 HDMI 媒体播放器工程
+来源：C:\Users\AUSU\Desktop\FPGA\work\topic1_hdmi_player
+复制时间：2026-10-18
+本目录为已写好的选题一工程副本，原 FPGA\work 未改动。
