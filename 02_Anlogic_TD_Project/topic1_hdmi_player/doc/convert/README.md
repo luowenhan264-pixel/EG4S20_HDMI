@@ -73,3 +73,17 @@ python sync_to_sd.py E: -s "C:\my_images" -n 2
 ```
 
 执行完毕后，安全弹出 SD 卡插入 FPGA 即可。
+## 6. 上板前：读出真实扇区表 (`find_bmp_sectors.py`)
+
+当前工程用固定扇区 playlist（`IMG_SECTOR0..3`），默认 `0/2048/4096/6144` 只是占位。`IMG_SECTOR0=0` 往往会落到引导区，上板容易黑屏。
+
+`find_bmp_sectors.py` 只读扫描 TF 卡（或卡镜像），打印可直接粘贴的 `IMG_COUNT` / `IMG_SECTOR*`。不会写卡。
+
+Windows（管理员命令行，盘号用 `Get-Disk` 确认，勿选系统盘）：
+
+```bash
+python sync_to_sd.py E:
+python find_bmp_sectors.py \\.\PhysicalDrive2
+```
+
+把打印出的扇区值改回 `top_tf_hdmi_audio.v` 后重新综合再烧 bit。

@@ -77,12 +77,11 @@ HX4S20C 开发板板载两个轻触按键（`key1` 位于 B2，`key2` 位于 C1�
 
 请确保使用的 TF 卡为 **FAT32** 格式：
 1. **图片格式要求**：标准 24 位 RGB888 未压缩 BMP，尺寸精确为 **640 × 480**（单张文件大小必须为 921,654 字节）。
-2. **扇区 Playlist 对应表**：
-   * 第 1 张图：起始扇区 `0`
-   * 第 2 张图：起始扇区 `2048`
-   * 第 3 张图：起始扇区 `4096`
-   * 第 4 张图：起始扇区 `6144`
-3. 可以使用工程自带的 Python 脚本 [`doc/convert/sync_to_sd.py`](file:///C:/Users/75941/Desktop/Anlogic_EG4S20_Project/02_Anlogic_TD_Project/topic1_hdmi_player/doc/convert/sync_to_sd.py) 直接一键将图片写入 TF 卡对应扇区。
+2. **烧卡步骤**（`sync_to_sd.py` 走 FAT 文件复制，不会按固定 LBA 写扇区）：
+   1. `python sync_to_sd.py E:`（盘符换成你的 TF 卡）清旧 BM 头并写入最多 4 张图
+   2. 管理员命令行跑 `python find_bmp_sectors.py \\.\PhysicalDriveN`（`N` 用 `Get-Disk` 确认，勿选系统盘）
+   3. 把打印出的 `IMG_COUNT` / `IMG_SECTOR0..3` 改回 `top_tf_hdmi_audio.v`，再重新综合烧 bit
+3. 工程里默认的 `0 / 2048 / 4096 / 6144` **只是占位**；`IMG_SECTOR0 = 0` 常落到引导区，上板容易黑屏。必须以 `find_bmp_sectors.py` 实测值为准。
 
 ---
 
