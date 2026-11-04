@@ -1,0 +1,10 @@
+{
+  "holdWnsNs": 0.003,
+  "timingPassed": true,
+  "constraintErrorCount": 0,
+  "buildCompleted": true,
+  "setupWnsNs": 0.955,
+  "hardwareTested": false,
+  "bitstream": "D:\\HX4S20\\work\\topic1_hdmi_player\\build\\run_20261103_171402_416/phy/topic1_hdmi_player.bit",
+  "sourceChangedDuringBuild": false
+}

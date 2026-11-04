@@ -1,0 +1,20 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_settings_osd -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:39 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_settings_osd
+# Loading work.player_settings_osd
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_settings_osd: readable values/highlight, bounds, closed passthrough, sync/DE, pixel render
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_settings_osd.sv(32)
+#    Time: 4122400 ns  Iteration: 1  Instance: /tb_settings_osd
+# Break in Module tb_settings_osd at D:/HX4S20/work/topic1_hdmi_player/sim/tb_settings_osd.sv line 32
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_settings_osd.sv line 32
+#  quit -code 0
+# End time: 17:14:39 on Nov 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

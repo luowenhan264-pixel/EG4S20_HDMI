@@ -1,0 +1,22 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_audio_modes -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:14 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_audio_modes
+# Loading work.player_config_cdc
+# Loading work.hdmi_audio_link_i2s
+# Loading work.I2S_receiver
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_audio_modes: four two-note signatures, 4 volume levels, live mute, mode latch, retrigger cancels old second note, stereo, reset
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_modes.sv(53)
+#    Time: 302287742 ns  Iteration: 0  Instance: /tb_audio_modes
+# Break in Module tb_audio_modes at D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_modes.sv line 53
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_modes.sv line 53
+#  quit -code 0
+# End time: 17:14:38 on Nov 03,2026, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0

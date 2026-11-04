@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "index": 1,
+      "name": "sound_wave",
+      "width": 320,
+      "height": 240,
+      "bmp": "01_sound_wave_320x240.bmp",
+      "original": "01_sound_wave_artwork.png",
+      "sha256": "cec9b9470328e93b2834be655faf2d7ef6d29233cea0dce5b2907f3dc74aad4d"
+    },
+    {
+      "index": 2,
+      "name": "pitch_frequency",
+      "width": 800,
+      "height": 600,
+      "bmp": "02_pitch_frequency_800x600.bmp",
+      "original": "02_pitch_frequency_artwork.png",
+      "sha256": "238a5e042baf154eacdce036c7c33ad47defe87e64f1aa9de94118603e73844d"
+    },
+    {
+      "index": 3,
+      "name": "volume_amplitude",
+      "width": 641,
+      "height": 479,
+      "bmp": "03_volume_amplitude_641x479.bmp",
+      "original": "03_volume_amplitude_artwork.png",
+      "sha256": "30acf7ff93da778cafe93f205896943cdab26c320a47f45f49023abbadf58923"
+    },
+    {
+      "index": 4,
+      "name": "music_mixing",
+      "width": 960,
+      "height": 540,
+      "bmp": "04_music_mixing_960x540.bmp",
+      "original": "04_music_mixing_artwork.png",
+      "sha256": "b956fe850e7841851ef7341a1ecfe4806edda9dd38a4f3711cd91fce5c537ee8"
+    }
+  ],
+  "output_resolution": [
+    640,
+    480
+  ],
+  "proposed_waveform_pixels": [
+    32,
+    344,
+    576,
+    64
+  ],
+  "subtitle_y": [
+    444,
+    468
+  ],
+  "artwork_only": false,
+  "integrated_card_image": "build/sound_science_card.img",
+  "scope_samples": 512
+}

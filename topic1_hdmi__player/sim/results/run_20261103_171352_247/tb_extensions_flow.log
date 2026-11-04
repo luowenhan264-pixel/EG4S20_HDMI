@@ -1,0 +1,36 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_extensions_flow -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:55 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_extensions_flow
+# Loading work.player_controls
+# Loading work.player_button
+# Loading work.sd_card_bmp
+# Loading work.key_press_debounce
+# Loading work.sd_card_top
+# Loading work.player_frame_commit
+# Loading work.player_config_cdc
+# Loading work.player_picture_event
+# Loading work.hdmi_audio_link_i2s
+# Loading work.I2S_receiver
+# Loading work.video_fade_rgb
+# Loading work.bmp_read
+# ** Warning: (vsim-3017) D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv(24): [TFMPC] - Too few port connections. Expected 30, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_extensions_flow/player File: D:/HX4S20/work/topic1_hdmi_player/src/user_source/hdl_source/SD/sd_card_bmp.v
+# ** Warning: (vsim-3722) D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv(24): [TFMPC] - Missing connection for port 'write_ready'.
+# ** Warning: (vsim-3722) D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv(24): [TFMPC] - Missing connection for port 'control_prev'.
+# ** Warning: (vsim-3722) D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv(24): [TFMPC] - Missing connection for port 'navigation_ready'.
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_extensions_flow: 3-frame fade steps, menu during animation, queued next, mode/volume CDC, PCM, I/O retry, reset recovery
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv(124)
+#    Time: 1777970 ns  Iteration: 1  Instance: /tb_extensions_flow
+# Break in Module tb_extensions_flow at D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv line 124
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_extensions_flow.sv line 124
+#  quit -code 0
+# End time: 17:14:56 on Nov 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4

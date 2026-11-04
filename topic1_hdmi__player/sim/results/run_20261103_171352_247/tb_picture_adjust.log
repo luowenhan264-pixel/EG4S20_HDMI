@@ -1,0 +1,20 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_picture_adjust -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:57 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_picture_adjust
+# Loading work.video_picture_adjust
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_picture_adjust: all RGB levels at all 45 settings, clipping, blanking, two-stage sync, reset (11525 pixels)
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_picture_adjust.sv(39)
+#    Time: 115320 ns  Iteration: 1  Instance: /tb_picture_adjust
+# Break in Module tb_picture_adjust at D:/HX4S20/work/topic1_hdmi_player/sim/tb_picture_adjust.sv line 39
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_picture_adjust.sv line 39
+#  quit -code 0
+# End time: 17:14:57 on Nov 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

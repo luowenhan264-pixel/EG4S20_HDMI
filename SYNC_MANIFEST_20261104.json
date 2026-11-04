@@ -1,0 +1,1639 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-04",
+  "repository": "luowenhan264-pixel/EG4S20_HDMI",
+  "base_commit": "d31522120b8c4f083650ba5ac09de3e89fdaa1b1",
+  "scope": "Latest sound-science project, selected build artifacts, existing validation records, revised documents, unsigned poster and project photos. Signed authorization remains local.",
+  "verification": "Packaging and hashes only. No new HDL build, simulation, or board test. Original manifests retained. This manifest excludes itself. Git blob hashes describe committed bytes; working tree hashes describe local files.",
+  "file_count": 202,
+  "files": [
+    {
+      "path": ".gitignore",
+      "working_tree_bytes": 1477,
+      "working_tree_sha256": "D19DD065879F75BA0AC7A52A46696AF5C48D74C15A6E08088B57D517FD48B0F7",
+      "git_blob": "7832bc74d62dd6e738169dbcf79a25cad1b6c9ad",
+      "git_blob_bytes": 1477,
+      "git_blob_sha256": "D19DD065879F75BA0AC7A52A46696AF5C48D74C15A6E08088B57D517FD48B0F7"
+    },
+    {
+      "path": "05_Contest_Guides_And_Reports/history/README_20261018.md",
+      "working_tree_bytes": 5666,
+      "working_tree_sha256": "4B79862742D426A5ED0E36BF40A53B27B23CD2455D9C01B6F79C4AFA31B7170F",
+      "git_blob": "8a4a44a52b2b08b3fb37092e1464d98af112d3eb",
+      "git_blob_bytes": 5591,
+      "git_blob_sha256": "F15EDE6243DD55703A3E6FB1E7F30F8BE7ADA525DFB6CE4DCC31A4E1EF2BE0BF"
+    },
+    {
+      "path": "CLEANUP_20261104.md",
+      "working_tree_bytes": 1242,
+      "working_tree_sha256": "32DB14BE3BFFCB324C04296198503E9BEF179FEFC9201707CB471695A2A7E6BD",
+      "git_blob": "d043142bdccc1ff62c26233c5c2e6a8f799685b6",
+      "git_blob_bytes": 1242,
+      "git_blob_sha256": "32DB14BE3BFFCB324C04296198503E9BEF179FEFC9201707CB471695A2A7E6BD"
+    },
+    {
+      "path": "README.md",
+      "working_tree_bytes": 4573,
+      "working_tree_sha256": "E23F3BFFEF586D9ADB5E58577C05BC1B5304A4FA80D0C479E93DD09AAAAD17F0",
+      "git_blob": "0a7ace6dce33c62146b1a8ebd3731211aa636ac2",
+      "git_blob_bytes": 4572,
+      "git_blob_sha256": "572DE2A9EA289B5293B87DAAD25AF502D2BF64D98DAD8BA25EF5DF160C7AEF51"
+    },
+    {
+      "path": "output/document_revision_20261104/基于FPGA的声音科普交互展示系统技术文档.pdf",
+      "working_tree_bytes": 1542236,
+      "working_tree_sha256": "ECC4D4E6D92F9915FFAD069E941C10175E900DCFC8455211823E9719F4BD54C5",
+      "git_blob": "5c74f81f462b6d7885471bc2b901df38beb259ff",
+      "git_blob_bytes": 1542236,
+      "git_blob_sha256": "ECC4D4E6D92F9915FFAD069E941C10175E900DCFC8455211823E9719F4BD54C5"
+    },
+    {
+      "path": "output/document_revision_20261104/基于FPGA的声音科普交互展示系统技术文档_修订版.docx",
+      "working_tree_bytes": 11221583,
+      "working_tree_sha256": "FC01DB9B6F4D95FB2884EB3F5D44C1CD820665D61E90DE10F7634EB454246632",
+      "git_blob": "50659a57d6c2be39666068f49967fd436a05425f",
+      "git_blob_bytes": 11221583,
+      "git_blob_sha256": "FC01DB9B6F4D95FB2884EB3F5D44C1CD820665D61E90DE10F7634EB454246632"
+    },
+    {
+      "path": "output/pdf/作品提交材料_20261104/基于FPGA的声音科普交互展示系统_作品海报_A3.pdf",
+      "working_tree_bytes": 6736593,
+      "working_tree_sha256": "ACF0E7DB42947E4BE4BFFFCCD78D4A39BA912FD42109E2E2AF53778E14C7D10B",
+      "git_blob": "7bbb1290e0477019e75e16e44fd674f5992396f7",
+      "git_blob_bytes": 6736593,
+      "git_blob_sha256": "ACF0E7DB42947E4BE4BFFFCCD78D4A39BA912FD42109E2E2AF53778E14C7D10B"
+    },
+    {
+      "path": "topic1_hdmi__player/.gitattributes",
+      "working_tree_bytes": 83,
+      "working_tree_sha256": "B52FA2B955CEA296FA0A0030157763F61EBC390154BF39DEAB08232AAB921E3D",
+      "git_blob": "c6ec3cae55d9c28fdd8e7942e0bea57c64a8e861",
+      "git_blob_bytes": 83,
+      "git_blob_sha256": "B52FA2B955CEA296FA0A0030157763F61EBC390154BF39DEAB08232AAB921E3D"
+    },
+    {
+      "path": "topic1_hdmi__player/.gitignore",
+      "working_tree_bytes": 843,
+      "working_tree_sha256": "9B3F228539616E6F5C5415DF6959BB1FD4313BB522D254E17C16E91AA1C5C292",
+      "git_blob": "4325b2a7bc6b5c1b04616b011a0853694252dc13",
+      "git_blob_bytes": 843,
+      "git_blob_sha256": "9B3F228539616E6F5C5415DF6959BB1FD4313BB522D254E17C16E91AA1C5C292"
+    },
+    {
+      "path": "topic1_hdmi__player/README.md",
+      "working_tree_bytes": 1740,
+      "working_tree_sha256": "FA24A69CD7DFE2BD1AD4ED981969A948D5D398326BBF111CE313CC9960ADF2A2",
+      "git_blob": "83b121d8d3ce7fe89c442a8c47efdde03d41fb1a",
+      "git_blob_bytes": 1740,
+      "git_blob_sha256": "FA24A69CD7DFE2BD1AD4ED981969A948D5D398326BBF111CE313CC9960ADF2A2"
+    },
+    {
+      "path": "topic1_hdmi__player/build.ps1",
+      "working_tree_bytes": 4910,
+      "working_tree_sha256": "7E3DAB677A879C27205986844EBC453F3467E45A965CA1E4939BDCCB31510D58",
+      "git_blob": "a47844eeca3aa6882471ab3db793cad9dabd2e8d",
+      "git_blob_bytes": 4910,
+      "git_blob_sha256": "7E3DAB677A879C27205986844EBC453F3467E45A965CA1E4939BDCCB31510D58"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/bitstream_sha256.txt",
+      "working_tree_bytes": 206,
+      "working_tree_sha256": "9B3C74729B3221DD2B5E571C664AAA33E6E412B10159F979C19DE45108D235A9",
+      "git_blob": "6c9cb22df6f6f567e77e5f46a8d575713b2e67d5",
+      "git_blob_bytes": 206,
+      "git_blob_sha256": "9B3C74729B3221DD2B5E571C664AAA33E6E412B10159F979C19DE45108D235A9"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/phy/final_timing.rpt",
+      "working_tree_bytes": 1490115,
+      "working_tree_sha256": "9B442387616BE2E28E1F564B7C5CD42EC40EBC34F78F74564A0D176C643E70E6",
+      "git_blob": "e0915791f51cb4b406b21d0fd34e39168c6dc218",
+      "git_blob_bytes": 1490115,
+      "git_blob_sha256": "9B442387616BE2E28E1F564B7C5CD42EC40EBC34F78F74564A0D176C643E70E6"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/phy/topic1_hdmi_player.bit",
+      "working_tree_bytes": 629624,
+      "working_tree_sha256": "6FF603BAB1F145744E6631E2AAA2E0F15E0E3677E2B2F0C59B59324B7E66A958",
+      "git_blob": "9d38021e43334066068afc7f48e0c037d2ee40de",
+      "git_blob_bytes": 629624,
+      "git_blob_sha256": "6FF603BAB1F145744E6631E2AAA2E0F15E0E3677E2B2F0C59B59324B7E66A958"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/phy/topic1_hdmi_player_phy.area",
+      "working_tree_bytes": 26944,
+      "working_tree_sha256": "7CD0FF94C445DDD49B8CB5CBC299BAAC16ADBF0CD3905AE32F33B897173664BC",
+      "git_blob": "12043a63dc78aef888b78bf78b7db4bed0674a2a",
+      "git_blob_bytes": 26944,
+      "git_blob_sha256": "7CD0FF94C445DDD49B8CB5CBC299BAAC16ADBF0CD3905AE32F33B897173664BC"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/science_review.json",
+      "working_tree_bytes": 1762,
+      "working_tree_sha256": "F44C5CE689011EE7CF0C9CBA06913023E8B7AF3E5F2DB066D754408BF2A5C34B",
+      "git_blob": "2b57e333b102dffe6c8109a1502564f7989b1607",
+      "git_blob_bytes": 1762,
+      "git_blob_sha256": "F44C5CE689011EE7CF0C9CBA06913023E8B7AF3E5F2DB066D754408BF2A5C34B"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/source_manifest.json",
+      "working_tree_bytes": 18351,
+      "working_tree_sha256": "E6AE90913DEA0379B128AEA6E0345D0EFF3E53A024CE347E0C19BB7DF87DEC1C",
+      "git_blob": "d3a3df59556203e4220bbe66d75ce6fadb5ec32d",
+      "git_blob_bytes": 18351,
+      "git_blob_sha256": "E6AE90913DEA0379B128AEA6E0345D0EFF3E53A024CE347E0C19BB7DF87DEC1C"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_171402_416/validation.json",
+      "working_tree_bytes": 315,
+      "working_tree_sha256": "380F85636977B8AF933EA695A9396087D75102447FBF6310F4FAA8AC2B391064",
+      "git_blob": "583911abd3df4d79f654f13588092fe594c0d735",
+      "git_blob_bytes": 315,
+      "git_blob_sha256": "380F85636977B8AF933EA695A9396087D75102447FBF6310F4FAA8AC2B391064"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_233855_984/bitstream_sha256.txt",
+      "working_tree_bytes": 215,
+      "working_tree_sha256": "0DE640B09C4E4F3085F92F971728D71210E99DD6D8BEF65D4DDE1A3A5B9B7A36",
+      "git_blob": "d47a409a6e9e4592a0dbd5432aef5eb252e5f6ec",
+      "git_blob_bytes": 215,
+      "git_blob_sha256": "0DE640B09C4E4F3085F92F971728D71210E99DD6D8BEF65D4DDE1A3A5B9B7A36"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_233855_984/phy/final_timing.rpt",
+      "working_tree_bytes": 1490124,
+      "working_tree_sha256": "1BDB6A2CA015918C2B226BD98E1F71DEAE15FFC3FC239EC8F5B5B57112897E3B",
+      "git_blob": "ca6f3b987099f38c0c18a9001febe77103ff4a6c",
+      "git_blob_bytes": 1490124,
+      "git_blob_sha256": "1BDB6A2CA015918C2B226BD98E1F71DEAE15FFC3FC239EC8F5B5B57112897E3B"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_233855_984/phy/topic1_hdmi_player.bit",
+      "working_tree_bytes": 629624,
+      "working_tree_sha256": "8D75CFCD81F847796E3E6BA03C8F2BBB491F8DD976386CBA9C965FFCA06BBC19",
+      "git_blob": "6fa20e60fe802179c264c4052b20805c5eb02e3d",
+      "git_blob_bytes": 629624,
+      "git_blob_sha256": "8D75CFCD81F847796E3E6BA03C8F2BBB491F8DD976386CBA9C965FFCA06BBC19"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_233855_984/phy/topic1_hdmi_player_phy.area",
+      "working_tree_bytes": 26944,
+      "working_tree_sha256": "7CD0FF94C445DDD49B8CB5CBC299BAAC16ADBF0CD3905AE32F33B897173664BC",
+      "git_blob": "12043a63dc78aef888b78bf78b7db4bed0674a2a",
+      "git_blob_bytes": 26944,
+      "git_blob_sha256": "7CD0FF94C445DDD49B8CB5CBC299BAAC16ADBF0CD3905AE32F33B897173664BC"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_233855_984/source_manifest.json",
+      "working_tree_bytes": 19291,
+      "working_tree_sha256": "BD5E8BE1488F49AA8DE100759CD0618D3D708BE293464C3C9C7D726014B82059",
+      "git_blob": "380a961160742485290531a915b777e1898bf7f4",
+      "git_blob_bytes": 19291,
+      "git_blob_sha256": "BD5E8BE1488F49AA8DE100759CD0618D3D708BE293464C3C9C7D726014B82059"
+    },
+    {
+      "path": "topic1_hdmi__player/build/run_20261103_233855_984/validation.json",
+      "working_tree_bytes": 325,
+      "working_tree_sha256": "0596045305FC3A9CFF84F055ED315E4C720CB8349883371D9D678A2D7B8A145C",
+      "git_blob": "c99f5a926558353badfa9c0f0811f97e6f5ddc34",
+      "git_blob_bytes": 325,
+      "git_blob_sha256": "0596045305FC3A9CFF84F055ED315E4C720CB8349883371D9D678A2D7B8A145C"
+    },
+    {
+      "path": "topic1_hdmi__player/build/sound_science_card.img.gz",
+      "working_tree_bytes": 1640213,
+      "working_tree_sha256": "EC574FCD4127FCE31FB4E64AB59A45DC75F4DC01B41197BC9F6746BF40657435",
+      "git_blob": "0235f5ba4240dc8df435b5f5864fcaf5d1bccf5e",
+      "git_blob_bytes": 1640213,
+      "git_blob_sha256": "EC574FCD4127FCE31FB4E64AB59A45DC75F4DC01B41197BC9F6746BF40657435"
+    },
+    {
+      "path": "topic1_hdmi__player/build_topic1.tcl",
+      "working_tree_bytes": 606,
+      "working_tree_sha256": "3700689BE841376C332731D080099F99A7CEBFC821D7E01205D4B711C80495DD",
+      "git_blob": "a38b88518262d4a588b27c4cc6e5c74cd94007f5",
+      "git_blob_bytes": 606,
+      "git_blob_sha256": "3700689BE841376C332731D080099F99A7CEBFC821D7E01205D4B711C80495DD"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/01_sound_wave_320x240.bmp",
+      "working_tree_bytes": 230454,
+      "working_tree_sha256": "CEC9B9470328E93B2834BE655FAF2D7EF6D29233CEA0DCE5B2907F3DC74AAD4D",
+      "git_blob": "93e9d7eab6e5ee97bb7f86c0a53765a9202c3839",
+      "git_blob_bytes": 230454,
+      "git_blob_sha256": "CEC9B9470328E93B2834BE655FAF2D7EF6D29233CEA0DCE5B2907F3DC74AAD4D"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/01_sound_wave_artwork.png",
+      "working_tree_bytes": 1411341,
+      "working_tree_sha256": "E85D8B1ADB101E81305D9EDE90201791945B642C1507DFFFBF3E749EC9F9DADA",
+      "git_blob": "3c91f9653e5612f05c631db932869b7a3746400f",
+      "git_blob_bytes": 1411341,
+      "git_blob_sha256": "E85D8B1ADB101E81305D9EDE90201791945B642C1507DFFFBF3E749EC9F9DADA"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/02_pitch_frequency_800x600.bmp",
+      "working_tree_bytes": 1440054,
+      "working_tree_sha256": "238A5E042BAF154EACDCE036C7C33AD47DEFE87E64F1AA9DE94118603E73844D",
+      "git_blob": "b1246ec7786e3ff6f4f7b5a6a2b0b520a6faeccc",
+      "git_blob_bytes": 1440054,
+      "git_blob_sha256": "238A5E042BAF154EACDCE036C7C33AD47DEFE87E64F1AA9DE94118603E73844D"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/02_pitch_frequency_artwork.png",
+      "working_tree_bytes": 1411027,
+      "working_tree_sha256": "F28D1845273850E3B2C74F22D8FDC7F2686363A1BD9B8F469EA2CB3B0253F985",
+      "git_blob": "d0ea390f222bf8a3b69031a47dac1814f97527d5",
+      "git_blob_bytes": 1411027,
+      "git_blob_sha256": "F28D1845273850E3B2C74F22D8FDC7F2686363A1BD9B8F469EA2CB3B0253F985"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/03_volume_amplitude_641x479.bmp",
+      "working_tree_bytes": 921650,
+      "working_tree_sha256": "30ACF7FF93DA778CAFE93F205896943CDAB26C320A47F45F49023ABBADF58923",
+      "git_blob": "cd65136d1f5cdcdf12a5aa504c7c55ab0c09e872",
+      "git_blob_bytes": 921650,
+      "git_blob_sha256": "30ACF7FF93DA778CAFE93F205896943CDAB26C320A47F45F49023ABBADF58923"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/03_volume_amplitude_artwork.png",
+      "working_tree_bytes": 1398890,
+      "working_tree_sha256": "DD3DF9EF53AF0E1F7D399D35E87914BDE45672EBDAF19CD97A6933ED8F3EABCA",
+      "git_blob": "197989c76d1d46d3491193633b13b0353024d5ce",
+      "git_blob_bytes": 1398890,
+      "git_blob_sha256": "DD3DF9EF53AF0E1F7D399D35E87914BDE45672EBDAF19CD97A6933ED8F3EABCA"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/04_music_mixing_960x540.bmp",
+      "working_tree_bytes": 1555254,
+      "working_tree_sha256": "B956FE850E7841851EF7341A1ECFE4806EDDA9DD38A4F3711CD91FCE5C537EE8",
+      "git_blob": "6f8a3df105fea7fb60814cfbf444f7bea237ce55",
+      "git_blob_bytes": 1555254,
+      "git_blob_sha256": "B956FE850E7841851EF7341A1ECFE4806EDDA9DD38A4F3711CD91FCE5C537EE8"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/04_music_mixing_artwork.png",
+      "working_tree_bytes": 1430184,
+      "working_tree_sha256": "E54282A3F07D49159E8AD3766A3AC970FEC8CB4F2AA9CE1F4289380E216190B7",
+      "git_blob": "50538f17a7d1cc2f5248e6c32f1c32881d9c8c27",
+      "git_blob_bytes": 1430184,
+      "git_blob_sha256": "E54282A3F07D49159E8AD3766A3AC970FEC8CB4F2AA9CE1F4289380E216190B7"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/README.md",
+      "working_tree_bytes": 1576,
+      "working_tree_sha256": "5CBF4235BDE26F50EC7A56324708C1949816D3DA2E60BC434F02865337FFB1D7",
+      "git_blob": "cb7d28bb179d714474dcf386e90c1403802b8082",
+      "git_blob_bytes": 1576,
+      "git_blob_sha256": "5CBF4235BDE26F50EC7A56324708C1949816D3DA2E60BC434F02865337FFB1D7"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/generation_prompts.json",
+      "working_tree_bytes": 7849,
+      "working_tree_sha256": "05B5CC0A08D943F086378A46E87DC272F34E1C6E668C3D813261EF8F93E13F30",
+      "git_blob": "df1fd223b3e2383b68d58a96a81e865c25381acc",
+      "git_blob_bytes": 7849,
+      "git_blob_sha256": "05B5CC0A08D943F086378A46E87DC272F34E1C6E668C3D813261EF8F93E13F30"
+    },
+    {
+      "path": "topic1_hdmi__player/doc/sound_science_pages/manifest.json",
+      "working_tree_bytes": 1467,
+      "working_tree_sha256": "431F3721C6B6DEA7D71F144617C652F142070C18B242C208BE230F2651359B0A",
+      "git_blob": "9ef0313d6235e658519d60413b21cba69fda1ad0",
+      "git_blob_bytes": 1467,
+      "git_blob_sha256": "431F3721C6B6DEA7D71F144617C652F142070C18B242C208BE230F2651359B0A"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/compile.log",
+      "working_tree_bytes": 5843,
+      "working_tree_sha256": "849FB3CCBDA4988C0695096CA5747C66561F40FDE3BCFDAC85D2B62C54686E08",
+      "git_blob": "94b4a4fcb88ae68dc00f0f3e6300cb5109c4633c",
+      "git_blob_bytes": 5843,
+      "git_blob_sha256": "849FB3CCBDA4988C0695096CA5747C66561F40FDE3BCFDAC85D2B62C54686E08"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_audio_link.log",
+      "working_tree_bytes": 1329,
+      "working_tree_sha256": "45AF3AE7AB0DCA60FE9FA2D0496CAB646036C64783890FE458C56EC7E3BAD8FA",
+      "git_blob": "c41548b2a52eca217c83b08d94dedb7f46490e58",
+      "git_blob_bytes": 1329,
+      "git_blob_sha256": "45AF3AE7AB0DCA60FE9FA2D0496CAB646036C64783890FE458C56EC7E3BAD8FA"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_audio_modes.log",
+      "working_tree_bytes": 1023,
+      "working_tree_sha256": "C4D53157FA665E6FC8B25A7FFFDC8FE074091795A55B176277D4E75C270BA71B",
+      "git_blob": "b717f95a1d743f6d8c25a33c7fe4a46ff856b4c8",
+      "git_blob_bytes": 1023,
+      "git_blob_sha256": "C4D53157FA665E6FC8B25A7FFFDC8FE074091795A55B176277D4E75C270BA71B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_audio_visualizer.log",
+      "working_tree_bytes": 1006,
+      "working_tree_sha256": "F2766308750E8A37825BB32478D9B70BA7EE8FCECCDDFB83BAD0E646648D8FFA",
+      "git_blob": "a59533675470d14f6200ceecae740cc945e63f78",
+      "git_blob_bytes": 1006,
+      "git_blob_sha256": "F2766308750E8A37825BB32478D9B70BA7EE8FCECCDDFB83BAD0E646648D8FFA"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_audio_visualizer_link.log",
+      "working_tree_bytes": 1076,
+      "working_tree_sha256": "F46BA3CF9530FEF6F93C1DE9CDEFE6C7D1E4ECFB39620FF386E31C6838506D92",
+      "git_blob": "1d9ec931ca410e3ab1813b37d45ece4db13220c5",
+      "git_blob_bytes": 1076,
+      "git_blob_sha256": "F46BA3CF9530FEF6F93C1DE9CDEFE6C7D1E4ECFB39620FF386E31C6838506D92"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_background_music.log",
+      "working_tree_bytes": 1008,
+      "working_tree_sha256": "92A593D2D73C31539BC3976F7B14FE0DCE1F441B15DAAE712F6EF4D93F0BC94E",
+      "git_blob": "3270c9f7e5131221ac21a52481c6bcd14de0b1c7",
+      "git_blob_bytes": 1008,
+      "git_blob_sha256": "92A593D2D73C31539BC3976F7B14FE0DCE1F441B15DAAE712F6EF4D93F0BC94E"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_background_music_link.log",
+      "working_tree_bytes": 1112,
+      "working_tree_sha256": "A857CD29C11A962BC83C4BC17546F66838D52B34E822C06773151F978A4014BF",
+      "git_blob": "460935216dfd9bcfd5365189c9404b7152862da6",
+      "git_blob_bytes": 1112,
+      "git_blob_sha256": "A857CD29C11A962BC83C4BC17546F66838D52B34E822C06773151F978A4014BF"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_bmp_read.log",
+      "working_tree_bytes": 899,
+      "working_tree_sha256": "4F053044977EACBF570CD106C8A3BF2D9EBF51CCDCF2A5292F6C4083DEE0B110",
+      "git_blob": "5f2e3d335772d7237da0d75769d9ad8e9c46ae6f",
+      "git_blob_bytes": 899,
+      "git_blob_sha256": "4F053044977EACBF570CD106C8A3BF2D9EBF51CCDCF2A5292F6C4083DEE0B110"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_bmp_scale.log",
+      "working_tree_bytes": 2340,
+      "working_tree_sha256": "A21E4743BE53A9B85B2AE0396D17E4E0975D94200317BE6A68214E41904EE604",
+      "git_blob": "4ddcca7f812fa0deae856120486f4a3c3b67b29e",
+      "git_blob_bytes": 2340,
+      "git_blob_sha256": "A21E4743BE53A9B85B2AE0396D17E4E0975D94200317BE6A68214E41904EE604"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_controls.log",
+      "working_tree_bytes": 955,
+      "working_tree_sha256": "A8121BDB1CC88DED67FA1C243E501416482659911F1C93A10B8CC2CE5361F918",
+      "git_blob": "cea00f7a31ff85a47e5cf98b8b1da00c0733d7e6",
+      "git_blob_bytes": 955,
+      "git_blob_sha256": "A8121BDB1CC88DED67FA1C243E501416482659911F1C93A10B8CC2CE5361F918"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_cue_config_boundary.log",
+      "working_tree_bytes": 1085,
+      "working_tree_sha256": "AFEA4B252A98B84757CD8A2D1FA4FA43C014D347D15D13C0BFE5EA821064611B",
+      "git_blob": "dfd616e75567db01b6a1e0ea1aa287566020e4e2",
+      "git_blob_bytes": 1085,
+      "git_blob_sha256": "AFEA4B252A98B84757CD8A2D1FA4FA43C014D347D15D13C0BFE5EA821064611B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_display_overlay.log",
+      "working_tree_bytes": 988,
+      "working_tree_sha256": "D59DBBF30D46565455C57516710637A4FC9AFF0254C38BD26E16887AF650C58B",
+      "git_blob": "30126408b0a48694f58146128d01f51a063d71e0",
+      "git_blob_bytes": 988,
+      "git_blob_sha256": "D59DBBF30D46565455C57516710637A4FC9AFF0254C38BD26E16887AF650C58B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_extensions_flow.log",
+      "working_tree_bytes": 2072,
+      "working_tree_sha256": "EF20EC58EDF770F485B692DF18F2D5193DE774EA96F9195D38904011C2371EE0",
+      "git_blob": "66595b5ccbe073238021968112a2ea96b602050c",
+      "git_blob_bytes": 2072,
+      "git_blob_sha256": "EF20EC58EDF770F485B692DF18F2D5193DE774EA96F9195D38904011C2371EE0"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_fade.log",
+      "working_tree_bytes": 911,
+      "working_tree_sha256": "E17D3ED839A147729C67D35148270C436A86A2FB80A852C90B7F0FC0FF6FB79B",
+      "git_blob": "f9b8d84a64f49f80dab74d454f4f439150655a42",
+      "git_blob_bytes": 911,
+      "git_blob_sha256": "E17D3ED839A147729C67D35148270C436A86A2FB80A852C90B7F0FC0FF6FB79B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_memory_scale.log",
+      "working_tree_bytes": 1019,
+      "working_tree_sha256": "6B76AA0C77B00C9B9F4C6E4892798AAB5C96F36143A1E7F4C022E88FBFA59976",
+      "git_blob": "7be278c86c0679c3a987bae1f7db444fe912526d",
+      "git_blob_bytes": 1019,
+      "git_blob_sha256": "6B76AA0C77B00C9B9F4C6E4892798AAB5C96F36143A1E7F4C022E88FBFA59976"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_memory_schedule.log",
+      "working_tree_bytes": 1025,
+      "working_tree_sha256": "FB4394C24FA927A32D31CD1D28C0761AB20D34C1B696C12E255701F85290862A",
+      "git_blob": "0b65539e6f78ff36c6b8e97692ee70e061c20b21",
+      "git_blob_bytes": 1025,
+      "git_blob_sha256": "FB4394C24FA927A32D31CD1D28C0761AB20D34C1B696C12E255701F85290862A"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_picture_adjust.log",
+      "working_tree_bytes": 959,
+      "working_tree_sha256": "681AB92EB6B6CBEB1CCBDE23AC9EAFBA6177BEF5FBC0E21C863B161A5B2D6143",
+      "git_blob": "8b016a873704b1a201c00fc08c8d6babc36b5b4e",
+      "git_blob_bytes": 959,
+      "git_blob_sha256": "681AB92EB6B6CBEB1CCBDE23AC9EAFBA6177BEF5FBC0E21C863B161A5B2D6143"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_player.log",
+      "working_tree_bytes": 1562,
+      "working_tree_sha256": "3395C701CEFDD264516ACB6A9453E19C35FED6FF72802F3012FA76D2E074A0E5",
+      "git_blob": "6fc670b40ef2c4007e734571bf5424d3e8dab776",
+      "git_blob_bytes": 1562,
+      "git_blob_sha256": "3395C701CEFDD264516ACB6A9453E19C35FED6FF72802F3012FA76D2E074A0E5"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_player_scaled.log",
+      "working_tree_bytes": 1639,
+      "working_tree_sha256": "3F321D34E1B5568072AF4999CF27D449A4818F4A14A4D3F4596EAC1E176303B0",
+      "git_blob": "ab0a79221da86c73bc1946614bbcb273e3fa3a2b",
+      "git_blob_bytes": 1639,
+      "git_blob_sha256": "3F321D34E1B5568072AF4999CF27D449A4818F4A14A4D3F4596EAC1E176303B0"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_runtime_player.log",
+      "working_tree_bytes": 1862,
+      "working_tree_sha256": "2AA27161FD06B18BFDC453FFE5256FAFB1223C9BA294F1677039DD7D269380A1",
+      "git_blob": "b6a8043d66a900b4c72cb53f16cc4dbc62b4bd96",
+      "git_blob_bytes": 1862,
+      "git_blob_sha256": "2AA27161FD06B18BFDC453FFE5256FAFB1223C9BA294F1677039DD7D269380A1"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_science_audio.log",
+      "working_tree_bytes": 1002,
+      "working_tree_sha256": "DB54F4B81F23AC52D462615FB20D331F6B1C6327C315D22D5E5E3419E61CCFB1",
+      "git_blob": "d4cfd9b19433bc00d1131bb3d05e2157583e854a",
+      "git_blob_bytes": 1002,
+      "git_blob_sha256": "DB54F4B81F23AC52D462615FB20D331F6B1C6327C315D22D5E5E3419E61CCFB1"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_science_controls.log",
+      "working_tree_bytes": 992,
+      "working_tree_sha256": "4470C645456F365DB14B76C78BE2249AB92E572CE38B819A4D86A34FDF0CA844",
+      "git_blob": "ff327243875bd7abcd1578f87a0c92a3d4f7cee8",
+      "git_blob_bytes": 992,
+      "git_blob_sha256": "4470C645456F365DB14B76C78BE2249AB92E572CE38B819A4D86A34FDF0CA844"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_science_display.log",
+      "working_tree_bytes": 1107,
+      "working_tree_sha256": "C1CEA92820514127407F12A90D40F69638B07CD68127A7BCABF34B0BB4E1D29C",
+      "git_blob": "8b2c97ac48848fec47711248a6bbef0f5225f340",
+      "git_blob_bytes": 1107,
+      "git_blob_sha256": "C1CEA92820514127407F12A90D40F69638B07CD68127A7BCABF34B0BB4E1D29C"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_science_navigation.log",
+      "working_tree_bytes": 1167,
+      "working_tree_sha256": "80A751F9CFE978470CEE8DFFACDCD3C478757CEAD0444CBD7052421595E436E8",
+      "git_blob": "90e5421275d572464758627f0dfa9ce837345d0a",
+      "git_blob_bytes": 1167,
+      "git_blob_sha256": "80A751F9CFE978470CEE8DFFACDCD3C478757CEAD0444CBD7052421595E436E8"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_science_scope.log",
+      "working_tree_bytes": 961,
+      "working_tree_sha256": "3E9D21FC1521695C323061B06B989F4D623CB6886F7433D0B7434C609FB84CBD",
+      "git_blob": "1a350eedf7ec891795d37381b17e47c36642910a",
+      "git_blob_bytes": 961,
+      "git_blob_sha256": "3E9D21FC1521695C323061B06B989F4D623CB6886F7433D0B7434C609FB84CBD"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_settings_osd.log",
+      "working_tree_bytes": 928,
+      "working_tree_sha256": "BDCC35ADBEFF3E16C1ECF65AB40075982FE844C0BCA65D10E12CBAF1AE527728",
+      "git_blob": "6da1420f48a45376a2a91b4d68afb278a992dd1b",
+      "git_blob_bytes": 928,
+      "git_blob_sha256": "BDCC35ADBEFF3E16C1ECF65AB40075982FE844C0BCA65D10E12CBAF1AE527728"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/results/run_20261103_171352_247/tb_video.log",
+      "working_tree_bytes": 926,
+      "working_tree_sha256": "0B5417F59E7FF14E357276267793A2E865C660FAFE13C949B2C22BAEA5A0A0BB",
+      "git_blob": "46fbf718cc9e04ecd681e8d9be937048d738ded8",
+      "git_blob_bytes": 926,
+      "git_blob_sha256": "0B5417F59E7FF14E357276267793A2E865C660FAFE13C949B2C22BAEA5A0A0BB"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/run.ps1",
+      "working_tree_bytes": 2507,
+      "working_tree_sha256": "9176C5CF749ADF640C13757266AE4256EC49707EE7B6CCA778DE5F1839337F2A",
+      "git_blob": "72b8537e0cb1c4c31bb2f41bf583f10d28796aa7",
+      "git_blob_bytes": 2507,
+      "git_blob_sha256": "9176C5CF749ADF640C13757266AE4256EC49707EE7B6CCA778DE5F1839337F2A"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/run_vendor_sdram.ps1",
+      "working_tree_bytes": 1256,
+      "working_tree_sha256": "2B5A6CB167BD1544DD84E30A8ECA87901B59BBC5CF93F39C68CFBBCA7CAB9482",
+      "git_blob": "ee8cc670369b494cdb24b4d34ff48fdd01903fe6",
+      "git_blob_bytes": 1256,
+      "git_blob_sha256": "2B5A6CB167BD1544DD84E30A8ECA87901B59BBC5CF93F39C68CFBBCA7CAB9482"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_audio_link.sv",
+      "working_tree_bytes": 4711,
+      "working_tree_sha256": "197DC97696D43CFF9BA7124C50A0D13AE933DA08DC5B59D32851E1FA39C41810",
+      "git_blob": "a395e79b7ba29a8ac85d04b1fcb1579d0412cb89",
+      "git_blob_bytes": 4711,
+      "git_blob_sha256": "197DC97696D43CFF9BA7124C50A0D13AE933DA08DC5B59D32851E1FA39C41810"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_audio_modes.sv",
+      "working_tree_bytes": 2942,
+      "working_tree_sha256": "BFFDABDFC0B94288C6D4B9CCC41E472EBDF5DA87C59F21CF581BCFDEE0105719",
+      "git_blob": "d06bd4099fb81956a49a7a494b0809b71f1e1ee4",
+      "git_blob_bytes": 2942,
+      "git_blob_sha256": "BFFDABDFC0B94288C6D4B9CCC41E472EBDF5DA87C59F21CF581BCFDEE0105719"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_audio_visualizer.sv",
+      "working_tree_bytes": 3359,
+      "working_tree_sha256": "08C32592381D5843663B2A5789CDB256CDC17A10875DF28C1D056CF52196CCB6",
+      "git_blob": "23bc3634fa017683b558e6a1de49ec423b43eb6f",
+      "git_blob_bytes": 3359,
+      "git_blob_sha256": "08C32592381D5843663B2A5789CDB256CDC17A10875DF28C1D056CF52196CCB6"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_audio_visualizer_link.sv",
+      "working_tree_bytes": 1593,
+      "working_tree_sha256": "76580BE603583217068C4339EED1CC3B6850317DD09C0842D526B5F0CEAE918B",
+      "git_blob": "b722b53a950bcd546a295437bca385c4ef6f2c6f",
+      "git_blob_bytes": 1593,
+      "git_blob_sha256": "76580BE603583217068C4339EED1CC3B6850317DD09C0842D526B5F0CEAE918B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_background_music.sv",
+      "working_tree_bytes": 3008,
+      "working_tree_sha256": "A2E3F6541E1D8A221A1DEBF9DB7A2C2846761E746E75D7AE7160C02EAE6CC922",
+      "git_blob": "c9aa277e569b954bc5a81e485482d06d1cc4e715",
+      "git_blob_bytes": 3008,
+      "git_blob_sha256": "A2E3F6541E1D8A221A1DEBF9DB7A2C2846761E746E75D7AE7160C02EAE6CC922"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_background_music_link.sv",
+      "working_tree_bytes": 1914,
+      "working_tree_sha256": "C4211B02453AA6581F02715010A167BD9E89ACD29E6E25D05064F26E80E9A956",
+      "git_blob": "83129242e2131d199d5207fe74c17020ce8d1f24",
+      "git_blob_bytes": 1914,
+      "git_blob_sha256": "C4211B02453AA6581F02715010A167BD9E89ACD29E6E25D05064F26E80E9A956"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_bmp_read.sv",
+      "working_tree_bytes": 3679,
+      "working_tree_sha256": "43BBFEEBE1E8517ACA47F0F35D687E2BC885A8C7365767ED7999972A4933F64E",
+      "git_blob": "cd2032425d87b833059af418245f1aa3f60798e2",
+      "git_blob_bytes": 3679,
+      "git_blob_sha256": "43BBFEEBE1E8517ACA47F0F35D687E2BC885A8C7365767ED7999972A4933F64E"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_bmp_scale.sv",
+      "working_tree_bytes": 5617,
+      "working_tree_sha256": "DFF8A871599D8CD3350C45E6D01AAC3458000A1C5A923C6D63CC05417C502F3D",
+      "git_blob": "3c0a32bd946e129d64d00b9a999e750e526167b4",
+      "git_blob_bytes": 5617,
+      "git_blob_sha256": "DFF8A871599D8CD3350C45E6D01AAC3458000A1C5A923C6D63CC05417C502F3D"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_controls.sv",
+      "working_tree_bytes": 3082,
+      "working_tree_sha256": "0C899B94102E1CF0CA367459448BB39D29B5C5BE1B7C94BC0D29281F47C18935",
+      "git_blob": "20e8e189e3d9dcb4c52ac42f7384cccac790b5c6",
+      "git_blob_bytes": 3082,
+      "git_blob_sha256": "0C899B94102E1CF0CA367459448BB39D29B5C5BE1B7C94BC0D29281F47C18935"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_cue_config_boundary.sv",
+      "working_tree_bytes": 1882,
+      "working_tree_sha256": "1765DF96FAC1B2535C8DC6C2D5611F10EA8DBCCA04DF0D4902F0710D8FB59E90",
+      "git_blob": "bfdd92e191938a61c54d537d50cd1f2ec1a053e2",
+      "git_blob_bytes": 1882,
+      "git_blob_sha256": "1765DF96FAC1B2535C8DC6C2D5611F10EA8DBCCA04DF0D4902F0710D8FB59E90"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_display_overlay.sv",
+      "working_tree_bytes": 2537,
+      "working_tree_sha256": "CB182F894E90B641960E145EEEF35D202AE82648B53DF7E9B79A59CCFD242044",
+      "git_blob": "8e052bd78b9a960ba5f0867aa0b5ed4a108d79e2",
+      "git_blob_bytes": 2537,
+      "git_blob_sha256": "CB182F894E90B641960E145EEEF35D202AE82648B53DF7E9B79A59CCFD242044"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_extensions_flow.sv",
+      "working_tree_bytes": 7421,
+      "working_tree_sha256": "5076B1DC6A1638B49C45D042D7895D382E0EBC7730C1ED94FE9C1543E16CACB0",
+      "git_blob": "a630e82a8b77ccd4f999213088b77f8ec794f5e7",
+      "git_blob_bytes": 7421,
+      "git_blob_sha256": "5076B1DC6A1638B49C45D042D7895D382E0EBC7730C1ED94FE9C1543E16CACB0"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_fade.sv",
+      "working_tree_bytes": 2669,
+      "working_tree_sha256": "D0BE346F052F43A00EF1B3718A5E687D74C8D5AAE73F9D71D06B8791CE3F5DAE",
+      "git_blob": "a011a96b969ac77e376bdf267052b552200bd4fd",
+      "git_blob_bytes": 2669,
+      "git_blob_sha256": "D0BE346F052F43A00EF1B3718A5E687D74C8D5AAE73F9D71D06B8791CE3F5DAE"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_memory_scale.sv",
+      "working_tree_bytes": 73,
+      "working_tree_sha256": "A1F44B57BD72F622DF0A071EB3ED82DB1EB42B19FDB9FAFB75C5F209C8527504",
+      "git_blob": "0e4bf6f7eefadf531a53ae71969b122cfd62195b",
+      "git_blob_bytes": 73,
+      "git_blob_sha256": "A1F44B57BD72F622DF0A071EB3ED82DB1EB42B19FDB9FAFB75C5F209C8527504"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_memory_schedule.sv",
+      "working_tree_bytes": 3963,
+      "working_tree_sha256": "CDF67D5C324293771D277D78DAEFAB347457034B63C894803AD3D06990A77D93",
+      "git_blob": "9603a0ae65b35264ab93f4aca3adaa393ce935ee",
+      "git_blob_bytes": 3963,
+      "git_blob_sha256": "CDF67D5C324293771D277D78DAEFAB347457034B63C894803AD3D06990A77D93"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_picture_adjust.sv",
+      "working_tree_bytes": 1683,
+      "working_tree_sha256": "D212C48C89516F3BCFD1034DF0EA1C3A7D0183D370DA3608F7DB584B54EAB276",
+      "git_blob": "8df6c68c418d83470fe7c98e1fe9d2bed078279f",
+      "git_blob_bytes": 1683,
+      "git_blob_sha256": "D212C48C89516F3BCFD1034DF0EA1C3A7D0183D370DA3608F7DB584B54EAB276"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_player.sv",
+      "working_tree_bytes": 5267,
+      "working_tree_sha256": "2F51BC81FD50F5A649398310F5D72D88E92912D5F058036A67DA993528BAAC49",
+      "git_blob": "c0cb28f4819380a61ac980a417737708ed21be7a",
+      "git_blob_bytes": 5267,
+      "git_blob_sha256": "2F51BC81FD50F5A649398310F5D72D88E92912D5F058036A67DA993528BAAC49"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_player_scaled.sv",
+      "working_tree_bytes": 66,
+      "working_tree_sha256": "04DF91130955E5BA4277AC72FB0EFF6CD8FF1F7F76DD5174120F69D711AA3CD8",
+      "git_blob": "b431e1c0f23144a32d4dad059773f1dde3229964",
+      "git_blob_bytes": 66,
+      "git_blob_sha256": "04DF91130955E5BA4277AC72FB0EFF6CD8FF1F7F76DD5174120F69D711AA3CD8"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_runtime_player.sv",
+      "working_tree_bytes": 2793,
+      "working_tree_sha256": "C5EBB3DA2F4162C5B4633CBD50A1E5980A6322625A427D72C11A25F62F80DD77",
+      "git_blob": "f41b2008e1a674ad9ba4a025c1d1a3039b806226",
+      "git_blob_bytes": 2793,
+      "git_blob_sha256": "C5EBB3DA2F4162C5B4633CBD50A1E5980A6322625A427D72C11A25F62F80DD77"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_science_audio.sv",
+      "working_tree_bytes": 3305,
+      "working_tree_sha256": "EFD2F177D810AE6DB24ABF6E1F3B8C2FF571A54171A898ED40DA77C08A428F69",
+      "git_blob": "f186e2d0995f3866e91ca129e15ed3de81ea69e4",
+      "git_blob_bytes": 3305,
+      "git_blob_sha256": "EFD2F177D810AE6DB24ABF6E1F3B8C2FF571A54171A898ED40DA77C08A428F69"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_science_controls.sv",
+      "working_tree_bytes": 2206,
+      "working_tree_sha256": "2FFCEECD7D38B1F063AECC623D60CE37B8834BB3D54D3D2AA9DE8BD317BFF88C",
+      "git_blob": "99b39eac08cced6e5c839ac098e174ba54168c63",
+      "git_blob_bytes": 2206,
+      "git_blob_sha256": "2FFCEECD7D38B1F063AECC623D60CE37B8834BB3D54D3D2AA9DE8BD317BFF88C"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_science_display.sv",
+      "working_tree_bytes": 2367,
+      "working_tree_sha256": "EA409220CDE0F8CFF206794B7D6584BA2C1A7422793A716C9DE250B9CEA9BC4C",
+      "git_blob": "530680a8cbf704eb3c09464fcff476d6b0f33850",
+      "git_blob_bytes": 2367,
+      "git_blob_sha256": "EA409220CDE0F8CFF206794B7D6584BA2C1A7422793A716C9DE250B9CEA9BC4C"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_science_navigation.sv",
+      "working_tree_bytes": 2746,
+      "working_tree_sha256": "1191F7852C0D5D2366D58B844C5A6C12396C2186D8EDD3708D3B5BC92B99168B",
+      "git_blob": "995543392fcdf1e5ecf7b7e723fa047b67fef807",
+      "git_blob_bytes": 2746,
+      "git_blob_sha256": "1191F7852C0D5D2366D58B844C5A6C12396C2186D8EDD3708D3B5BC92B99168B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_science_scope.sv",
+      "working_tree_bytes": 2079,
+      "working_tree_sha256": "EC5203CA5D99F54A5BBB610D77E134C8EDBF25DF98D56EA31C26A76C45F3E43F",
+      "git_blob": "bb4e397d73a451b41f3e7a0507dd51a1179879e4",
+      "git_blob_bytes": 2079,
+      "git_blob_sha256": "EC5203CA5D99F54A5BBB610D77E134C8EDBF25DF98D56EA31C26A76C45F3E43F"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_settings_osd.sv",
+      "working_tree_bytes": 1639,
+      "working_tree_sha256": "04ADC1331646965C0FD7D044257AB6222FFCC06399DD2E0CCD8B4E43E26CAC1B",
+      "git_blob": "7e3ac05675f630d26579846d27577e0f9a1e89cd",
+      "git_blob_bytes": 1639,
+      "git_blob_sha256": "04ADC1331646965C0FD7D044257AB6222FFCC06399DD2E0CCD8B4E43E26CAC1B"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/tb_video.sv",
+      "working_tree_bytes": 1682,
+      "working_tree_sha256": "B3692B60CE85AFF1C2F1966978F95D0651E90E92E95CAEBF5880F25C4B40FDA7",
+      "git_blob": "ac32d96b8561453fe12d003d57886bdf64e11a81",
+      "git_blob_bytes": 1682,
+      "git_blob_sha256": "B3692B60CE85AFF1C2F1966978F95D0651E90E92E95CAEBF5880F25C4B40FDA7"
+    },
+    {
+      "path": "topic1_hdmi__player/sim/vendor/tb_sdram.sv",
+      "working_tree_bytes": 1337,
+      "working_tree_sha256": "2DAE02085B48CBDC73E5FAFA675CE5931F5EB82F35D74734CCB8963790CD2511",
+      "git_blob": "022cc7bd8045f18752fc612191264759c1e96638",
+      "git_blob_bytes": 1337,
+      "git_blob_sha256": "2DAE02085B48CBDC73E5FAFA675CE5931F5EB82F35D74734CCB8963790CD2511"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/AUDIO_SAMPLE_ROM.ipc",
+      "working_tree_bytes": 1166,
+      "working_tree_sha256": "650AB6133BD5B35260D34E3E984D15F0BFB45B74B8A88D323D46BB4CEAB6AACC",
+      "git_blob": "827e0bd5f0df10ee7ef8ea54aa8b532a89add408",
+      "git_blob_bytes": 1166,
+      "git_blob_sha256": "650AB6133BD5B35260D34E3E984D15F0BFB45B74B8A88D323D46BB4CEAB6AACC"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/AUDIO_SAMPLE_ROM.v",
+      "working_tree_bytes": 1455,
+      "working_tree_sha256": "0BC4A18DFD8D598103FAEA82E9F02A85BEABA5A3E21047A4E6BAAB063CA005BD",
+      "git_blob": "be36618defa064984dcb3e835c866f6072ca922f",
+      "git_blob_bytes": 1455,
+      "git_blob_sha256": "0BC4A18DFD8D598103FAEA82E9F02A85BEABA5A3E21047A4E6BAAB063CA005BD"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/AUDIO_SAMPLE_ROM.vhd",
+      "working_tree_bytes": 1621,
+      "working_tree_sha256": "4C3D4EA17939B4D07A8D95C006174F94CED027B91DAAE5FD065E094D1E8071AF",
+      "git_blob": "9c4e88a7a7356fa3f9daac2ec1a0e9b9c9e641da",
+      "git_blob_bytes": 1621,
+      "git_blob_sha256": "4C3D4EA17939B4D07A8D95C006174F94CED027B91DAAE5FD065E094D1E8071AF"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/PLL.ipc",
+      "working_tree_bytes": 1511,
+      "working_tree_sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5",
+      "git_blob": "454fc6dfb46ddb1b7b5e9889097add12ef76fb73",
+      "git_blob_bytes": 1511,
+      "git_blob_sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/PLL.v",
+      "working_tree_bytes": 2438,
+      "working_tree_sha256": "4E873EEF9499FA93508D8CF2CAC90EEA0E16C6F649AE29502CDC4C5886CD32AA",
+      "git_blob": "453a74656ab6f223a4dc6b869fc3f2fa0e53c6bb",
+      "git_blob_bytes": 2438,
+      "git_blob_sha256": "4E873EEF9499FA93508D8CF2CAC90EEA0E16C6F649AE29502CDC4C5886CD32AA"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/PLL.vhd",
+      "working_tree_bytes": 2688,
+      "working_tree_sha256": "E46792BB3D2B72621B18B323C472213FD5880EB29E5E85F0B7D50E5117E47494",
+      "git_blob": "d7adbc9d8e4f39ac7eb49e451cd522e50c7a8429",
+      "git_blob_bytes": 2688,
+      "git_blob_sha256": "E46792BB3D2B72621B18B323C472213FD5880EB29E5E85F0B7D50E5117E47494"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/PLL_HDMI_AUDIO.ipc",
+      "working_tree_bytes": 1841,
+      "working_tree_sha256": "CE38F1B2917EF9DF107BE46E716767B7C8A78AF079412B2988CF266B589BD645",
+      "git_blob": "f2b91ae6f9fbb6ba5dc0a8a57d67081f08555d10",
+      "git_blob_bytes": 1841,
+      "git_blob_sha256": "CE38F1B2917EF9DF107BE46E716767B7C8A78AF079412B2988CF266B589BD645"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+      "working_tree_bytes": 2757,
+      "working_tree_sha256": "1E174C1DC4EDBCE9C61D6B390ACA3B7B94022B60995A92981D5278247B7F5867",
+      "git_blob": "471eb7f78a96f5eda8fb4227c40d34bfa78c383d",
+      "git_blob_bytes": 2757,
+      "git_blob_sha256": "1E174C1DC4EDBCE9C61D6B390ACA3B7B94022B60995A92981D5278247B7F5867"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/al_ip/PLL_HDMI_AUDIO.vhd",
+      "working_tree_bytes": 2941,
+      "working_tree_sha256": "1B5025B3FE29D4428C6AA58EF99E7C5D7C5D697E74DACD8AC8F2D068290E0E2F",
+      "git_blob": "695983bb5f017bc67bf0f3912efef64cff5b46b0",
+      "git_blob_bytes": 2941,
+      "git_blob_sha256": "1B5025B3FE29D4428C6AA58EF99E7C5D7C5D697E74DACD8AC8F2D068290E0E2F"
+    },
+    {
+      "path": "topic1_hdmi__player/src/td_project/topic1_hdmi_player.al",
+      "working_tree_bytes": 25562,
+      "working_tree_sha256": "5836FD82740AF2883B4DE437AAC5CA24B1D4A241DE3746A242753FA41C1640C9",
+      "git_blob": "b05bfcc90ea1533a1adda53fca582f871a9cfb14",
+      "git_blob_bytes": 25562,
+      "git_blob_sha256": "5836FD82740AF2883B4DE437AAC5CA24B1D4A241DE3746A242753FA41C1640C9"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/constraints_source/edid_debug.cwc",
+      "working_tree_bytes": 59256,
+      "working_tree_sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95",
+      "git_blob": "2f0e78888278b74ba631e6279f808704c15fae87",
+      "git_blob_bytes": 59256,
+      "git_blob_sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/constraints_source/pin.adc",
+      "working_tree_bytes": 5599,
+      "working_tree_sha256": "531C563A27532A2146AB70B41FA2CEB2AEE7E064ED6ABDD97A099BDA4E7DA2DE",
+      "git_blob": "dc9b9c17f3b5a582884c592f5199480cfbd349ec",
+      "git_blob_bytes": 5599,
+      "git_blob_sha256": "531C563A27532A2146AB70B41FA2CEB2AEE7E064ED6ABDD97A099BDA4E7DA2DE"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/constraints_source/timing.sdc",
+      "working_tree_bytes": 1669,
+      "working_tree_sha256": "6DF89B04C8284AA578FCF510349481601D1341012F43CF4451170FCE47F4269A",
+      "git_blob": "d043f37b7c6c827ba7788917bebfbc9995cb9971",
+      "git_blob_bytes": 1669,
+      "git_blob_sha256": "6DF89B04C8284AA578FCF510349481601D1341012F43CF4451170FCE47F4269A"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/I2S_receiver.v",
+      "working_tree_bytes": 4205,
+      "working_tree_sha256": "08904598B42C2E1A4836CD9FB3293BC6C791EA2F79E35C7663A33127DC97F47B",
+      "git_blob": "d33b808037663c03db6f68fb6c01a8f20fe84141",
+      "git_blob_bytes": 4205,
+      "git_blob_sha256": "08904598B42C2E1A4836CD9FB3293BC6C791EA2F79E35C7663A33127DC97F47B"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_256.tcl",
+      "working_tree_bytes": 554,
+      "working_tree_sha256": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+      "git_blob": "f6709b4aee3a2668ea7fd6cfc1f3cb105b34da92",
+      "git_blob_bytes": 554,
+      "git_blob_sha256": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_256.v",
+      "working_tree_bytes": 34121,
+      "working_tree_sha256": "DAB43A76A35E21DF4064A25EDB940699B041427D70BAE89CC03C5280B7BF4BF8",
+      "git_blob": "4b191bebc77003d14e5c62844cabba9d1fb46a73",
+      "git_blob_bytes": 34121,
+      "git_blob_sha256": "DAB43A76A35E21DF4064A25EDB940699B041427D70BAE89CC03C5280B7BF4BF8"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_256.vhd",
+      "working_tree_bytes": 1405,
+      "working_tree_sha256": "50D6D10017B63E1CE5A77BAD4A80E9A3DE81402909D30CA0818674A1887EB46D",
+      "git_blob": "ee65a33e597f6544c9b4a1e269fc79699bf7a4dc",
+      "git_blob_bytes": 1405,
+      "git_blob_sha256": "50D6D10017B63E1CE5A77BAD4A80E9A3DE81402909D30CA0818674A1887EB46D"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_256_sim.v",
+      "working_tree_bytes": 64027,
+      "working_tree_sha256": "55B81AB3AA699902B6F11FE766658B852E0740844879A942DCA81CD57B40F729",
+      "git_blob": "24c1d1dcacea4d6b37da13eb10f048e6d8ee4275",
+      "git_blob_bytes": 64027,
+      "git_blob_sha256": "55B81AB3AA699902B6F11FE766658B852E0740844879A942DCA81CD57B40F729"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_32_256.ipc",
+      "working_tree_bytes": 856,
+      "working_tree_sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371",
+      "git_blob": "57b40238d986ef00424d2892f4015efc5b2e7555",
+      "git_blob_bytes": 856,
+      "git_blob_sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_32_256.tcl",
+      "working_tree_bytes": 554,
+      "working_tree_sha256": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+      "git_blob": "f6709b4aee3a2668ea7fd6cfc1f3cb105b34da92",
+      "git_blob_bytes": 554,
+      "git_blob_sha256": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_16_32_256.v",
+      "working_tree_bytes": 34123,
+      "working_tree_sha256": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835",
+      "git_blob": "4096b1736e3f8ce24903a480aa8544ebd61216c9",
+      "git_blob_bytes": 34123,
+      "git_blob_sha256": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_32_16_256.ipc",
+      "working_tree_bytes": 857,
+      "working_tree_sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349",
+      "git_blob": "6910a92f6b60ac72892e1171ebcbed35937d444c",
+      "git_blob_bytes": 857,
+      "git_blob_sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_32_16_256.tcl",
+      "working_tree_bytes": 554,
+      "working_tree_sha256": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+      "git_blob": "f6709b4aee3a2668ea7fd6cfc1f3cb105b34da92",
+      "git_blob_bytes": 554,
+      "git_blob_sha256": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "working_tree_bytes": 34123,
+      "working_tree_sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564",
+      "git_blob": "077c9548cd523ecc65aefc0e3bec30019ae2d512",
+      "git_blob_bytes": 34123,
+      "git_blob_sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/sdram.ipc",
+      "working_tree_bytes": 385,
+      "working_tree_sha256": "C3092876D4A66739DFC52CBDA4FE84EAB75099218F65DB7E7D922C41DEE1C201",
+      "git_blob": "e4d2f7276b1d31821b51e7993d68f3e24acad685",
+      "git_blob_bytes": 385,
+      "git_blob_sha256": "C3092876D4A66739DFC52CBDA4FE84EAB75099218F65DB7E7D922C41DEE1C201"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/sdram.v",
+      "working_tree_bytes": 1108,
+      "working_tree_sha256": "1487E8583BBF52FE6D079A2854C10EBFF2E569A3872A9088C1C9717BA14D17FE",
+      "git_blob": "e08a405eaf7379c48b61bb46ecde33354bf1fff9",
+      "git_blob_bytes": 1108,
+      "git_blob_sha256": "1487E8583BBF52FE6D079A2854C10EBFF2E569A3872A9088C1C9717BA14D17FE"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/sdram.vhd",
+      "working_tree_bytes": 1336,
+      "working_tree_sha256": "853170E99291FB6B2B1BF3F5F20CD1DD0CC723052864147810B674E18CD70705",
+      "git_blob": "b42132b1cef91d104e8e9cf505b9560400892e22",
+      "git_blob_bytes": 1336,
+      "git_blob_sha256": "853170E99291FB6B2B1BF3F5F20CD1DD0CC723052864147810B674E18CD70705"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/sys_pll.ipc",
+      "working_tree_bytes": 1721,
+      "working_tree_sha256": "444721C2DBF22304138613E9CD40BB761FD772D19BCA2A832F0BFD0676723172",
+      "git_blob": "40b2d8277c42104b13924795c77545399d59f215",
+      "git_blob_bytes": 1721,
+      "git_blob_sha256": "444721C2DBF22304138613E9CD40BB761FD772D19BCA2A832F0BFD0676723172"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/sys_pll.v",
+      "working_tree_bytes": 2546,
+      "working_tree_sha256": "308FC170F9EA92116CD362172E8D0B27836FDBD488ACBED2E494AEB21A50E5C0",
+      "git_blob": "505d02ba2a6e29d8f4cfb314d9283980a410bcf5",
+      "git_blob_bytes": 2546,
+      "git_blob_sha256": "308FC170F9EA92116CD362172E8D0B27836FDBD488ACBED2E494AEB21A50E5C0"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/sys_pll.vhd",
+      "working_tree_bytes": 2821,
+      "working_tree_sha256": "804B4D501859DA6FEB1D91474DBEF258B14CA7A7310FE803181C9D995704993B",
+      "git_blob": "51e61bf6882fcd10a9c7097db234c1679c4451ac",
+      "git_blob_bytes": 2821,
+      "git_blob_sha256": "804B4D501859DA6FEB1D91474DBEF258B14CA7A7310FE803181C9D995704993B"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/video_pll.ipc",
+      "working_tree_bytes": 1451,
+      "working_tree_sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076",
+      "git_blob": "bacfe37e6237b1214e349ea2207ccff108324eb7",
+      "git_blob_bytes": 1451,
+      "git_blob_sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/video_pll.v",
+      "working_tree_bytes": 2347,
+      "working_tree_sha256": "46521618FE33CD4E63055B84FCEDF2A8B9519766C6B3B529647B7BC0394C8B23",
+      "git_blob": "4a39645d59fe45f02e21d3c252b053b2690b44da",
+      "git_blob_bytes": 2347,
+      "git_blob_sha256": "46521618FE33CD4E63055B84FCEDF2A8B9519766C6B3B529647B7BC0394C8B23"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/IP/video_pll.vhd",
+      "working_tree_bytes": 2619,
+      "working_tree_sha256": "4C23A8A81B28C81BED4834E1E9A757DB01EEBD360C7FE3A7066F8F8F7B6A36C4",
+      "git_blob": "8c308d5cd1d9a0b21c6651d1a75f842ded6aa9f7",
+      "git_blob_bytes": 2619,
+      "git_blob_sha256": "4C23A8A81B28C81BED4834E1E9A757DB01EEBD360C7FE3A7066F8F8F7B6A36C4"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/ax_debounce.v",
+      "working_tree_bytes": 2201,
+      "working_tree_sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8",
+      "git_blob": "8b44c9db2f159de379705bf0462b5791bb5d9df8",
+      "git_blob_bytes": 2201,
+      "git_blob_sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/bmp_read.v",
+      "working_tree_bytes": 13534,
+      "working_tree_sha256": "B81B28159EAD643DAC75C9F87BED241CDA9FA860DBA23CFD47B302AFAB7AC35B",
+      "git_blob": "c4561a7b99f600640305d12174b13d33665de927",
+      "git_blob_bytes": 13534,
+      "git_blob_sha256": "B81B28159EAD643DAC75C9F87BED241CDA9FA860DBA23CFD47B302AFAB7AC35B"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/bmp_scale_read.v",
+      "working_tree_bytes": 12834,
+      "working_tree_sha256": "6EDF8E17819184DCEDBBDD2C646D54AF0083ECD4F1333E116EE6588E8B429DC6",
+      "git_blob": "6190f02f77cf64429b0c85f3a1c3a9ab67521737",
+      "git_blob_bytes": 12834,
+      "git_blob_sha256": "6EDF8E17819184DCEDBBDD2C646D54AF0083ECD4F1333E116EE6588E8B429DC6"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/color_bar.v",
+      "working_tree_bytes": 9141,
+      "working_tree_sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152",
+      "git_blob": "f3ba8c91fb6490baa25bb8e710a6448b25f98cd8",
+      "git_blob_bytes": 9141,
+      "git_blob_sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "working_tree_bytes": 10172,
+      "working_tree_sha256": "5952075B213EC638F5C9BB238D4D4162685F9E9B5E752674F0E68A92DBEC83AC",
+      "git_blob": "21994a74e8b3cd5029fb2273f988a6fd8b68fee8",
+      "git_blob_bytes": 10172,
+      "git_blob_sha256": "5952075B213EC638F5C9BB238D4D4162685F9E9B5E752674F0E68A92DBEC83AC"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "working_tree_bytes": 11551,
+      "working_tree_sha256": "EF0F46443B6F79EBB9FBBA8F39B11DCA90EE7E9AE4637C1D45786744D964E540",
+      "git_blob": "a448d8b3449c05435fe6812b54a8bb780fae24b0",
+      "git_blob_bytes": 11551,
+      "git_blob_sha256": "EF0F46443B6F79EBB9FBBA8F39B11DCA90EE7E9AE4637C1D45786744D964E540"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/frame_read_write.v",
+      "working_tree_bytes": 11280,
+      "working_tree_sha256": "778D6316C7BF25140DE763F225ACFA541328482C025CFF7A2157ED77B8C9524A",
+      "git_blob": "e917ad2c23c33fb096637ffbab0869da90f14282",
+      "git_blob_bytes": 11280,
+      "git_blob_sha256": "778D6316C7BF25140DE763F225ACFA541328482C025CFF7A2157ED77B8C9524A"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/sd_card_bmp.v",
+      "working_tree_bytes": 10752,
+      "working_tree_sha256": "283FC08D2AF12097D299FD0C814D7291E5B1830C195F4B52E51F609067D73A15",
+      "git_blob": "3f3a5edf0cc60c49047d85bbb5ad17ec900b3a38",
+      "git_blob_bytes": 10752,
+      "git_blob_sha256": "283FC08D2AF12097D299FD0C814D7291E5B1830C195F4B52E51F609067D73A15"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "working_tree_bytes": 8550,
+      "working_tree_sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA",
+      "git_blob": "c2fd890b505f44f8012479919ac093ddc701a468",
+      "git_blob_bytes": 8550,
+      "git_blob_sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "working_tree_bytes": 5620,
+      "working_tree_sha256": "C245C07E3B0056808D86E06AAD74348494E2A7050D493A3D4141D97CCF115203",
+      "git_blob": "740013486478c1774b5dca6fc78a465488ce8b5e",
+      "git_blob_bytes": 5620,
+      "git_blob_sha256": "C245C07E3B0056808D86E06AAD74348494E2A7050D493A3D4141D97CCF115203"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/sd_card_top.v",
+      "working_tree_bytes": 7277,
+      "working_tree_sha256": "D5031B5B809A8DF0A2C8CCA194A511C5F74236E810CBE5E8436359F9E5F26A39",
+      "git_blob": "cdd45fdaa36a3e97db56b182165c01233871729b",
+      "git_blob_bytes": 7277,
+      "git_blob_sha256": "D5031B5B809A8DF0A2C8CCA194A511C5F74236E810CBE5E8436359F9E5F26A39"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/sdram.v",
+      "working_tree_bytes": 2391,
+      "working_tree_sha256": "0F67D4ACEF3FF352969E9D2F4605C8B3CB2A5A366954621145C059C0B86D67CD",
+      "git_blob": "a843b604e7bba0bbb1337c902bdc147caa3ed53a",
+      "git_blob_bytes": 2391,
+      "git_blob_sha256": "0F67D4ACEF3FF352969E9D2F4605C8B3CB2A5A366954621145C059C0B86D67CD"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/seg_decoder.v",
+      "working_tree_bytes": 766,
+      "working_tree_sha256": "4592B6E4D2E9E8B7E4AB5266D850D30E43537AB9C4157D4221E3F8DFD342DECD",
+      "git_blob": "802f429d1bba774ffc87679a3eb9057fa1aca62e",
+      "git_blob_bytes": 766,
+      "git_blob_sha256": "4592B6E4D2E9E8B7E4AB5266D850D30E43537AB9C4157D4221E3F8DFD342DECD"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/seg_scan.v",
+      "working_tree_bytes": 1847,
+      "working_tree_sha256": "08759C329C33CDB7A6070E0B46773F0A6C9C8052B51652DEC29406B9A9DAC1E3",
+      "git_blob": "28c890c2646a1b80b67cadb8e1804504cc2e44c8",
+      "git_blob_bytes": 1847,
+      "git_blob_sha256": "08759C329C33CDB7A6070E0B46773F0A6C9C8052B51652DEC29406B9A9DAC1E3"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/spi_master.v",
+      "working_tree_bytes": 3655,
+      "working_tree_sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C",
+      "git_blob": "bbc3a82a05756ebcbb01491cccf54c0865d82dec",
+      "git_blob_bytes": 3655,
+      "git_blob_sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/video_define.v",
+      "working_tree_bytes": 21,
+      "working_tree_sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2",
+      "git_blob": "c6e7bde4b8a41410ea3d782cc4460a27b8f1b8a5",
+      "git_blob_bytes": 21,
+      "git_blob_sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/video_delay.v",
+      "working_tree_bytes": 1595,
+      "working_tree_sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433",
+      "git_blob": "30495601118bc41f79eb2d047120729b24366207",
+      "git_blob_bytes": 1595,
+      "git_blob_sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/SD/video_timing_data.v",
+      "working_tree_bytes": 2752,
+      "working_tree_sha256": "ABCFD4C80AF7D33990B203380A1C328643BDE0E5234450C349B725DF96283089",
+      "git_blob": "ad9b7a92b87c340bb6bb5a4f9de50495bd8f34c0",
+      "git_blob_bytes": 2752,
+      "git_blob_sha256": "ABCFD4C80AF7D33990B203380A1C328643BDE0E5234450C349B725DF96283089"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/audio_arc_calculate.v",
+      "working_tree_bytes": 1702,
+      "working_tree_sha256": "552D8D86AFD237666B30AE08F31247808E89EB024EFDE5EFC670B82EB617A7DC",
+      "git_blob": "52fdc7c4592af326c50156659fe80dcb798be2a9",
+      "git_blob_bytes": 1702,
+      "git_blob_sha256": "552D8D86AFD237666B30AE08F31247808E89EB024EFDE5EFC670B82EB617A7DC"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/audio_visualizer.v",
+      "working_tree_bytes": 4925,
+      "working_tree_sha256": "2072AB4D2B77D0F6F06F172CD74D4F996489F2122A9D26C2E243BD765FD61FCE",
+      "git_blob": "c1b9cedc3447f7e0142fec2ade0bff84e8438f02",
+      "git_blob_bytes": 4925,
+      "git_blob_sha256": "2072AB4D2B77D0F6F06F172CD74D4F996489F2122A9D26C2E243BD765FD61FCE"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/background_music.v",
+      "working_tree_bytes": 5907,
+      "working_tree_sha256": "EEFE9BBB653955DDA8C17CDCDA0F722EBF543569DEB3604E4EBD00DD720932C0",
+      "git_blob": "5792051950e412ea1f01d588ddd8dc957444d567",
+      "git_blob_bytes": 5907,
+      "git_blob_sha256": "EEFE9BBB653955DDA8C17CDCDA0F722EBF543569DEB3604E4EBD00DD720932C0"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "working_tree_bytes": 328975,
+      "working_tree_sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63",
+      "git_blob": "f05ef26b94e8a9414a8afec1ace22148d6c1be58",
+      "git_blob_bytes": 328975,
+      "git_blob_sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+      "working_tree_bytes": 3589,
+      "working_tree_sha256": "729CB1635091B7630E5B68306E9F51FFF4E3E06BAE8CE08CC3D7323B3FB9D5CF",
+      "git_blob": "5ff6e0ac7aacac10ce7d865d73231cc60d4ae68e",
+      "git_blob_bytes": 3589,
+      "git_blob_sha256": "729CB1635091B7630E5B68306E9F51FFF4E3E06BAE8CE08CC3D7323B3FB9D5CF"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/hdmi_audio_tone_pcm_scale.v",
+      "working_tree_bytes": 2900,
+      "working_tree_sha256": "0FF1AB2B39E1294C3AAE814BF5A252C47C284C2CDB9568ADF02D3C6CFD8DDD0B",
+      "git_blob": "d72debd6c8e77db3871b9b30495acb5611abcd7d",
+      "git_blob_bytes": 2900,
+      "git_blob_sha256": "0FF1AB2B39E1294C3AAE814BF5A252C47C284C2CDB9568ADF02D3C6CFD8DDD0B"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "working_tree_bytes": 4211,
+      "working_tree_sha256": "F5F8FB46E0CBD703A7D21891875A832A50183DC3359F50F9743AC8AFD4C70EC2",
+      "git_blob": "2fdfbbd113300daba3b1f92bd76ead3978b81baa",
+      "git_blob_bytes": 4211,
+      "git_blob_sha256": "F5F8FB46E0CBD703A7D21891875A832A50183DC3359F50F9743AC8AFD4C70EC2"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/include/global_def.v",
+      "working_tree_bytes": 692,
+      "working_tree_sha256": "E15123D2FADBBDA5662AD74E627AA83450C67ADAD264D2DD48737C217F8C46C2",
+      "git_blob": "de164ccc13b8d78be66c60b28beff6cc2465d3eb",
+      "git_blob_bytes": 692,
+      "git_blob_sha256": "E15123D2FADBBDA5662AD74E627AA83450C67ADAD264D2DD48737C217F8C46C2"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "working_tree_bytes": 7538,
+      "working_tree_sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57",
+      "git_blob": "b3e22faed8fbb9121df65ad230adfa15c5d3907e",
+      "git_blob_bytes": 7538,
+      "git_blob_sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "working_tree_bytes": 9025,
+      "working_tree_sha256": "367E7EDF2092C153D9FB6D98376C5726A3D1D7373756E8FE7256AD9546C90DA5",
+      "git_blob": "a4568f857239d3596dbcc746d1db2dd683836c57",
+      "git_blob_bytes": 9025,
+      "git_blob_sha256": "367E7EDF2092C153D9FB6D98376C5726A3D1D7373756E8FE7256AD9546C90DA5"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "working_tree_bytes": 15637,
+      "working_tree_sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2",
+      "git_blob": "d24bb0768e521bd42c58fce1872f30bdcf921608",
+      "git_blob_bytes": 15637,
+      "git_blob_sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/key_remove_shakes.v",
+      "working_tree_bytes": 1762,
+      "working_tree_sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9",
+      "git_blob": "d25cf230efd9ef20ebc9d8386e4aefe696cde8e2",
+      "git_blob_bytes": 1762,
+      "git_blob_sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/lane_lvds_10_1.v",
+      "working_tree_bytes": 4791,
+      "working_tree_sha256": "EB27DCFCB0655E0345F698E817352AFA73CA83FEDF039A660E63735337C89A61",
+      "git_blob": "658abc89c75f6f81cd1b3547281b1d9f32fcb328",
+      "git_blob_bytes": 4791,
+      "git_blob_sha256": "EB27DCFCB0655E0345F698E817352AFA73CA83FEDF039A660E63735337C89A61"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/osd_overlay_640x480.v",
+      "working_tree_bytes": 3993,
+      "working_tree_sha256": "7F17986CE0E56C20AF0AC8F7E6A9329F224F604545AB3E729C4225E124039FBD",
+      "git_blob": "36dd094fc30f090a331c90a91a9b2c137fe9ecdd",
+      "git_blob_bytes": 3993,
+      "git_blob_sha256": "7F17986CE0E56C20AF0AC8F7E6A9329F224F604545AB3E729C4225E124039FBD"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/player_audio_link.v",
+      "working_tree_bytes": 5505,
+      "working_tree_sha256": "34D7AC1E04D1EC89A572E89E959160CBB4F3F47FAD6B515F430BE103C177CB35",
+      "git_blob": "b4c51a80c835fadfa5d1903b63eb270fbade3d01",
+      "git_blob_bytes": 5505,
+      "git_blob_sha256": "34D7AC1E04D1EC89A572E89E959160CBB4F3F47FAD6B515F430BE103C177CB35"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/player_cdc.v",
+      "working_tree_bytes": 3450,
+      "working_tree_sha256": "B7CE391725F5ED2269E3DACE0E0BDB0205062982371BB0C952BF2683064817B3",
+      "git_blob": "874572ec9d9c022bb36b961ac9e8e353d4c3358b",
+      "git_blob_bytes": 3450,
+      "git_blob_sha256": "B7CE391725F5ED2269E3DACE0E0BDB0205062982371BB0C952BF2683064817B3"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/player_controls.v",
+      "working_tree_bytes": 4939,
+      "working_tree_sha256": "E8D40C6219FBF4B142711AD25C542CC6692061086503CC115CF558C526629610",
+      "git_blob": "716301f51c269cc6c544f68c9dd786a7841baec3",
+      "git_blob_bytes": 4939,
+      "git_blob_sha256": "E8D40C6219FBF4B142711AD25C542CC6692061086503CC115CF558C526629610"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/player_settings_osd.v",
+      "working_tree_bytes": 9274,
+      "working_tree_sha256": "62AE2B2B138A3FB074FCCA4916E05BCB1BED6F1E360EA1D6D1E46CA1D4437D2F",
+      "git_blob": "ad1b49897a43b3692564deb45ac3bd0507d13fc3",
+      "git_blob_bytes": 9274,
+      "git_blob_sha256": "62AE2B2B138A3FB074FCCA4916E05BCB1BED6F1E360EA1D6D1E46CA1D4437D2F"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/1.wav",
+      "working_tree_bytes": 3096678,
+      "working_tree_sha256": "0E6F8F626A0215A85DFCC94E431ABAB32E6828DBCB64249B7D4FF47721E7B2FD",
+      "git_blob": "d87cd587276d224f3146e21870a238243a906396",
+      "git_blob_bytes": 3096678,
+      "git_blob_sha256": "0E6F8F626A0215A85DFCC94E431ABAB32E6828DBCB64249B7D4FF47721E7B2FD"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/audio_1khz_24bit_48deep.mif",
+      "working_tree_bytes": 690,
+      "working_tree_sha256": "DCC918E3B442485A933831368567962BB39DC1060B1BCFADA16033E050BE34ED",
+      "git_blob": "75b6fbf962b614c4e55033398a36640f59d4ce7d",
+      "git_blob_bytes": 690,
+      "git_blob_sha256": "DCC918E3B442485A933831368567962BB39DC1060B1BCFADA16033E050BE34ED"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/audio_1khz_24bit_48deep.mif.dath",
+      "working_tree_bytes": 384,
+      "working_tree_sha256": "E0F242A837B58F810813E1D6DA5495473C4FA16DD6B283C30EC91B608B05AB85",
+      "git_blob": "ee93a2772cc2d4c2ec226613d2e772545e4603e1",
+      "git_blob_bytes": 384,
+      "git_blob_sha256": "E0F242A837B58F810813E1D6DA5495473C4FA16DD6B283C30EC91B608B05AB85"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/audio_sine_24bit_48deep_scale8.mif",
+      "working_tree_bytes": 700,
+      "working_tree_sha256": "AA20E68905FC41A094CF37E218489D3745EB6E46C62DABE772547961A7DB64CF",
+      "git_blob": "2edadf7c9ebf5d71c614edb828f66b37c87dc3d7",
+      "git_blob_bytes": 700,
+      "git_blob_sha256": "AA20E68905FC41A094CF37E218489D3745EB6E46C62DABE772547961A7DB64CF"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/audio_sine_24bit_48deep_scale8.mif.dath",
+      "working_tree_bytes": 384,
+      "working_tree_sha256": "04A6EA5A31BE7FFEBFDEF11A6AFB06DE17EF367B4B6600EC29C248246D639F02",
+      "git_blob": "b7391113f7b28940d688aa1a16c1bcb6db883ec6",
+      "git_blob_bytes": 384,
+      "git_blob_sha256": "04A6EA5A31BE7FFEBFDEF11A6AFB06DE17EF367B4B6600EC29C248246D639F02"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/song_48k.mif",
+      "working_tree_bytes": 12275282,
+      "working_tree_sha256": "27A4B3B80627EC650D3B6F01B82A21BADF7A8508D7A5E75827ABF6B2DE3579B9",
+      "git_blob": "7a10284fc6e90ff5f672bfddda5238b0b8566b8b",
+      "git_blob_bytes": 12275282,
+      "git_blob_sha256": "27A4B3B80627EC650D3B6F01B82A21BADF7A8508D7A5E75827ABF6B2DE3579B9"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/song_48k.mif.dath",
+      "working_tree_bytes": 7225344,
+      "working_tree_sha256": "34D7DB62BC4E6B794F1970BEC7EBF2FF504763069437445A095B8CF5DA3CFF58",
+      "git_blob": "05bf2f4e6e52bea6c13ae0bf570f492093040ab9",
+      "git_blob_bytes": 7225344,
+      "git_blob_sha256": "34D7DB62BC4E6B794F1970BEC7EBF2FF504763069437445A095B8CF5DA3CFF58"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/python/wav_to_mif.py",
+      "working_tree_bytes": 2327,
+      "working_tree_sha256": "70C06AE300BDAAA840F009AF002805558FC4F309136DB1D46E68285D2BCBD750",
+      "git_blob": "98dc625c3d96b4a0d7e6452964c2beb44aa696b0",
+      "git_blob_bytes": 2327,
+      "git_blob_sha256": "70C06AE300BDAAA840F009AF002805558FC4F309136DB1D46E68285D2BCBD750"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/rom/i2s_rom_player_single_pll_fix64_rom_ip.v",
+      "working_tree_bytes": 8375,
+      "working_tree_sha256": "F8E7C9C56C6A21154580E030DADA604572D89A1E75E8945125B2EA0DD4B3094B",
+      "git_blob": "ee3ea2f4acaf93ac85f969eb283b1a09e9d9cd2b",
+      "git_blob_bytes": 8375,
+      "git_blob_sha256": "F8E7C9C56C6A21154580E030DADA604572D89A1E75E8945125B2EA0DD4B3094B"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/science_audio.v",
+      "working_tree_bytes": 6021,
+      "working_tree_sha256": "E14F2C452A950248A40C4EB51D2D56C512E2903E7ADB27E0BAA37014FCE94B65",
+      "git_blob": "4d586fa0a9782f6a9361f7721dd9765298ec4f3d",
+      "git_blob_bytes": 6021,
+      "git_blob_sha256": "E14F2C452A950248A40C4EB51D2D56C512E2903E7ADB27E0BAA37014FCE94B65"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/science_controls.v",
+      "working_tree_bytes": 1981,
+      "working_tree_sha256": "4A8B96B3C3FC1D22DDEDB47EBA0ABD48C2816AD8D312DC6C73482838D6B6599D",
+      "git_blob": "2eb0d9512446e5afe476307f1dfc562c289d906c",
+      "git_blob_bytes": 1981,
+      "git_blob_sha256": "4A8B96B3C3FC1D22DDEDB47EBA0ABD48C2816AD8D312DC6C73482838D6B6599D"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/science_osd.v",
+      "working_tree_bytes": 7981,
+      "working_tree_sha256": "C84EF7A3B1E86997AE0A2E041A6C2158919F72C83F540DDF7CD1A715BCC3A437",
+      "git_blob": "620afe34b6e2ffb3bc208f2993550be2e98d200b",
+      "git_blob_bytes": 7981,
+      "git_blob_sha256": "C84EF7A3B1E86997AE0A2E041A6C2158919F72C83F540DDF7CD1A715BCC3A437"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/science_scope.v",
+      "working_tree_bytes": 4974,
+      "working_tree_sha256": "AA5BD9C5A620F4A9AC9D368C2DE0385AEAF1B2ED0B8ACD4BD4C435F6A654A325",
+      "git_blob": "c0486fac59d43217fd9d65133b113229d444d7fa",
+      "git_blob_bytes": 4974,
+      "git_blob_sha256": "AA5BD9C5A620F4A9AC9D368C2DE0385AEAF1B2ED0B8ACD4BD4C435F6A654A325"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/science_subtitle_rom.v",
+      "working_tree_bytes": 10233,
+      "working_tree_sha256": "5DCAE728BAD45F80BB38B645CC3F828C396DDE0A7850AABA20299D535E88D993",
+      "git_blob": "224f73101b00c870f408ac3f305854ac41b2defc",
+      "git_blob_bytes": 10233,
+      "git_blob_sha256": "5DCAE728BAD45F80BB38B645CC3F828C396DDE0A7850AABA20299D535E88D993"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/startup_pulse.v",
+      "working_tree_bytes": 713,
+      "working_tree_sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9",
+      "git_blob": "29879970f0e6dee9a11f044440af06d8755f1171",
+      "git_blob_bytes": 713,
+      "git_blob_sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/test/design_top_i2s_test_pll.v",
+      "working_tree_bytes": 6443,
+      "working_tree_sha256": "B6396C3E90C67D7E8AAD8C83BFA8A1AA0B826DB8F74A26936549CAE57E86668C",
+      "git_blob": "54c67c3c1a62eaf7fbb071f57d8b76091b071036",
+      "git_blob_bytes": 6443,
+      "git_blob_sha256": "B6396C3E90C67D7E8AAD8C83BFA8A1AA0B826DB8F74A26936549CAE57E86668C"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/test/i2s_test_tone_gen_pll.v",
+      "working_tree_bytes": 3645,
+      "working_tree_sha256": "7614D4CA84C007A568E798B7C8CBC31EADD8A064BEE53101194DF13EDB71E02F",
+      "git_blob": "1b6340d015bb0c821af638ac7820840977e7e622",
+      "git_blob_bytes": 3645,
+      "git_blob_sha256": "7614D4CA84C007A568E798B7C8CBC31EADD8A064BEE53101194DF13EDB71E02F"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "working_tree_bytes": 21350,
+      "working_tree_sha256": "D60FD553B4D73988E22ECABC95DF89555187CC74B5D94D23E193A1C431147406",
+      "git_blob": "06310d6d2b84c96901d2ec330f10ba2920e795f0",
+      "git_blob_bytes": 21350,
+      "git_blob_sha256": "D60FD553B4D73988E22ECABC95DF89555187CC74B5D94D23E193A1C431147406"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/video_fade_rgb.v",
+      "working_tree_bytes": 923,
+      "working_tree_sha256": "6AFCB858C0173F03DE839CEB2B3F5BC87E62D4DB9FD474690B330502ADC0134B",
+      "git_blob": "8813de90f580f9d64fa07b190ef9b278b4cd9819",
+      "git_blob_bytes": 923,
+      "git_blob_sha256": "6AFCB858C0173F03DE839CEB2B3F5BC87E62D4DB9FD474690B330502ADC0134B"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/video_picture_adjust.v",
+      "working_tree_bytes": 1479,
+      "working_tree_sha256": "D54084A2C393A419386B11EE1DA4A414ADC7A0D8380721F2AC87BA7DE918E99D",
+      "git_blob": "b2184603c213d85029295b5762559d80c2f83215",
+      "git_blob_bytes": 1479,
+      "git_blob_sha256": "D54084A2C393A419386B11EE1DA4A414ADC7A0D8380721F2AC87BA7DE918E99D"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "working_tree_bytes": 1749,
+      "working_tree_sha256": "1C8FC26C789F87227036BEA034F1AB6FC5633F2AB2684BE422C54687A290FB96",
+      "git_blob": "e7dd6ac024928e21ad801f865a3bc9d857c0ef71",
+      "git_blob_bytes": 1749,
+      "git_blob_sha256": "1C8FC26C789F87227036BEA034F1AB6FC5633F2AB2684BE422C54687A290FB96"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/hdl_source/video_source_test.v",
+      "working_tree_bytes": 2983,
+      "working_tree_sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC",
+      "git_blob": "9117333ce8aad9e10597d4812ba857642161bc42",
+      "git_blob_bytes": 2983,
+      "git_blob_sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/ip_source/pll.ipc",
+      "working_tree_bytes": 2124,
+      "working_tree_sha256": "5D632BAD332785258C35CA41CE2B4A2A550E6BFD75BE0B63A3F72403CA2CE11E",
+      "git_blob": "350eb1b0b978fc5525a3379b300b027cdc17666f",
+      "git_blob_bytes": 2124,
+      "git_blob_sha256": "5D632BAD332785258C35CA41CE2B4A2A550E6BFD75BE0B63A3F72403CA2CE11E"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/ip_source/pll.v",
+      "working_tree_bytes": 3333,
+      "working_tree_sha256": "202799F886F12CFC1D837AFA932328B636C6C3DEE70167BE68C084133647B39C",
+      "git_blob": "fd9229c36060e11ea1ec1a081e9e85d53339197c",
+      "git_blob_bytes": 3333,
+      "git_blob_sha256": "202799F886F12CFC1D837AFA932328B636C6C3DEE70167BE68C084133647B39C"
+    },
+    {
+      "path": "topic1_hdmi__player/src/user_source/ip_source/pll.vhd",
+      "working_tree_bytes": 3559,
+      "working_tree_sha256": "A8166865B5AEF9CAAEE525D4633AA1DEC4172244A7BBFF239E0D658C0CA775E4",
+      "git_blob": "a80b012ef0547113393161a53fffe0d93e928098",
+      "git_blob_bytes": 3559,
+      "git_blob_sha256": "A8166865B5AEF9CAAEE525D4633AA1DEC4172244A7BBFF239E0D658C0CA775E4"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/build_card_image.py",
+      "working_tree_bytes": 5592,
+      "working_tree_sha256": "A5362ADBC4105D615E82210549C8184A4D7FDAC72520A337753A9E5922CBC379",
+      "git_blob": "d8aed9b145cbff188eab7385c4938b0fd17f8b7b",
+      "git_blob_bytes": 5592,
+      "git_blob_sha256": "A5362ADBC4105D615E82210549C8184A4D7FDAC72520A337753A9E5922CBC379"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/generate_bgm_tables.py",
+      "working_tree_bytes": 1827,
+      "working_tree_sha256": "9B5E41745D3ADFFB52840C14092E8401550C99E6EF73C9AEFBA8DC22FA7EDDC5",
+      "git_blob": "c1de6723242d892310bbb344a196ee5aed378887",
+      "git_blob_bytes": 1827,
+      "git_blob_sha256": "9B5E41745D3ADFFB52840C14092E8401550C99E6EF73C9AEFBA8DC22FA7EDDC5"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/generate_science_osd.py",
+      "working_tree_bytes": 2072,
+      "working_tree_sha256": "9B72E2B0FEFED9506323C211BB45544B148592EDDCA6921F8AA93558C19035BC",
+      "git_blob": "4e834e7af5b54550cdca5eadb79a1397a3f3924d",
+      "git_blob_bytes": 2072,
+      "git_blob_sha256": "9B72E2B0FEFED9506323C211BB45544B148592EDDCA6921F8AA93558C19035BC"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/inspect_reset.tcl",
+      "working_tree_bytes": 980,
+      "working_tree_sha256": "AF3052798280E1EF5A0AE26C6227C2D6E5EEB125506619B3C6041BEBC7FECA86",
+      "git_blob": "f590b5817cbcea1b2c074e31369bcbbd1b12319d",
+      "git_blob_bytes": 980,
+      "git_blob_sha256": "AF3052798280E1EF5A0AE26C6227C2D6E5EEB125506619B3C6041BEBC7FECA86"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/make_scaling_demo.py",
+      "working_tree_bytes": 3271,
+      "working_tree_sha256": "AB7BF5BA132EF6CE1D55442A8500F36EBAA61F80960560A2A6F41AB245AD8DC5",
+      "git_blob": "474463205321d9778657762397246ccc4fccfa9e",
+      "git_blob_bytes": 3271,
+      "git_blob_sha256": "AB7BF5BA132EF6CE1D55442A8500F36EBAA61F80960560A2A6F41AB245AD8DC5"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/pack_fire_media.py",
+      "working_tree_bytes": 1809,
+      "working_tree_sha256": "ACBAE2DB118776632E3AB3B9971DE0FC7724BA901B76FCCD1CDE06AF5E3A4ACE",
+      "git_blob": "2e91fcb1a62a69f1ab815b6ee42302f41f9e3148",
+      "git_blob_bytes": 1809,
+      "git_blob_sha256": "ACBAE2DB118776632E3AB3B9971DE0FC7724BA901B76FCCD1CDE06AF5E3A4ACE"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/prepare_science_sim.py",
+      "working_tree_bytes": 673,
+      "working_tree_sha256": "ED9CBE81BDFBEF8B7A7E7A721393FDA2E58DCA0FB7D76DC13229CE1B9E1E2FD9",
+      "git_blob": "25968248006da7d09b478f620dae0ce7e029edfb",
+      "git_blob_bytes": 673,
+      "git_blob_sha256": "ED9CBE81BDFBEF8B7A7E7A721393FDA2E58DCA0FB7D76DC13229CE1B9E1E2FD9"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/prepare_sound_pages.py",
+      "working_tree_bytes": 2023,
+      "working_tree_sha256": "9CBB80EACFB7FCDD3C1315720D06B967A7A82B26ACEB5B2B61494307500B9DDA",
+      "git_blob": "7fbf3aa7f7005dddec8993f58eea76f49063f591",
+      "git_blob_bytes": 2023,
+      "git_blob_sha256": "9CBB80EACFB7FCDD3C1315720D06B967A7A82B26ACEB5B2B61494307500B9DDA"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/test_card_image.py",
+      "working_tree_bytes": 4066,
+      "working_tree_sha256": "F44707348C4169446DB908F8D44F490C62EC1DC4D902B145CE8751806880E949",
+      "git_blob": "584cc667babf0961e15322a545536a4dbc0b1db5",
+      "git_blob_bytes": 4066,
+      "git_blob_sha256": "F44707348C4169446DB908F8D44F490C62EC1DC4D902B145CE8751806880E949"
+    },
+    {
+      "path": "topic1_hdmi__player/tools/unpack_card_image.py",
+      "working_tree_bytes": 1574,
+      "working_tree_sha256": "3D49807C4538AB92A9A2D7AC257C0B345E9445EB4DD411836D8CA629AB040C41",
+      "git_blob": "4c3852354aa7f10b93f5d3db51accc7c676ff453",
+      "git_blob_bytes": 1574,
+      "git_blob_sha256": "3D49807C4538AB92A9A2D7AC257C0B345E9445EB4DD411836D8CA629AB040C41"
+    },
+    {
+      "path": "topic1_hdmi__player/声音科普交互展示说明.md",
+      "working_tree_bytes": 6594,
+      "working_tree_sha256": "51717FF686CD749C20F704C7218F4531F4D59F0C33F05562C1A29E82103B99C1",
+      "git_blob": "6fd286288de625e18230a0b96fe4ea41375d3e70",
+      "git_blob_bytes": 6594,
+      "git_blob_sha256": "51717FF686CD749C20F704C7218F4531F4D59F0C33F05562C1A29E82103B99C1"
+    },
+    {
+      "path": "微信图片_20261104001643_39_135.jpg",
+      "working_tree_bytes": 4442931,
+      "working_tree_sha256": "3F37E3904A6FBE959BDBF27A7A17234916B609B8F91549916CA85BD336189808",
+      "git_blob": "560cf0d1542c97ba39558c7f84e4550a8b96d661",
+      "git_blob_bytes": 4442931,
+      "git_blob_sha256": "3F37E3904A6FBE959BDBF27A7A17234916B609B8F91549916CA85BD336189808"
+    },
+    {
+      "path": "微信图片_20261104001704_40_135.jpg",
+      "working_tree_bytes": 4198547,
+      "working_tree_sha256": "5E99FB1C1B42249A729C5FF9DE2E496A1224847CB3B63C161E25BDE72F272C76",
+      "git_blob": "210ac46b931721a0551d079ede097b65daf94436",
+      "git_blob_bytes": 4198547,
+      "git_blob_sha256": "5E99FB1C1B42249A729C5FF9DE2E496A1224847CB3B63C161E25BDE72F272C76"
+    },
+    {
+      "path": "微信图片_20261104001713_41_135.jpg",
+      "working_tree_bytes": 3961345,
+      "working_tree_sha256": "6026F573F33858BD0463D60D5E41829FB657AE645AB5A9E84B16A5C68E81352C",
+      "git_blob": "7964c958c4558af2af42ff5c8e3255461c752a79",
+      "git_blob_bytes": 3961345,
+      "git_blob_sha256": "6026F573F33858BD0463D60D5E41829FB657AE645AB5A9E84B16A5C68E81352C"
+    },
+    {
+      "path": "微信图片_20261104001748_42_135.jpg",
+      "working_tree_bytes": 214635,
+      "working_tree_sha256": "7FD87B710C7B6F116B01BFF204D1B0D56CFEAFAEB368E308247A06414D379EE1",
+      "git_blob": "e1f9839960a24b1102cfce0832401a4ff1b12065",
+      "git_blob_bytes": 214635,
+      "git_blob_sha256": "7FD87B710C7B6F116B01BFF204D1B0D56CFEAFAEB368E308247A06414D379EE1"
+    }
+  ],
+  "cleanup": {
+    "removed_from_current_tree": 141,
+    "local_copies_preserved": true,
+    "historical_commit": "d31522120b8c4f083650ba5ac09de3e89fdaa1b1",
+    "record": "CLEANUP_20261104.md"
+  },
+  "tf_image": {
+    "published": "topic1_hdmi__player/build/sound_science_card.img.gz",
+    "uncompressed_bytes": 67108864,
+    "uncompressed_sha256": "71D32B709A5D6871B1FABA7394DF19819EDB5E222AE671F2EBFD8AD0A06EA3B0",
+    "fresh_extraction_test": "passed"
+  }
+}

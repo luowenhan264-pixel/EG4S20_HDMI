@@ -75,3 +75,14 @@ Thumbs.db
 !*.bit
 !README.md
 !.gitignore
+
+# Signed competition authorization remains local at the owner's request.
+/output/pdf/作品提交材料_20261104/参赛作品承诺及使用授权书_照片版.pdf
+__pycache__/
+*.pyc
+~$*
+
+# Superseded projects and bundled desktop utilities stay local / in Git history.
+/01_Bitstream_Ready_To_Flash/
+/02_Anlogic_TD_Project/topic1_hdmi_player/
+/02_Anlogic_TD_Project/official_baseline_HX4S20C/软件工具/

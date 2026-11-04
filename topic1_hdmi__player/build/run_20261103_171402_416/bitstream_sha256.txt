@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : 6FF603BAB1F145744E6631E2AAA2E0F15E0E3677E2B2F0C59B59324B7E66A958
+Path      : D:\HX4S20\work\topic1_hdmi_player\build\run_20261103_171402_416\phy\topic1_hdmi_player.bit
+

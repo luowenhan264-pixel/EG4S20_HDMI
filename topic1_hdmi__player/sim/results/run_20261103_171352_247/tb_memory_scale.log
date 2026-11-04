@@ -1,0 +1,22 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_memory_scale -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:16:57 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_memory_scale
+# Loading work.tb_memory_schedule
+# Loading work.frame_fifo_read
+# Loading work.frame_fifo_write
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_memory_scale: fast scaled pixels, top-down writes, 50MHz memory/25MHz video, no FIFO under/overflow
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_memory_schedule.sv(79)
+#    Time: 16800860 ns  Iteration: 1  Instance: /tb_memory_scale/test
+# Break in Module tb_memory_schedule at D:/HX4S20/work/topic1_hdmi_player/sim/tb_memory_schedule.sv line 79
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_memory_schedule.sv line 79
+#  quit -code 0
+# End time: 17:17:00 on Nov 03,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

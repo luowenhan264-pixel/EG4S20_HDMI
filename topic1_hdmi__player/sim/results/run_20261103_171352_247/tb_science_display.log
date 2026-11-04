@@ -1,0 +1,24 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_science_display -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:18:14 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_science_display
+# Loading work.science_audio
+# Loading work.background_music
+# Loading work.science_scope
+# Loading work.science_osd
+# Loading work.science_subtitle_rom
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_science_display: actual four BMPs, audio/scope/OSD pipeline, Chinese glyphs, menu, no unknown pixels, 640x480 raster and sync
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_science_display.sv(45)
+#    Time: 16633660 ns  Iteration: 1  Instance: /tb_science_display
+# Break in Module tb_science_display at D:/HX4S20/work/topic1_hdmi_player/sim/tb_science_display.sv line 45
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_science_display.sv line 45
+#  quit -code 0
+# End time: 17:18:39 on Nov 03,2026, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0

@@ -1,0 +1,83 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 17:13:52 on Nov 03,2026
+vlog -sv "+incdir+D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/include" D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/SD/bmp_read.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/SD/bmp_scale_read.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/SD/sd_card_bmp.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/osd_overlay_640x480.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/player_cdc.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/video_fade_rgb.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/SD/frame_fifo_read.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/SD/frame_fifo_write.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/player_audio_link.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/I2S_receiver.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/audio_visualizer.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/background_music.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/player_controls.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/player_settings_osd.v D:\HX4S20\work\topic1_hdmi_player/src/user_source/hdl_source/video_picture_adjust.v D:\HX4S20\work\topic1_hdmi_player\src\user_source\hdl_source\science_audio.v D:\HX4S20\work\topic1_hdmi_player\src\user_source\hdl_source\science_controls.v D:\HX4S20\work\topic1_hdmi_player\src\user_source\hdl_source\science_osd.v D:\HX4S20\work\topic1_hdmi_player\src\user_source\hdl_source\science_scope.v D:\HX4S20\work\topic1_hdmi_player\src\user_source\hdl_source\science_subtitle_rom.v D:\HX4S20\work\topic1_hdmi_player\sim\tb_audio_link.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_audio_modes.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_audio_visualizer_link.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_audio_visualizer.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_background_music_link.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_background_music.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_bmp_read.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_bmp_scale.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_controls.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_cue_config_boundary.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_display_overlay.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_extensions_flow.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_fade.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_memory_scale.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_memory_schedule.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_picture_adjust.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_player_scaled.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_player.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_runtime_player.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_science_audio.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_science_controls.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_science_display.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_science_navigation.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_science_scope.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_settings_osd.sv D:\HX4S20\work\topic1_hdmi_player\sim\tb_video.sv 
+-- Compiling module bmp_read
+-- Compiling module bmp_scale_read
+-- Compiling module sd_card_bmp
+-- Compiling module key_press_debounce
+-- Compiling module osd_overlay_640x480
+-- Compiling module player_reset_sync
+-- Compiling module player_frame_commit
+-- Compiling module video_fade_rgb
+-- Compiling module frame_fifo_read
+-- Compiling module frame_fifo_write
+-- Compiling module player_picture_event
+-- Compiling module hdmi_audio_link_i2s
+-- Compiling module I2S_receiver
+-- Compiling module audio_visualizer
+-- Compiling module background_music
+-- Compiling module player_button
+-- Compiling module player_controls
+-- Compiling module player_config_cdc
+-- Compiling module player_settings_osd
+-- Compiling module video_picture_adjust
+-- Compiling module science_audio
+-- Compiling module science_controls
+-- Compiling module science_osd
+-- Compiling module science_scope
+-- Compiling module science_subtitle_rom
+-- Compiling module tb_audio_link
+-- Compiling module tb_audio_modes
+-- Compiling module tb_audio_visualizer_link
+-- Compiling module tb_audio_visualizer
+-- Compiling module tb_background_music_link
+-- Compiling module tb_background_music
+-- Compiling module tb_bmp_read
+-- Compiling module tb_bmp_scale
+-- Compiling module tb_controls
+-- Compiling module tb_cue_config_boundary
+-- Compiling module tb_display_overlay
+-- Compiling module tb_extensions_flow
+-- Compiling module tb_fade
+-- Compiling module tb_memory_scale
+-- Compiling module tb_memory_schedule
+-- Compiling module tb_picture_adjust
+-- Compiling module tb_player_scaled
+-- Compiling module tb_player
+-- Compiling module sd_card_top
+-- Compiling module tb_runtime_player
+-- Compiling module tb_science_audio
+-- Compiling module tb_science_controls
+-- Compiling module tb_science_display
+-- Compiling module tb_science_navigation
+-- Compiling module tb_science_scope
+-- Compiling module tb_settings_osd
+-- Compiling module tb_video
+
+Top level modules:
+	tb_audio_link
+	tb_audio_modes
+	tb_audio_visualizer_link
+	tb_audio_visualizer
+	tb_background_music_link
+	tb_background_music
+	tb_bmp_read
+	tb_bmp_scale
+	tb_controls
+	tb_cue_config_boundary
+	tb_display_overlay
+	tb_extensions_flow
+	tb_fade
+	tb_memory_scale
+	tb_picture_adjust
+	tb_player_scaled
+	tb_runtime_player
+	tb_science_audio
+	tb_science_controls
+	tb_science_display
+	tb_science_navigation
+	tb_science_scope
+	tb_settings_osd
+	tb_video
+End time: 17:13:53 on Nov 03,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

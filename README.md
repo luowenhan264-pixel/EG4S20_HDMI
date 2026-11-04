@@ -1,75 +1,57 @@
-# 安路 EG4S20 HDMI 多媒体播放系统 - 全套项目工程与资料总目录
+# 基于 FPGA 的声音科普交互展示系统
 
-本工程为 **2026年全国大学生嵌入式芯片与系统设计竞赛（安路赛道 选题一）**：**基于安路 EG4S20 的 HDMI 多媒体播放系统** 专用开发根目录。
+最新资料同步日期：2026-11-04。平台：HX4S20 / EG4S20BG256；视频输出：640×480 HDMI。
 
-> **竞赛题目**：选题一：基于安路 EG4S20 的 HDMI 多媒体播放系统  
-> **推荐平台**：平台 1 —— **HX4S20C 开发板**  
-> **核心芯片**：安路科技 **EG4S20BG256**（19,600 LUT4、19,600 DFF、片内 SiP 合封 64Mbit 32-bit SDRAM、4 PLL）  
-> **EDA 工具**：Anlogic TD 6.2.1 / ModelSim SE  
-> **核心硬红线**：**100% FPGA 纯硬件逻辑自主编程实现，严禁外挂任何额外处理器（无论辅助控制还是算法预处理）**  
+系统通过声音与波形、音高与频率、音量与振幅、音乐与混音四页实验，结合 TF 图片、实时 PCM 波形、中文字幕和按键菜单开展科普展示。图片由 TF 卡读取并最近邻缩放，声音由 FPGA 合成。
 
----
+## 最新工程与提交材料
 
-## 一、目录结构说明
+| 内容 | 入口 |
+| --- | --- |
+| 最新声音科普工程 | [topic1_hdmi__player](topic1_hdmi__player/) |
+| TD 工程 | [topic1_hdmi_player.al](topic1_hdmi__player/src/td_project/topic1_hdmi_player.al) |
+| 操作与实现说明 | [声音科普交互展示说明](topic1_hdmi__player/声音科普交互展示说明.md) |
+| 修订技术文档 Word | [下载 Word](output/document_revision_20261104/基于FPGA的声音科普交互展示系统技术文档_修订版.docx) |
+| 修订技术文档 PDF | [查看 PDF](output/document_revision_20261104/基于FPGA的声音科普交互展示系统技术文档.pdf) |
+| 不署名 A3 作品海报 | [查看海报](output/pdf/作品提交材料_20261104/基于FPGA的声音科普交互展示系统_作品海报_A3.pdf) |
+| 文档指定构建位流 | [171402_416 位流](topic1_hdmi__player/build/run_20261103_171402_416/phy/topic1_hdmi_player.bit) |
+| 同日另一构建位流 | [233855_984 位流](topic1_hdmi__player/build/run_20261103_233855_984/phy/topic1_hdmi_player.bit) |
+| 声音科普 TF 镜像（无损压缩） | [sound_science_card.img.gz](topic1_hdmi__player/build/sound_science_card.img.gz) |
+| 同步文件与哈希 | [SYNC_MANIFEST_20261104.json](SYNC_MANIFEST_20261104.json) |
 
-| 文件夹 | 用途说明 |
-| :--- | :--- |
-| [**`01_Bitstream_Ready_To_Flash/`**](file:///C:/Users/75941/Desktop/Anlogic_EG4S20_Project/01_Bitstream_Ready_To_Flash) | **【已编译就绪位流】** 存放最终通过物理布局布线生成的 `.bit` 固化位流与上板说明。 |
-| [**`02_Anlogic_TD_Project/`**](file:///C:/Users/75941/Desktop/Anlogic_EG4S20_Project/02_Anlogic_TD_Project) | **【安路 TD 主工程】** 包含主工程工程文件（`.al`）、约束文件（`pin.adc`、`timing.sdc`）与综合/实现脚本。 |
-| [**`03_RTL_And_ModelSim/`**](file:///C:/Users/75941/Desktop/Anlogic_EG4S20_Project/03_RTL_And_ModelSim) | **【硬件 RTL 源码与仿真】** TF卡FAT32/BMP解析器、SDRAM帧缓存控制器、HDMI音视频打包器、转场特效与音频可视化算法模块及全套测试台。 |
-| [**`04_Hardware_Docs_And_Schematics/`**](file:///C:/Users/75941/Desktop/Anlogic_EG4S20_Project/04_Hardware_Docs_And_Schematics) | **【硬件手册与授权】** HX4S20C 原理图、EG4S20 数据手册、板载外设引脚映射表及正版 `Anlogic.lic` 授权。 |
-| [**`05_Contest_Guides_And_Reports/`**](file:///C:/Users/75941/Desktop/Anlogic_EG4S20_Project/05_Contest_Guides_And_Reports) | **【赛题指南与报告】** 官方选题指南 PDF、最新 Q&A 答疑纪要、板卡网盘下载链接与开发报告模板。 |
+两份位流为不同构建产物。技术文档的离线验证数据对应 run_20261103_171402_416，请记录实际下载文件，不混用不同版本的测试结论。
 
----
+TF 镜像以 gzip 无损压缩形式发布。在最新工程目录运行 `python tools/unpack_card_image.py`，恢复 `build/sound_science_card.img`，脚本会校验原镜像 SHA-256。解压后再按技术文档写卡。
 
-## 二、赛题一核心指标与任务拆解
+## 操作
 
-### 1. 基础必做指标
-1. **存储介质管理与图像解析**：
-   - 纯硬件读取 TF（MicroSD）卡，支持标准 **FAT32** 文件系统解析；
-   - 自动扫描并解析 BMP 格式图像的标头与像素阵列（24-bit RGB888）。
-2. **片内合封 SDRAM 帧缓存管理**：
-   - 驱动 EG4S20 内部 SiP 合封的 32-bit SDRAM（2M×32bits = 64Mbit）；
-   - 构建多端口仲裁控制器与双缓冲/乒乓（Ping-Pong）机制，彻底消除画面撕裂。
-3. **HDMI 视频高清显示输出**：
-   - FPGA 纯逻辑实现 HDMI TX（TMDS 8b/10b 编码与串行差分驱动）；
-   - 输出标准 720P / 1080P 稳定视频时序，直驱板载 HDMI 接口。
-4. **HDMI 音频输出与音画同步**：
-   - 硬件读取音频数据（WAV / PCM），生成 HDMI 音频时钟再生包（ACR）与音频采样包（Audio Sample Packet）；
-   - 实现声音与画面的同步联动播放。
-5. **多媒体交互控制**：
-   - 板载按键控制上一张/下一张切换、自动轮播/暂停播放、音量加减。
+- KEY1：复位。
+- KEY2 / KEY3：下一页 / 上一页。
+- KEY4 短按：切换本页实验；长按约 0.8 秒：打开或关闭菜单。
+- 菜单：音量、亮度、对比度、字幕、自动轮播、驻留时间。
 
-### 2. 扩展加分指标（高分夺冠杀手锏）
-- [x] **扩展 1：图层叠加与字幕效果**（动态滚动字幕跑马灯、时间戳、半透明 Alpha 遮罩混合）；
-- [x] **扩展 2：图片轮播与转场特效**（淡入淡出 Crossfade、百叶窗、水平/垂直滑动转场）；
-- [x] **扩展 3：图片自适应缩放适配**（硬件插值算法，不同分辨率 BMP 自动缩放全屏显示）；
-- [x] **扩展 4：实时参数调节与 OSD 叠加**（按键调节亮度、对比度，画面实时叠加 OSD 状态进度条）；
-- [x] **扩展 5：音频可视化展示**（硬件 64/128 点 FFT 频谱分析或波形生成，在画面底部叠加动态频谱柱状图）。
+## 已有验证记录与范围
 
----
+- [现有回归日志](topic1_hdmi__player/sim/results/run_20261103_171352_247/)中 26 项测试均记录通过，其中声音科普专项 5 项。
+- [指定构建的最终时序报告](topic1_hdmi__player/build/run_20261103_171402_416/phy/final_timing.rpt)：setup WNS +0.955 ns，hold WNS +0.003 ns，STA 覆盖率 99.82%。结论限于所用约束及分析覆盖范围。
+- tb_science_display 验证音频生成、波形和 OSD 像素流水线；TF、缩放、缓存等由其他测试分别覆盖，不能称为单一 TF→SDRAM→HDMI 端到端整机仿真。
+- 与原构建清单对照，94 个文件中 93 个匹配，.al 工程文件不匹配。原清单及原验证记录保留，本次同步清单单独记录当前交付文件。
+- 项目照片为实拍，但照片与具体位流的对应关系及完整上板验收记录尚未提供。此次同步未重新编译、运行仿真或进行板级测量。
 
-## 三、官方竞赛红线与注意事项（Q&A 划重点）
+运行时未实现通用 FAT32 目录/簇链解析，应使用配套连续存储 BMP 镜像。声音由 FPGA 内部合成，波形显示不等同于 FFT 或外部声压测量。
 
-1. **绝对严禁外挂 CPU / 单片机**：赛题一全流程（含文件检索、图像解析、按键交互、音频处理）**必须在 FPGA 内部纯硬件实现**。
-2. **TF 卡规范**：TF 卡必须格式化为 **FAT32** 格式，存放标准 `.bmp` 图片与 `.wav` 音频。
-3. **HDMI 驱动规范**：严禁使用外部 HDMI 转接板/驱动板，差分信号由 FPGA 内部硬核/IO 逻辑直驱。
-4. **音频输出规范**：显示设备需支持 HDMI 音视频输入或有外接音箱，评测会现场检验音频播放效果。
-5. **开发板网盘资料**：
-   - 百度网盘：`https://pan.baidu.com/s/1ysv_FmmgZKuM0rBiHfSv8w` 提取码：`M5N1`
-   - 板载免驱下载器，Win11 若出现驱动感叹号需关闭内存完整性或签名强制。
+## 构建
 
----
+在最新工程目录执行 ./build.ps1 -TdHome <本机TD安装目录>。回归入口为 ./sim/run.ps1，具体工具配置见脚本。构建输出按时间戳分目录；仓库保留指定发布产物与证据，过滤编译数据库及缓存。
 
-## 四、本仓库最新选题一工程（协作更新）
+## 历史工程与资料
 
-由协作账号 **BENY1119** 整理推送的 **选题一 HDMI 多媒体播放器** 最新工程：
+- 早期播放器已移至 [Git 历史版本](https://github.com/luowenhan264-pixel/EG4S20_HDMI/tree/d31522120b8c4f083650ba5ac09de3e89fdaa1b1/02_Anlogic_TD_Project/topic1_hdmi_player)，当前入口统一使用 topic1_hdmi__player/。
+- 02_Anlogic_TD_Project/official_baseline_HX4S20C/：官方参考例程。
+- 旧播放器位流可从 [历史目录](https://github.com/luowenhan264-pixel/EG4S20_HDMI/tree/d31522120b8c4f083650ba5ac09de3e89fdaa1b1/01_Bitstream_Ready_To_Flash) 恢复；当前声音科普版使用上表指定产物。
+- [旧版仓库说明](05_Contest_Guides_And_Reports/history/README_20261018.md)中的功能勾选和路径属于历史记录，不作为当前实现或验收证明。
 
-| 路径 | 内容 |
-| :--- | :--- |
-| [`01_Bitstream_Ready_To_Flash/`](./01_Bitstream_Ready_To_Flash/) | 可烧录位流 `topic1_hdmi_player.bit`、下载脚本与上板说明 |
-| [`02_Anlogic_TD_Project/topic1_hdmi_player/`](./02_Anlogic_TD_Project/topic1_hdmi_player/) | TD 工程（`.al`）、RTL 源码、约束、IP、文档与 BMP/音频资源 |
-| [`05_Contest_Guides_And_Reports/选题一_例程体检报告.md`](./05_Contest_Guides_And_Reports/选题一_例程体检报告.md) | 例程体检报告 |
+签名授权书按所有者要求仅保留本地，不提交到仓库。
 
-> 官方例程基线仍保留在 `02_Anlogic_TD_Project/official_baseline_HX4S20C/`，与选题一自研工程并列，互不覆盖。
+清理范围及保留策略见 [CLEANUP_20261104.md](CLEANUP_20261104.md)。
 

@@ -1,0 +1,22 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_controls -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:13 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_controls
+# Loading work.player_controls
+# Loading work.player_button
+# Loading work.player_config_cdc
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_controls: debounce, short/long exclusivity, menu, presets, chord, coherent CDC and reset
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_controls.sv(55)
+#    Time: 7930 ns  Iteration: 1  Instance: /tb_controls
+# Break in Module tb_controls at D:/HX4S20/work/topic1_hdmi_player/sim/tb_controls.sv line 55
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_controls.sv line 55
+#  quit -code 0
+# End time: 17:14:14 on Nov 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

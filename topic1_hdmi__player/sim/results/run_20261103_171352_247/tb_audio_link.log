@@ -1,0 +1,28 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_audio_link -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:04 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_audio_link
+# Loading work.player_frame_commit
+# Loading work.player_picture_event
+# Loading work.hdmi_audio_link_i2s
+# Loading work.I2S_receiver
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# cue checked: 1023 nonzero samples, 11 sign changes
+# cue checked: 1023 nonzero samples, 14 sign changes
+# cue checked: 1023 nonzero samples, 16 sign changes
+# cue checked: 1023 nonzero samples, 22 sign changes
+# cue checked: 1024 nonzero samples, 22 sign changes
+# PASS tb_audio_link: real commit/fade + CDC + serializer + receiver, four pitches, stereo, duration, continuous silence, retrigger, reset
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_link.sv(115)
+#    Time: 110313502 ns  Iteration: 0  Instance: /tb_audio_link
+# Break in Module tb_audio_link at D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_link.sv line 115
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_link.sv line 115
+#  quit -code 0
+# End time: 17:14:13 on Nov 03,2026, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0

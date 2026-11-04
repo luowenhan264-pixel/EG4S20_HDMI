@@ -1,0 +1,20 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_audio_visualizer -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:17:01 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_audio_visualizer
+# Loading work.audio_visualizer
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_audio_visualizer: signed PCM, clipping, stereo segments, frame-atomic RAM banks, silence, timeout/recovery, full raster and sync, bypass/reset
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_visualizer.sv(72)
+#    Time: 16198490 ns  Iteration: 1  Instance: /tb_audio_visualizer
+# Break in Module tb_audio_visualizer at D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_visualizer.sv line 72
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_audio_visualizer.sv line 72
+#  quit -code 0
+# End time: 17:17:05 on Nov 03,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

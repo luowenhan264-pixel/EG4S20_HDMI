@@ -1,0 +1,21 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_memory_schedule -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:13:59 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_memory_schedule
+# Loading work.frame_fifo_read
+# Loading work.frame_fifo_write
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_memory_schedule: 50MHz memory/25MHz video, 307200 pixels, concurrent TF writes, no FIFO under/overflow, vertical flip, refresh constants
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_memory_schedule.sv(79)
+#    Time: 16800860 ns  Iteration: 1  Instance: /tb_memory_schedule
+# Break in Module tb_memory_schedule at D:/HX4S20/work/topic1_hdmi_player/sim/tb_memory_schedule.sv line 79
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_memory_schedule.sv line 79
+#  quit -code 0
+# End time: 17:14:03 on Nov 03,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

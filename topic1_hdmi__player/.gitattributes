@@ -1,0 +1,2 @@
+# Preserve the original bytes used by source manifests and build evidence.
+* -text

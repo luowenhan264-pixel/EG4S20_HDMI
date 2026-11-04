@@ -1,0 +1,20 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_bmp_read -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:13:53 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_bmp_read
+# Loading work.bmp_read
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_bmp_read: discovery, 307200 RGB pixels, trailing bytes, malformed headers, short header/data sectors
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_bmp_read.sv(95)
+#    Time: 9344680 ns  Iteration: 1  Instance: /tb_bmp_read
+# Break in Module tb_bmp_read at D:/HX4S20/work/topic1_hdmi_player/sim/tb_bmp_read.sv line 95
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_bmp_read.sv line 95
+#  quit -code 0
+# End time: 17:13:55 on Nov 03,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

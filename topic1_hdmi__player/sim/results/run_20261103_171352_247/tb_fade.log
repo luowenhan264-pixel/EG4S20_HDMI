@@ -1,0 +1,21 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_fade -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:13:58 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_fade
+# Loading work.player_frame_commit
+# Loading work.video_fade_rgb
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_fade: 33 levels, configured duration, black-only bank swap, delayed ACK, RGB/sync arithmetic, reset
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_fade.sv(75)
+#    Time: 386328 ns  Iteration: 0  Instance: /tb_fade
+# Break in Module tb_fade at D:/HX4S20/work/topic1_hdmi_player/sim/tb_fade.sv line 75
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_fade.sv line 75
+#  quit -code 0
+# End time: 17:13:59 on Nov 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

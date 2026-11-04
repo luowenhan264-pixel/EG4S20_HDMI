@@ -1,0 +1,32 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_bmp_scale -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:15:01 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_bmp_scale
+# Loading work.bmp_scale_read
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# SCALE         640x        480 orientation=0 offset=54 ->   640x  480, 307200 pixels, 2281 sectors, 8364115 cycles
+# SCALE         320x        240 orientation=0 offset=54 ->   640x  480, 307200 pixels, 2581 sectors, 8261806 cycles
+# SCALE         800x        600 orientation=0 offset=54 ->   640x  480, 307200 pixels, 2731 sectors, 8351028 cycles
+# SCALE         641x        479 orientation=1 offset=511 ->   640x  480, 307200 pixels, 1807 sectors, 8178557 cycles
+# SCALE        1920x       1080 orientation=0 offset=4096 ->   640x  480, 307200 pixels, 5761 sectors, 9791885 cycles
+# SCALE           1x          1 orientation=1 offset=512 ->   640x  480, 307200 pixels, 2 sectors, 6448067 cycles
+# SCALE        2048x       2048 orientation=0 offset=54 ->    17x   13, 221 pixels, 157 sectors, 132624 cycles
+# SCALE        2048x       2048 orientation=1 offset=54 ->    17x   13, 221 pixels, 157 sectors, 132599 cycles
+# SCALE           1x       2048 orientation=0 offset=54 ->    17x   13, 221 pixels, 14 sectors, 14858 cycles
+# SCALE        2048x          1 orientation=0 offset=54 ->    17x   13, 221 pixels, 157 sectors, 133040 cycles
+# SCALE           7x          5 orientation=1 offset=54 ->    17x   13, 221 pixels, 2 sectors, 5279 cycles
+# SCALE          31x         19 orientation=0 offset=54 ->    17x   13, 221 pixels, 9 sectors, 10140 cycles
+# PASS tb_bmp_scale: full-frame pixel comparisons, up/down/equal/odd/extreme sizes, signed height, padding, offsets, scan, backpressure, malformed/short/abort recovery
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_bmp_scale.sv(139)
+#    Time: 498342960 ns  Iteration: 1  Instance: /tb_bmp_scale
+# Break in Module tb_bmp_scale at D:/HX4S20/work/topic1_hdmi_player/sim/tb_bmp_scale.sv line 139
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_bmp_scale.sv line 139
+#  quit -code 0
+# End time: 17:16:55 on Nov 03,2026, Elapsed time: 0:01:54
+# Errors: 0, Warnings: 0

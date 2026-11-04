@@ -1,0 +1,20 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_display_overlay -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:58 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_display_overlay
+# Loading work.player_settings_osd
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_display_overlay: two-row labels, highlight, text render, alpha strip, frame-only motion/time/image, wrap, subtitle disable, reset
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_display_overlay.sv(52)
+#    Time: 6239110 ns  Iteration: 1  Instance: /tb_display_overlay
+# Break in Module tb_display_overlay at D:/HX4S20/work/topic1_hdmi_player/sim/tb_display_overlay.sv line 52
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_display_overlay.sv line 52
+#  quit -code 0
+# End time: 17:15:00 on Nov 03,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

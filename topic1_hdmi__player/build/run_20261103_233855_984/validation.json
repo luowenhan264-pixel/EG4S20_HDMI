@@ -1,0 +1,10 @@
+{
+  "buildCompleted": true,
+  "bitstream": "C:\\Users\\liusu\\Desktop\\topic1_hdmi__player\\build\\run_20261103_233855_984/phy/topic1_hdmi_player.bit",
+  "holdWnsNs": 0.003,
+  "timingPassed": true,
+  "setupWnsNs": 0.955,
+  "sourceChangedDuringBuild": false,
+  "hardwareTested": false,
+  "constraintErrorCount": 0
+}

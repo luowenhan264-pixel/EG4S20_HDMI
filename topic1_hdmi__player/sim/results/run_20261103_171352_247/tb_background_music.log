@@ -1,0 +1,20 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_background_music -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:17:12 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_background_music
+# Loading work.background_music
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_background_music: two complete 24s loops, amplitude, sample cadence, volume/mute, stereo cue mixing, saturation, enable/reset; peak=     163757
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_background_music.sv(75)
+#    Time: 140121200 ns  Iteration: 1  Instance: /tb_background_music
+# Break in Module tb_background_music at D:/HX4S20/work/topic1_hdmi_player/sim/tb_background_music.sv line 75
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_background_music.sv line 75
+#  quit -code 0
+# End time: 17:17:51 on Nov 03,2026, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0

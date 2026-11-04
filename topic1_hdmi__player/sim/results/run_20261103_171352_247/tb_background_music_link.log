@@ -1,0 +1,23 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_background_music_link -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:17:52 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_background_music_link
+# Loading work.hdmi_audio_link_i2s
+# Loading work.I2S_receiver
+# Loading work.background_music
+# Loading work.audio_visualizer
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_background_music_link: real I2S cue + BGM mixer + waveform, startup enable, ongoing music, cue overlap, volume mute
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_background_music_link.sv(41)
+#    Time: 80288760 ns  Iteration: 1  Instance: /tb_background_music_link
+# Break in Module tb_background_music_link at D:/HX4S20/work/topic1_hdmi_player/sim/tb_background_music_link.sv line 41
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_background_music_link.sv line 41
+#  quit -code 0
+# End time: 17:18:01 on Nov 03,2026, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0

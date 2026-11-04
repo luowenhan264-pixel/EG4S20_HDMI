@@ -1,0 +1,28 @@
+# Keep source, tools, teaching assets and reproducible release evidence.
+/build/*
+!/build/sound_science_card.img.gz
+!/build/run_20261103_171402_416/
+!/build/run_20261103_233855_984/
+/build/run_*/*
+!/build/run_*/source_manifest.json
+!/build/run_*/science_review.json
+!/build/run_*/validation.json
+!/build/run_*/bitstream_sha256.txt
+!/build/run_*/phy/
+/build/run_*/phy/*
+!/build/run_*/phy/topic1_hdmi_player.bit
+!/build/run_*/phy/final_timing.rpt
+!/build/run_*/phy/topic1_hdmi_player_phy.area
+
+/sim/results/*
+!/sim/results/run_20261103_171352_247/
+/sim/results/run_20261103_171352_247/*
+!/sim/results/run_20261103_171352_247/*.log
+__pycache__/
+*.pyc
+*.dath
+*.datl
+
+# Retain these original files because the archived build manifest includes them.
+!/src/user_source/constraints_source/edid_debug.cwc
+!/src/user_source/hdl_source/python/*.mif.dath

@@ -1,0 +1,23 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_cue_config_boundary -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:41 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_cue_config_boundary
+# Loading work.player_picture_event
+# Loading work.player_config_cdc
+# Loading work.hdmi_audio_link_i2s
+# Loading work.I2S_receiver
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_cue_config_boundary: 256 phases, simultaneous picture/config change, two notes decoded correctly
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_cue_config_boundary.sv(33)
+#    Time: 159975222 ns  Iteration: 0  Instance: /tb_cue_config_boundary
+# Break in Module tb_cue_config_boundary at D:/HX4S20/work/topic1_hdmi_player/sim/tb_cue_config_boundary.sv line 33
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_cue_config_boundary.sv line 33
+#  quit -code 0
+# End time: 17:14:54 on Nov 03,2026, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0

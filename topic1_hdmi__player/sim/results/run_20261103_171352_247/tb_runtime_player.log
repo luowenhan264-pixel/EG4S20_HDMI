@@ -1,0 +1,31 @@
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish stop work.tb_runtime_player -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 17:14:40 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_runtime_player
+# Loading work.player_controls
+# Loading work.player_button
+# Loading work.sd_card_bmp
+# Loading work.key_press_debounce
+# Loading work.sd_card_top
+# Loading work.player_frame_commit
+# Loading work.bmp_read
+# ** Warning: (vsim-3017) D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv(12): [TFMPC] - Too few port connections. Expected 30, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_runtime_player/dut File: D:/HX4S20/work/topic1_hdmi_player/src/user_source/hdl_source/SD/sd_card_bmp.v
+# ** Warning: (vsim-3722) D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv(12): [TFMPC] - Missing connection for port 'write_ready'.
+# ** Warning: (vsim-3722) D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv(12): [TFMPC] - Missing connection for port 'control_prev'.
+# ** Warning: (vsim-3722) D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv(12): [TFMPC] - Missing connection for port 'navigation_ready'.
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS tb_runtime_player: real keys/menu + scheduler, pause, runtime 5s/2s timing, manual/auto, safe banks
+# ** Note: $finish    : D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv(50)
+#    Time: 163235 ns  Iteration: 2  Instance: /tb_runtime_player
+# Break in Module tb_runtime_player at D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv line 50
+# Stopped at D:/HX4S20/work/topic1_hdmi_player/sim/tb_runtime_player.sv line 50
+#  quit -code 0
+# End time: 17:14:40 on Nov 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
